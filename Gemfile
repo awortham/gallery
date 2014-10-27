@@ -33,7 +33,6 @@ end
 group :development do
   gem 'spring'
   gem 'pry', '~> 0.10.1'
-  gem 'puma', '~> 2.9.1'
   gem 'factory_girl_rails', '~> 4.4.1'
 end
 
