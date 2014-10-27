@@ -21,7 +21,7 @@ class PagesController < ApplicationController
   end
 
   def code
-    redirect_to 'http://github.com/rNavarrete/dinner_dash_frita'
+    redirect_to 'https://github.com/awortham/Gallery'
   end
 
   def cart_route
