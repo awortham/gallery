@@ -1,3 +1,8 @@
+require "codeclimate-test-reporter"
+require "rails_helper"
+
+CodeClimate::TestReporter.start
+
 require 'database_cleaner'
 
 

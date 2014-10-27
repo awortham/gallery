@@ -24,9 +24,10 @@ gem "gritter", "1.1.0"
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
   gem 'capybara', '~> 2.4.3'
-  gem 'capybara-webkit'
+  # gem 'capybara-webkit'
   gem 'launchy', '~> 2.4.2'
   gem 'database_cleaner', '~> 1.3.0'
+  gem "codeclimate-test-reporter"
 end
 
 group :development do
