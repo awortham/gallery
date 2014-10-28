@@ -35,7 +35,7 @@
     <% available_items(category.items).each do |item| %>
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail",  id="menu_items">
-        <a href="<%= item_path(item) %>"><img src="<%= item.image(:medium) %>", class="img-responsive img-rounded", id="menu_item_pics"></a>
+        <!-- <a href="<%= item_path(item) %>"><img src="<%= item.image(:medium) %>", class="img-responsive img-rounded", id="menu_item_pics"></a> -->
         <div class="caption">
           <h3><%= item.title %></h3>
           <%= form_tag line_items_path do %>
