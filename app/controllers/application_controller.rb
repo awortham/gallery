@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include UsersHelper
 
+  before_action :set_user
+
   helper_method :cart
   helper_method :find_item
   helper_method :address_delivered_to
@@ -21,7 +23,6 @@ class ApplicationController < ActionController::Base
     Item.find(item_id)
   end
 
-  # refactor this
   def order_items(line_items_hash)
     items = {}
     line_items_array = line_items_hash.to_a
@@ -32,15 +33,6 @@ class ApplicationController < ActionController::Base
     end
     items
   end
-
-  # def order_items(line_items_hash)
-  #   items = {}
-  #   line_items_hash.each do |item_id, quantity|
-  #     item_id = id_and_item_hash[0].scan(/\d+/)
-  #     quantity = id_and_item_hash[1].to_i
-  #     items << :item_id => :quantity
-  #   end
-  # end
 
   def past_order_quantity(line_items_hash)
     order_items(line_items_hash).values.reduce(0) {|sum, quantity| sum += quantity}
@@ -61,5 +53,10 @@ class ApplicationController < ActionController::Base
   def past_order_quantity(line_items_hash)
     order_items(line_items_hash).values.reduce(0) {|sum, quantity| sum += quantity}
   end
+
+  private
+    def set_user
+      @user = User.new
+    end
 
 end
