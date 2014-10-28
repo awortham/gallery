@@ -1,8 +1,9 @@
-[![Stories in Ready](https://badge.waffle.io/objectParadigm/diner-ninja-dash.png?label=ready&title=Ready)](https://waffle.io/objectParadigm/diner-ninja-dash)
-diner-ninja-dash
+Gallery
 ================
-FRITA - a cuban gastronomic love affair
 
-[staging]
+[Live Site](http://frita.herokuapp.com/)
 
-[production](http://frita.herokuapp.com/)
+[![Code Climate](https://codeclimate.com/github/awortham/Gallery/badges/gpa.svg)](https://codeclimate.com/github/awortham/Gallery)
+[![Test Coverage](https://codeclimate.com/github/awortham/Gallery/badges/coverage.svg)](https://codeclimate.com/github/awortham/Gallery)
+[![Build Status](https://travis-ci.org/awortham/Gallery.svg)](https://travis-ci.org/awortham/Gallery)
+=======
