@@ -4,15 +4,15 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-config.paperclip_defaults = {
-  :storage => :fog,
-  :fog_credentials => {
-    :provider => "AWS"
-    :aws_access_key_id => ENV['s3_key_id']
-    :aws_secret_access_key => ENV['s3_access_key']
-  },
+  config.paperclip_defaults = {
+    :storage => :fog,
+    :fog_credentials => {
+      :provider => "AWS"
+      :aws_access_key_id => ENV['s3_key_id']
+      :aws_secret_access_key => ENV['s3_access_key']
+    },
     :fog_directory => ENV['s3_bucket']
-}
+  }
 
 
   # Eager load code on boot. This eager loads most of Rails and
