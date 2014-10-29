@@ -28,6 +28,7 @@ group :test do
   gem 'launchy', '~> 2.4.2'
   gem 'database_cleaner', '~> 1.3.0'
   gem "codeclimate-test-reporter"
+  gem 'poltergeist'
 end
 
 group :development do
@@ -44,6 +45,7 @@ gem 'rails_12factor', group: :production
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk'
 gem "fog"
+gem "sprig"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
