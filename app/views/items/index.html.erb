@@ -17,6 +17,13 @@
           <img src="<%= item.image(:thumb) %>">
           <span class="item_title"><%= item.title %><span><%= number_to_currency(item.price) %>
           <%= item.description %>
+
+          <%= form_tag line_items_path do %>
+            <%= number_field :quantity, "quantity", in: 1..20, value: 1 %>
+            <%= hidden_field_tag :id, item.id %>
+            <a href="#" class="btn btn-default disabled" role=""><%= number_to_currency(item.price) %></a>
+            <%= submit_tag "Add to Cart", class: "btn btn-success" %>
+          <% end %>
         </div>
       <% end %>
 

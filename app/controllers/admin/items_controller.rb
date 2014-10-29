@@ -22,7 +22,6 @@ class Admin::ItemsController < Admin::AdminController
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save
       gflash :now,  :success => "Item Successfully Created"
-      # ItemCategory.create(item_id: @item.id, category_id: params[:item][:categories][1])
       redirect_to admin_path
     else
       gflash :now,  :error => @item.errors.full_messages.to_sentence
@@ -39,7 +38,6 @@ class Admin::ItemsController < Admin::AdminController
       redirect_to admin_items_path
     else
       gflash :now,  :error => "Item was not updated. Please try again."
-      # redirect_to :back
       render :new
     end
   end
