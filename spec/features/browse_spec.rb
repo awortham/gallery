@@ -6,6 +6,7 @@ describe 'browse images' do
       visit root_path
       click_on('Browse')
       expect(page).to have_content 'All Items'
+
     end
 
 end
