@@ -9,8 +9,8 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :fog,
     :fog_credentials => {
-      :provider => "AWS"
-      :aws_access_key_id => ENV['s3_key_id']
+      :provider => "AWS",
+      :aws_access_key_id => ENV['s3_key_id'],
       :aws_secret_access_key => ENV['s3_access_key']
     },
       :fog_directory => ENV['s3_bucket']
