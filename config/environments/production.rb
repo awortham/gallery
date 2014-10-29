@@ -9,9 +9,9 @@ Rails.application.configure do
     :fog_credentials => {
       :provider => "AWS",
       :aws_access_key_id => ENV['s3_key_id'],
-      :aws_secret_access_key => ENV['s3_access_key']
+      :aws_secret_access_key => ENV['s3_access_key'],
     },
-    :fog_directory => ENV['s3_bucket']
+      :fog_directory => ENV['s3_bucket']
   }
 
 
