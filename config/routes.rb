@@ -4,11 +4,12 @@ Rails.application.routes.draw do
 
   root 'pages#menu'
 
-  get '/menu'  => 'pages#menu'
-  get '/admin' => 'pages#admin'
-  get '/cart'  => 'pages#cart_route', as: 'cart'
-  get '/about' => 'pages#about'
-  get '/code'  => 'pages#code'
+  get '/menu'   => 'pages#menu'
+  get '/admin'  => 'pages#admin'
+  get '/cart'   => 'pages#cart_route', as: 'cart'
+  get '/about'  => 'pages#about'
+  get '/code'   => 'pages#code'
+  get '/photos' => 'items#index'
 
   resources :users
   resources :items, only: [:index, :show]
