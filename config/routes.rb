@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :items, only: [:index, :show]
+  # resources :photos, only: [:index, :show]
   resources :categories
   resources :orders
   resources :addresses, only: [:create]
