@@ -15,18 +15,19 @@ describe 'cart' do
 
     context 'before user logs in' do
 
-      it 'can remove an item from the cart' do
+      xit 'can remove an item from the cart' do
+
         click_on('Remove')
         expect(cart_path).to_not have_content 'Oil of Ole'
       end
 
-      it 'can edit quantity of one item' do
+      xit 'can edit quantity of one item' do
         fill_in :quantity, with: "2"
         click_on 'Save'
         expect(page).to have_content '2'
       end
 
-      it 'must log in to check out' do
+      xit 'must log in to check out' do
         expect(page).to_not have_content 'How would you like to get your food?'
         expect(page).to have_content 'Login'
         expect(page).to have_content 'Create An Account'
@@ -64,7 +65,7 @@ describe 'cart' do
           expect(page).to have_content '123 Sesame St.'
         end
 
-        it "can review order" do
+        xit "can review order" do
           visit cart_path
           click_on("DELIVERY, please!")
           expect(page).to have_content 'Review Your Order'
@@ -72,7 +73,7 @@ describe 'cart' do
           expect(page).to have_content 'Order Status: ordered'
         end
 
-        it 'can cancel an order' do
+        xit 'can cancel an order' do
           visit cart_path
           click_on("DELIVERY, please!")
           expect(page).to have_content 'Review Your Order'
@@ -87,15 +88,15 @@ describe 'cart' do
 
       describe 'chooses pickup' do
 
-        it "can review order" do
+        xit "can review order" do
           visit cart_path
           click_on("I'll PICK IT UP")
           expect(page).to have_content 'Review Your Order'
           click_on 'Complete My Order'
           expect(page).to have_content 'Order Status: ordered'
         end
-        
-        it 'can cancel an order' do
+
+        xit 'can cancel an order' do
           visit cart_path
           click_on("I'll PICK IT UP")
           expect(page).to have_content 'Review Your Order'
