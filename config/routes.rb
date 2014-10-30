@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   root 'pages#menu'
 
+  get "/:store_slug/items", to: "items#index"
+  # get "/:store_slug/items/:id", to: "items#show"
+  # get "/:store_slug/cart", to: "carts#show"
+
   get '/menu'   => 'pages#menu'
   get '/admin'  => 'pages#admin'
   get '/cart'   => 'pages#cart_route', as: 'cart'

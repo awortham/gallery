@@ -6,6 +6,8 @@ records:
     password_confirmation: 'password'
     platform_admin: true
     username: 'Rachel'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
     name: 'Jeff'
     email: 'demo+jeff@jumstartlab.com'
@@ -13,51 +15,69 @@ records:
     password_confirmation: 'password'
     admin: true
     username: 'Jeff'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 3
     name: 'Jorge'
     email: 'demo+jorge@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Jorge'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 4
     name: 'Josh'
     email: 'demo+josh@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Josh'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 5
     name: 'Peter'
     email: 'demo+peter@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Peter'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 6
     name: 'Sara'
     email: 'demo+sara@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Sara'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 7
     name: 'Aaron'
     email: 'demo+aaron@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Aaron'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 8
     name: 'Luke'
     email: 'demo+luke@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Luke'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 9
     name: 'Alex'
     email: 'demo+alex@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Alex'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 10
     name: 'Jessica'
     email: 'demo+jessica@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     username: 'Jessica'
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
