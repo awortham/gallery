@@ -131,18 +131,6 @@ html *{
   max-height: 167px;
 }
 
-@font-face {
-    font-family: 'seasideresortnfregular';
-    src: font-url('SEASRN__-webfont.eot');
-    src: font-url('SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SEASRN__-webfont.woff') format('woff'),
-         url('SEASRN__-webfont.ttf') format('truetype'),
-         url('SEASRN__-webfont.svg#seasideresortnfregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 
 div.img {
   float: left;
@@ -312,9 +300,12 @@ body{
 
 
 #site_title{
- font-family: 'seasideresortnfregular';
- font-size: 48px;
- color: red;
+ font-size: 34px;
+ color: #C8C8C8;
+}
+
+#site_title:hover {
+  color: white;
 }
 
 #nav_bar{
