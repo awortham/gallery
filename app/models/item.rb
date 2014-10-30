@@ -1,4 +1,6 @@
 class Item < ActiveRecord::Base
+  belongs_to :business
+
   has_many :item_categories, dependent: :destroy
   has_many :categories, through: :item_categories
   has_many :order_items

@@ -1,0 +1,11 @@
+records:
+  - sprig_id: 1
+    title: "nature"
+  - sprig_id: 2
+    title: "fashion"
+  - sprig_id: 3
+    title: "budoir"
+  - sprig_id: 4
+    title: "portrait"
+  - sprig_id: 5
+    title: "urban"

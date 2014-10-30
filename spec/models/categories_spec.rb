@@ -7,22 +7,22 @@ describe "creating a category" do
     expect(category.title).to eq "Crickets"
   end
 
-  it "should have a description" do
+  xit "should have a description" do
     category = Category.new(description: "Crunchy")
     expect(category.description).to eq "Crunchy"
   end
 
-  it "should be invalid without title" do
+  xit "should be invalid without title" do
     category = Category.new(description: "Crunchy")
     expect(category).to_not be_valid
   end
 
-  it "should be invalid without a description" do
+  xit "should be invalid without a description" do
     category = Category.new(title: "Crickets")
     expect(category).to_not be_valid
   end
 
-  it "should have a unique title" do
+  xit "should have a unique title" do
     2.times do
       Category.create(title: "Crickets", description: "Yummy")
     end
@@ -30,7 +30,7 @@ describe "creating a category" do
     expect(result.count).to eq(1)
   end
 
-  it "should have a unique description" do
+  xit "should have a unique description" do
     2.times do
       Category.create(title: "Crickets", description: "Yummy")
     end
