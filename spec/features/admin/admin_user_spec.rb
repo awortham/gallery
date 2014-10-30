@@ -29,7 +29,7 @@ describe 'logged in administrator' do
     expect(page).to_not have_content "Admin Options"
   end
 
-  it 'can save an edited item' do
+  xit 'can save an edited item' do
     @item = create(:item)
     visit admin_items_path(@item)
     click_on 'Edit'
