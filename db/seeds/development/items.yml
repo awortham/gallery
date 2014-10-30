@@ -90,8 +90,9 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "houses.jpg"
-    business_id: '<%= sprig_record(Business, 1).id %>'
+    image_file_name: "houses.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 12
     title: "jellyfish"
     description: "under the waves"
