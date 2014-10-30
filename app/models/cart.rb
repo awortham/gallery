@@ -7,10 +7,13 @@ class Cart
     @session[:cart_items] ||= {}
   end
 
-  def add_line_item(item_id, quantity)
-    line_items[item_id] = quantity
+  def line_item_quantity(item_id)
+    line_items[item_id].to_i
   end
 
+  def add_line_item(item_id, quantity)
+    line_items[item_id] = line_items[item_id].to_i + quantity.to_i
+  end
 
   def total_quantity
     line_items.values.reduce(0) {|sum, quantity| sum += quantity.to_i }
@@ -22,6 +25,10 @@ class Cart
       total += Item.find(item_id).price * quantity.to_i
     end
     total
+  end
+
+  def inspect
+    line_items.inspect
   end
 
   def update_item(item_id, quantity)
