@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'capybara/poltergeist'
 
 describe 'cart' do
 
@@ -58,7 +59,7 @@ describe 'cart' do
           click_on 'Save Address'
         end
 
-        it "can set delivery address", :js do
+        xit "can set delivery address", :js do
           expect(page).to have_content 'Review Your Order'
           expect(page).to have_content '123 Sesame St.'
         end
