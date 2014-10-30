@@ -14,7 +14,7 @@
   <div class="grid-sizer">
       <% @items.each do |item| %>
         <div class="grid-item <%= item.categories.reduce('') { |sum, category| sum + category.title + ' '}.strip %>" id="item_<%= item.id %>">
-          <img src="<%= item.image(:medium) %>">
+          <%= link_to image_tag(item.image(:medium)), photo_path(item.business.slug, item) %>
           <span class="item_title"><%= item.title %><span><%= number_to_currency(item.price) %>
           <%= item.description %>
 
