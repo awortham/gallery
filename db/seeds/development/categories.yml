@@ -1,11 +1,16 @@
 records:
   - sprig_id: 1
     title: "nature"
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
     title: "fashion"
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 3
     title: "budoir"
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 4
     title: "portrait"
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 5
     title: "urban"
+    business_id: '<%= sprig_record(Business, 1).id %>'

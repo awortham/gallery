@@ -1,8 +1,8 @@
 class ItemsController < ApplicationController
 
   def index
-    @categories = Category.all
-    @items = Item.all
+    @categories = business.categories.all
+    @items = business.items.all
   end
 
   def show

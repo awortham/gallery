@@ -7,8 +7,7 @@ records:
       - '<%= sprig_record(Category, 1).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "baby.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
     title: "bandana-dog"
     description: "dag with an attitude"
@@ -16,8 +15,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bandana-dog.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 3
     title: "beach-street"
     description: "voyage beyond"
@@ -25,8 +23,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "beach-street.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 4
     title: "bird"
     description: "fly into the sky"
@@ -34,8 +31,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bird.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 5
     title: "blue-sky"
     description: "it's a small world"
@@ -44,8 +40,7 @@ records:
       - '<%= sprig_record(Category, 1).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "blue-sky.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 6
     title: "bubbles"
     description: "a perfect circle"
@@ -53,8 +48,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bubbles.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 7
     title: "car"
     description: "good old times"
@@ -62,8 +56,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "car.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 8
     title: "corn"
     description: "this is food"
@@ -72,8 +65,7 @@ records:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "corn.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 9
     title: "dogs"
     description: "a great beast"
@@ -82,8 +74,7 @@ records:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "dog.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 10
     title: "fox"
     description: "sly one"
@@ -91,8 +82,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
     image_file_name: "fox.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 11
     title: "houses"
     description: "the whole family"
@@ -101,8 +91,7 @@ records:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "houses.jpg"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 12
     title: "jellyfish"
     description: "under the waves"
@@ -111,8 +100,7 @@ records:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "jellyfish.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 13
     title: "leaves"
     description: "shedding"
@@ -121,8 +109,7 @@ records:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "leaves.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 14
     title: "pier"
     description: "long way to go"
@@ -131,8 +118,7 @@ records:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "pier.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 15
     title: "rocks"
     description: "mosaics"
@@ -140,8 +126,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "rocks.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 16
     title: "sailboat"
     description: "row your boat"
@@ -149,8 +134,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sailboat.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 17
     title: "sun through clouds"
     description: "is there a god?"
@@ -158,8 +142,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sun-through-clouds.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 18
     title: "sunflowers"
     description: "happy as a daisy"
@@ -167,8 +150,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sunflowers.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 19
     title: "sunset"
     description: "the source of color"
@@ -176,8 +158,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sunset.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 20
     title: "toddler"
     description: "not grown up"
@@ -186,5 +167,4 @@ records:
       - '<%= sprig_record(Category, 4).id %>'
       - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "toddler.png"
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
+    business_id: '<%= sprig_record(Business, 1).id %>'

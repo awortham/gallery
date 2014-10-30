@@ -1,10 +1,11 @@
-
 class ApplicationController < ActionController::Base
+  attr_accessor :business
 
   protect_from_forgery with: :exception
   include UsersHelper
 
   before_action :set_user
+  before_action :set_business
 
   helper_method :cart
   helper_method :find_item
@@ -59,4 +60,7 @@ class ApplicationController < ActionController::Base
       @user = User.new
     end
 
+    def set_business
+      @business = Business.where(slug: params[:store_slug]).first
+    end
 end
