@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141014015037) do
+ActiveRecord::Schema.define(version: 20141029193921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(version: 20141014015037) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "businesses", force: true do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "businesses", ["user_id"], name: "index_businesses_on_user_id", using: :btree
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -59,6 +68,7 @@ ActiveRecord::Schema.define(version: 20141014015037) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "status",                                     default: "active"
+    t.integer  "business_id"
   end
 
   create_table "line_items", force: true do |t|
@@ -92,6 +102,8 @@ ActiveRecord::Schema.define(version: 20141014015037) do
     t.boolean  "admin",           default: false
     t.string   "email"
     t.string   "username"
+    t.boolean  "platform_admin",  default: false
+    t.integer  "business_id"
   end
 
 end
