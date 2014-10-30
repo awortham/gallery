@@ -1,11 +1,11 @@
 records:
   - sprig_id: 1
-    title: "small plates"
+    title: "nature"
   - sprig_id: 2
-    title: "flat breads"
+    title: "fashion"
   - sprig_id: 3
-    title: "soup & salads"
+    title: "budoir"
   - sprig_id: 4
-    title: "entree"
+    title: "portrait"
   - sprig_id: 5
-    title: "vegetarian"
+    title: "urban"

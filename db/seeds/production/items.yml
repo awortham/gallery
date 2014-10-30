@@ -1,150 +1,190 @@
 records:
   - sprig_id: 1
-    title: "fresh goat's milk curd"
-    description: "baby beets, raspberry, pink peppercorn biscotti"
-    price: 11.01
+    title: "so cute"
+    description: "first years of life"
+    price: 20
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "goat_milk.jpg"
+    image_file_name: "baby.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
-    title: "chilled bangs island mussels"
-    description: "tomato water, lemon balm, lemon cucumber"
-    price: 14.01
+    title: "bandana-dog"
+    description: "dag with an attitude"
+    price: 30
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
-    image_file_name: "mussels.jpg"
+    image_file_name: "bandana-dog.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 3
-    title: "smoked wild bluefish"
-    description: "tomato + fennel salad, chamomile vinaigrette, coronado cabbage"
-    price: 15.01
+    title: "beach-street"
+    description: "voyage beyond"
+    price: 35
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
-    image_file_name: "wild_bluefish.jpg"
+    image_file_name: "beach-street.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 4
-    title: "lemongrass sausage"
-    description: "watermelon, shishito pepper, watercress, mint"
-    price: 13.01
+    title: "bird"
+    description: "fly into the sky"
+    price: 15
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
-    image_file_name: "food.jpg"
+    image_file_name: "bird.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 5
-    title: "okra + corn beignets"
-    description: "prawn reduction, five herb salad"
-    price: 15.01
+    title: "blue-sky"
+    description: "it's a small world"
+    price: 50
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "okra.jpg"
+    image_file_name: "blue-sky.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 6
-    title: "duck liver sausage"
-    description: "bbq tomato jam, corn salad, skillet bread"
-    price: 13.01
+    title: "bubbles"
+    description: "a perfect circle"
+    price: 40
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
-    image_file_name: "fancy_poo.jpg"
+    image_file_name: "bubbles.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 7
-    title: "babette's pain naturale"
-    description: "beurre rudolph le menuier"
-    price: 5.01
+    title: "car"
+    description: "good old times"
+    price: 45
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
-    image_file_name: "gross.JPG"
+    image_file_name: "car.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 8
-    title: "margherita"
-    description: "fresh mozarella, san marzano tomato, basil"
-    price: 11.01
+    title: "corn"
+    description: "this is food"
+    price: 60
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "margaherita.jpg"
+    image_file_name: "corn.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 9
-    title: "the fig + pig"
-    description: "guanciale, gorgonzola, baby arugula"
-    price: 12.01
+    title: "dogs"
+    description: "a great beast"
+    price: 60
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "pig.jpg"
+    image_file_name: "dog.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 10
-    title: "patata rossa"
-    description: "lardo, roasted garlic oil, caramelized onion, pecorino"
-    price: 13.01
+    title: "fox"
+    description: "sly one"
+    price: 20
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
-    image_file_name: "patata_rossa.jpg"
+    image_file_name: "fox.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 11
-    title: "roasted corn soup"
-    description: "chanterelle mushroom confit, tamale, aged Welsh chedder"
-    price: 10.01
+    title: "houses"
+    description: "the whole family"
+    price: 45
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "cornsoup.jpg"
+    image_file_name: "houses.jpg"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 12
-    title: "local lettuces"
-    description: "dried cherries, candied pepitas, chevre&acute;, white balsamic"
-    price: 8.01
+    title: "jellyfish"
+    description: "under the waves"
+    price: 70
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "greens.jpg"
+    image_file_name: "jellyfish.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 13
-    title: "cardoon souffle"
-    description: "porcini balsamella, leeks, baby kale"
-    price: 11.01
+    title: "leaves"
+    description: "shedding"
+    price: 75
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "souffle.jpg"
+    image_file_name: "leaves.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 14
-    title: "carrot tagliatelle"
-    description: "carrot top pesto, cumin seed, orange beure blanc"
-    price: 12.01
+    title: "pier"
+    description: "long way to go"
+    price: 15
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "carrot_tagilatelle.jpg"
+    image_file_name: "pier.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 15
-    title: "day boat scallops"
-    description: "surryano ham, cantaloupe, wax beans, fig vin cotto"
-    price: 30.01
+    title: "rocks"
+    description: "mosaics"
+    price: 50
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
-    image_file_name: "scallops.jpg"
+    image_file_name: "rocks.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 16
-    title: "pan roasted lamb"
-    description: "eggplant, garbanzo beans, gaeta olive, crepinette, pomegranate demi-glace"
-    price: 25.01
+    title: "sailboat"
+    description: "row your boat"
+    price: 40
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
-    image_file_name: "lamb.jpg"
+    image_file_name: "sailboat.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 17
-    title: "kale + roasted garlic bucatini"
-    description: "smoked ham, pecora vecchio, quail egg yolk"
-    price: 25.01
+    title: "sun through clouds"
+    description: "is there a god?"
+    price: 45
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
-    image_file_name: "kale.png"
+    image_file_name: "sun-through-clouds.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 18
-    title: "red duroc pork + belly"
-    description: "la ratte potatoes, peppercorn-black plum aigre doux, torpedo onions, fennel"
-    price: 29.01
+    title: "sunflowers"
+    description: "happy as a daisy"
+    price: 30
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
-    image_file_name: "pork_belly.jpg"
+    image_file_name: "sunflowers.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 19
-    title: "roasted squab + confit"
-    description: "grape + turnip brovada, foie gras torchon, watercress puree"
-    price: 34.01
+    title: "sunset"
+    description: "the source of color"
+    price: 60
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
-    image_file_name: "squab.jpg"
+    image_file_name: "sunset.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 20
-    title: "cauliflower"
-    description: "rye gnocchi, baeburn apple, brussel sprouts"
-    price: 23.01
+    title: "toddler"
+    description: "not grown up"
+    price: 30
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "cauliflower.JPG"
+    image_file_name: "toddler.png"
+    business_id:
+      - '<%= sprig_record(Business, 1).id %>'

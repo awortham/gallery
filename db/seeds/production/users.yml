@@ -1,30 +1,63 @@
 records:
   - sprig_id: 1
-    first_name: 'Rachel'
-    last_name: 'Warbelow'
+    name: 'Rachel Warbelow'
     email: 'demo+rachel@jumpstartlab.com'
-    nickname:
     password: 'password'
     password_confirmation: 'password'
+    platform_admin: true
+    username: 'Rachel'
   - sprig_id: 2
-    first_name: 'Jeff'
-    last_name: ''
+    name: 'Jeff'
     email: 'demo+jeff@jumstartlab.com'
-    nickname: 'j3'
     password: 'password'
     password_confirmation: 'password'
+    admin: true
+    username: 'Jeff'
   - sprig_id: 3
-    first_name: 'Jorge'
-    last_name: 'Tellez'
+    name: 'Jorge'
     email: 'demo+jorge@jumpstartlab.com'
-    nickname: 'novohispano'
     password: 'password'
     password_confirmation: 'password'
+    username: 'Jorge'
   - sprig_id: 4
-    first_name: 'Josh'
-    last_name: 'Cheek'
+    name: 'Josh'
     email: 'demo+josh@jumpstartlab.com'
-    nickname: 'josh'
     password: 'password'
     password_confirmation: 'password'
-    role: 'admin'
+    username: 'Josh'
+  - sprig_id: 5
+    name: 'Peter'
+    email: 'demo+peter@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Peter'
+  - sprig_id: 6
+    name: 'Sara'
+    email: 'demo+sara@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Sara'
+  - sprig_id: 7
+    name: 'Aaron'
+    email: 'demo+aaron@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Aaron'
+  - sprig_id: 8
+    name: 'Luke'
+    email: 'demo+luke@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Luke'
+  - sprig_id: 9
+    name: 'Alex'
+    email: 'demo+alex@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Alex'
+  - sprig_id: 10
+    name: 'Jessica'
+    email: 'demo+jessica@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Jessica'
