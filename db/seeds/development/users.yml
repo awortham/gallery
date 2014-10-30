@@ -1,0 +1,60 @@
+records:
+  - sprig_id: 1
+    name: 'Rachel Warbelow'
+    email: 'demo+rachel@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    platform_admin: true
+  - sprig_id: 2
+    first_name: 'Jeff'
+    email: 'demo+jeff@jumstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    admin: true
+  - sprig_id: 3
+    first_name: 'Jorge'
+    email: 'demo+jorge@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+  - sprig_id: 4
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 5
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 6
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 7
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 8
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 9
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
+  - sprig_id: 10
+    first_name: 'Josh'
+    email: 'demo+josh@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'

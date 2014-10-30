@@ -1,0 +1,11 @@
+records:
+  - sprig_id: 1
+    title: "small plates"
+  - sprig_id: 2
+    title: "flat breads"
+  - sprig_id: 3
+    title: "soup & salads"
+  - sprig_id: 4
+    title: "entree"
+  - sprig_id: 5
+    title: "vegetarian"

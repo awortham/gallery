@@ -1,0 +1,30 @@
+records:
+  - sprig_id: 1
+    first_name: 'Rachel'
+    last_name: 'Warbelow'
+    email: 'demo+rachel@jumpstartlab.com'
+    nickname:
+    password: 'password'
+    password_confirmation: 'password'
+  - sprig_id: 2
+    first_name: 'Jeff'
+    last_name: ''
+    email: 'demo+jeff@jumstartlab.com'
+    nickname: 'j3'
+    password: 'password'
+    password_confirmation: 'password'
+  - sprig_id: 3
+    first_name: 'Jorge'
+    last_name: 'Tellez'
+    email: 'demo+jorge@jumpstartlab.com'
+    nickname: 'novohispano'
+    password: 'password'
+    password_confirmation: 'password'
+  - sprig_id: 4
+    first_name: 'Josh'
+    last_name: 'Cheek'
+    email: 'demo+josh@jumpstartlab.com'
+    nickname: 'josh'
+    password: 'password'
+    password_confirmation: 'password'
+    role: 'admin'
