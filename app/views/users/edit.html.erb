@@ -9,8 +9,8 @@
       <%= f.password_field :password, placeholder: 'Enter New Password' %>
               <%= f.password_field :password_confirmation, placeholder: 'Confirm New Password' %>
       <%= f.submit 'Update Account' , class: "btn btn-success"%>
-      <%= link_to 'Delete Account', user_path(@user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
-      <%= link_to "Back", admin_path, class: "btn btn-default" %>
+      <%= link_to 'Delete Account', user_path(@business.slug, @user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+      <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>
       <% end  %>
     </div>
   </div>

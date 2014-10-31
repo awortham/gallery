@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :line_items
-  resources :charges
 
   scope '/:store_slug' do
     get"/photos",       to: 'items#index', as: "photos"
@@ -19,6 +17,8 @@ Rails.application.routes.draw do
     resources :items, only: [:index, :show]
     resources :categories
     resources :addresses, only: [:create]
+    resources :line_items
+    resources :charges
 
     namespace :admin do
       resources :users, only: [:destroy]
@@ -26,8 +26,4 @@ Rails.application.routes.draw do
       resources :categories
     end
   end
-
-
-
-
 end

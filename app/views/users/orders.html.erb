@@ -24,7 +24,7 @@
         <td><%= time_tag(order.created_at) %></td>
         <td><%= past_order_quantity(order.line_items) %></td>
         <td><%= order.pickup_or_delivery %></td>
-        <td><%= link_to "View Details", order_path(order.id), class: "btn btn-warning" %></td>
+        <td><%= link_to "View Details", order_path(@business.slug, order.id), class: "btn btn-warning" %></td>
       </tr>
       <% end %>
     </tbody>
@@ -74,7 +74,7 @@
         <td><%= time_tag(order.created_at) %></td>
         <td><%= past_order_quantity(order.line_items) %></td>
         <td><%= order.pickup_or_delivery %></td>
-        <td><%= link_to "View Details", order_path(order.id), class: "btn btn-danger" %></td>
+        <td><%= link_to "View Details", order_path(@business.slug, order.id), class: "btn btn-danger" %></td>
       </tr>
       <% end %>
     </tbody>

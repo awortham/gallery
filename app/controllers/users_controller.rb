@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     else
       gflash :now, :error => user.errors.full_messages.to_sentence
     end
-    redirect_to user_path
+    redirect_to user_path(business.slug)
   end
 
   def destroy
@@ -59,10 +59,10 @@ class UsersController < ApplicationController
     if user.destroy
       session.clear
       gflash :now, :success  => "Successfully Deleted #{user.name.capitalize}"
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     else
       gflash :now, :error => @user.errors.full_messages.to_sentence
-      redirect_to user_path
+      redirect_to user_path(business.slug)
     end
   end
 

@@ -35,7 +35,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save
       gflash :now,  :success => "Item was successfully updated."
-      redirect_to admin_items_path
+      redirect_to admin_items_path(business.slug)
     else
       gflash :now,  :error => "Item was not updated. Please try again."
       render :new

@@ -20,7 +20,7 @@
           <td><%= user.admin %></td>
           <td><%= user.username %></td>
           <td><%= user.email %></td>
-          <!-- <td><%#= link_to 'destroy', admin_user_path(@business.slug, user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %></td> -->
+          <td><%= link_to 'destroy', admin_user_path(@business.slug, user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %></td>
         </tr>
     <% end %>
         </tbody>
@@ -28,7 +28,7 @@
   </div>
   <div class="edit-items-container">
     <h1>Edit Items</h1>
-    <p><%= link_to "Create a new item", new_admin_item_path, id: "new_item_button", class: "btn-lg btn-success" %></p>
+    <p><%= link_to "Create a new item", new_admin_item_path(@business.slug), id: "new_item_button", class: "btn-lg btn-success" %></p>
     <% @categories.each do |category| %>
       <h3><%= category.title %></h3>
       <table class="table table-striped">
