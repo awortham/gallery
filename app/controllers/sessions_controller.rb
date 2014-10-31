@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password]) && user.admin?
       session[:user_id] = user.id
       gflash :now, :success => 'Successfully Logged In'
-      redirect_to admin_path
+      redirect_to home_path(@business.slug)
     elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
       gflash :now, :success  => 'Successfully Logged In'

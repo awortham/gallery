@@ -18,5 +18,5 @@
       <td><%= @user.email %></td>
     </tr>
   </table>
-  <%= link_to "Edit Account Details", edit_user_path(@user), class: "btn btn-success" %>
+  <%= link_to "Edit Account Details", edit_user_path(@business.slug, @user), class: "btn btn-success" %>
 </div>

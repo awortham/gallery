@@ -22,7 +22,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save
       gflash :now,  :success => "Item Successfully Created"
-      redirect_to admin_path
+      redirect_to admin_items_path(business.slug)
     else
       gflash :now,  :error => @item.errors.full_messages.to_sentence
       render :new
@@ -46,7 +46,7 @@ class Admin::ItemsController < Admin::AdminController
     Item.find(params[:id]).destroy
     gflash :now,  :success => "Item was successfully deleted."
 
-    redirect_to admin_path
+    redirect_to admin_items_path(business.slug)
   end
 
   private

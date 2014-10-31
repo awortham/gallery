@@ -10,7 +10,7 @@ records:
       - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
     name: 'Jeff'
-    email: 'demo+jeff@jumstartlab.com'
+    email: 'demo+jeff@jumpstartlab.com'
     password: 'password'
     password_confirmation: 'password'
     admin: true
