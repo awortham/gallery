@@ -1,171 +1,531 @@
 records:
-  - sprig_id: 1
+  - sprig_id: 3
+    price: 20
     title: "so cute"
     description: "first years of life"
-    price: 20
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "baby.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 2
+    price: 30
     title: "bandana-dog"
     description: "dag with an attitude"
-    price: 30
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bandana-dog.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 3
+    price: 35
     title: "beach-street"
     description: "voyage beyond"
-    price: 35
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "beach-street.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 4
+    price: 15
     title: "bird"
     description: "fly into the sky"
-    price: 15
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bird.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 5
+    price: 50
     title: "blue-sky"
     description: "it's a small world"
-    price: 50
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "blue-sky.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 6
+    price: 40
     title: "bubbles"
     description: "a perfect circle"
-    price: 40
-    category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
     image_file_name: "bubbles.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
-  - sprig_id: 7
-    title: "car"
-    description: "good old times"
-    price: 45
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
+  - sprig_id: 7
+    price: 45
+    title: "car"
+    description: "good old times"
     image_file_name: "car.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 8
+    price: 60
     title: "corn"
     description: "this is food"
-    price: 60
-    category_ids:
-      - '<%= sprig_record(Category, 2).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "corn.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
-  - sprig_id: 9
-    title: "dogs"
-    description: "a great beast"
-    price: 60
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 9
+    price: 60
+    title: "dogs"
+    description: "a great beast"
     image_file_name: "dog.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
-  - sprig_id: 10
-    title: "fox"
-    description: "sly one"
-    price: 20
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 10
+    price: 20
+    title: "fox"
+    description: "sly one"
     image_file_name: "fox.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
   - sprig_id: 11
+    price: 45
     title: "houses"
     description: "the whole family"
-    price: 45
+    image_file_name: "houses.png"
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "houses.png"
     business_id:
       - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 12
+    price: 70
     title: "jellyfish"
     description: "under the waves"
-    price: 70
-    category_ids:
-      - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "jellyfish.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 13
+    price: 75
     title: "leaves"
     description: "shedding"
-    price: 75
-    category_ids:
-      - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
     image_file_name: "leaves.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
-  - sprig_id: 14
-    title: "pier"
-    description: "long way to go"
-    price: 15
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
       - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 14
+    price: 15
+    title: "pier"
+    description: "long way to go"
     image_file_name: "pier.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 15
+    price: 50
     title: "rocks"
     description: "mosaics"
-    price: 50
-    category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "rocks.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 16
+    price: 40
     title: "sailboat"
     description: "row your boat"
-    price: 40
-    category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sailboat.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 17
+    price: 45
     title: "sun through clouds"
     description: "is there a god?"
-    price: 45
-    category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sun-through-clouds.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 18
+    price: 30
     title: "sunflowers"
     description: "happy as a daisy"
-    price: 30
-    category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
     image_file_name: "sunflowers.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
-  - sprig_id: 19
-    title: "sunset"
-    description: "the source of color"
-    price: 60
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 19
+    price: 60
+    title: "sunset"
+    description: "the source of color"
     image_file_name: "sunset.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 20
+    price: 30
     title: "toddler"
     description: "not grown up"
-    price: 30
+    image_file_name: "toddler.png"
+    business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
       - '<%= sprig_record(Category, 5).id %>'
-    image_file_name: "toddler.png"
-    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 21
+    price: 
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 22
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 23
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 24
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 25
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 26
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 27
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 28
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 29
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 30
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 31
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 32
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 33
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 34
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 35
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 36
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 37
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 38
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 39
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 40
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 41
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 42
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 43
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 44
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 45
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 46
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 47
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 48
+    price: 30
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 49
+    price: 30
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 50
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 51
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 52
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 53
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 54
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 55
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 56
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 57
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 58
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 59
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 60
+    price:
+    title:
+    description:
+    image_file_name:
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
