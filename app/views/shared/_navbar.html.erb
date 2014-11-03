@@ -30,7 +30,7 @@
           <li><%= link_to 'Settings', user_path(@business.slug, current_user) %></li>
           <li><%= link_to 'Logout', logout_path(@business.slug) %></li>
         <% elsif admin? && current_user %>
-        <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path %></span></p></li>
+        <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path(@business.slug) %></span></p></li>
           <li><%= link_to 'Administrator Menu', admin_path(@business.slug) %></li>
           <li><%= link_to 'Logout', logout_path %></li>
         <% else %>

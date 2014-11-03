@@ -2,7 +2,7 @@ class AddressesController < ApplicationController
 
   def create
     @address = Address.create(address_params)
-    redirect_to new_order_path(address: @address.id)
+    redirect_to new_order_path(business.slug, address: @address.id)
   end
 
   private

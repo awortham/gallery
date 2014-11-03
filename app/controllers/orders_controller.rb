@@ -3,13 +3,13 @@ class OrdersController < ApplicationController
 
   def index
     if current_user.nil?
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     elsif current_user.admin == true
       @recent_orders = active_orders
       @paid_orders = paid_orders
       @cancelled_orders = cancelled_orders
     else
-      redirect_to home_path(@business.slug)
+      redirect_to home_path(business.slug)
     end
   end
 
@@ -38,7 +38,7 @@ class OrdersController < ApplicationController
     if current_user.admin == true || @order.user_id == current_user.id
       @address = Address.find_by(id: @order.address_id)
     else
-      redirect_to home_path(@business.slug)
+      redirect_to home_path(business.slug)
     end
   end
 
@@ -52,9 +52,9 @@ class OrdersController < ApplicationController
       @order.save
     end
     if user_admin?
-      redirect_to orders_path
+      redirect_to orders_path(business.slug)
     else
-      redirect_to user_orders_path(@business.slug, current_user.id)
+      redirect_to user_orders_path(business.slug, current_user.id)
     end
   end
 

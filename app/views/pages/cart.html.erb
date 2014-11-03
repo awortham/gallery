@@ -2,8 +2,8 @@
 <div class="container">
   <% if current_user %>
     <h2>How would you like to get your food?</h2>
-    <%= link_to 'DELIVERY, please!', new_order_path(:pickup_option => "Delivery" ), class: "btn btn-primary" %>
-    <%= link_to 'I\'ll PICK IT UP', new_order_path(:pickup_option => "Pickup" ), class: "btn btn-success" %>
+    <%= link_to 'DELIVERY, please!', new_order_path(@business.slug, :pickup_option => "Delivery" ), class: "btn btn-primary" %>
+    <%= link_to 'I\'ll PICK IT UP', new_order_path(@business.slug, :pickup_option => "Pickup" ), class: "btn btn-success" %>
   <% else %>
     <h2>To get your food, we need you to</h2>
     <button id="login-button" class="btn btn-success btn-lg">Login</button>
@@ -12,7 +12,3 @@
     <%= render partial: 'shared/create_user_form' %>
   <% end %>
 </div>
-
-
-
-

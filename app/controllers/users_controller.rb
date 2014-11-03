@@ -26,7 +26,7 @@ class UsersController < ApplicationController
 
   def orders
     if current_user.nil?
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     elsif current_user.id == params[:id].to_i || current_user.admin == true
       @user = User.find(params[:id])
     else
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     else
       gflash :now, :error => user.errors.full_messages.to_sentence
     end
-    redirect_to user_path(business.slug)
+    redirect_to user_path(business.slug, user)
   end
 
   def destroy

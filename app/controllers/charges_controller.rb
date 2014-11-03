@@ -2,7 +2,7 @@ class ChargesController < ApplicationController
 
   def new
     if !current_user
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     end
     @order = Order.find_by_id(params[:id])
   end
@@ -29,6 +29,6 @@ class ChargesController < ApplicationController
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to charges_path
+    redirect_to charges_path(business.slug)
   end
 end
