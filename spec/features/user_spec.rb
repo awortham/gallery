@@ -3,8 +3,9 @@ require 'rails_helper'
 describe 'create user' do
 
   before do
-    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234')
-    visit(new_user_path)
+    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234', business_id: 1)
+    @business = Business.create(slug: "joesphotography")
+    visit(new_user_path(@business.slug))
   end
 
   it 'creates a new user' do
