@@ -3,7 +3,6 @@
     <div class="col-md-4 col-md-offset-4">
       <h1>Edit User Account</h1>
       <%= bootstrap_form_for(@user, url: {controller: "users", action: "update"}, html: { id: "edit-user" }) do |f| %>
-      <!-- <%#= bootstrap_form_for(@user, html: { id: "edit-user" }) do |f| %> -->
       <%= f.text_field :name, placeholder: 'Name' %>
       <%= f.text_field :email, placeholder: 'Email' %>
       <%= f.text_field :username, placeholder: 'Username' %>
