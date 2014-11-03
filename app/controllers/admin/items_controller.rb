@@ -1,7 +1,6 @@
 class Admin::ItemsController < Admin::AdminController
   def index
-    @categories = Category.all
-    @items      = Item.all
+    @categories = business.categories.includes(:items).where(items: {business_id: business.id})
   end
 
   def show
