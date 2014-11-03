@@ -17,7 +17,7 @@
       <tbody>
         <% order_items(@order.line_items).each_pair do |item_id, quantity | %>
         <tr>
-          <td><%= link_to "#{(find_item(item_id).title)}", item_path(item_id)  %></td>
+          <td><%= link_to "#{(find_item(item_id).title)}", item_path(@business.slug, item_id)  %></td>
           <td><%= number_to_currency(find_item(item_id).price) %></td>
           <td><%= quantity %></td>
           <td><%= number_to_currency(cart.line_item_subtotal(item_id, quantity)) %></td>
@@ -38,15 +38,15 @@
       </tbody>
     </table>
     <% if @order.status == "ordered" && current_user.id == @order.user_id %>
-      <%= link_to 'Pay with Credit Card', new_charge_path(id: @order), class: 'btn btn-success' %>
+      <%= link_to 'Pay with Credit Card', new_charge_path(@business.slug, id: @order), class: 'btn btn-success' %>
     <% end %>
 
     <% if user_admin? %>
-      <%= link_to 'Return to Orders', orders_path, class: "btn btn-default" %>
+      <%= link_to 'Return to Orders', orders_path(@business.slug), class: "btn btn-default" %>
     <% else %>
-      <%= link_to 'Return to Menu', root_path, class: "btn btn-default" %>
+      <%= link_to 'Return Home', home_path(@business.slug), class: "btn btn-default" %>
     <% unless @order.status == 'cancelled' %>
-        <%= link_to 'Cancel This Order', order_path(@order, :status => :cancelled), method: 'patch', class: 'btn btn-danger', confirm: {message: 'This will remove your order permanently. '}%>
+        <%= link_to 'Cancel This Order', order_path(@business.slug, @order, :status => :cancelled), method: 'patch', class: 'btn btn-danger', confirm: {message: 'This will remove your order permanently. '}%>
       <% end %>
     <% end %>
     <% if @order.status == 'cancelled' %>

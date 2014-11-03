@@ -24,7 +24,7 @@
             </div>
           </div>
         </td>
-        <%= form_tag("/line_items/#{item_id}", method: :put) do %>
+        <%= form_tag(line_item_path(@business.slug, item_id), method: :put) do %>
 
         <td data-th="Price"><%= number_to_currency(find_item(item_id).price) %></td>
         <td data-th="Quantity">
@@ -45,7 +45,7 @@
         <td class="text-center"><strong>Total 1.99</strong></td>
       </tr>
       <tr>
-        <td><a href="/" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+        <td><%= link_to " Continue Shopping", items_path(@business.slug), class: "btn btn-warning fa fa-angle-left"%></td>
         <td colspan="2" class="hidden-xs"></td>
         <td class="hidden-xs text-center"><strong>Total <%= number_to_currency(cart.subtotal) %></strong></td>
       </tr>
