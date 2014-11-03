@@ -8,16 +8,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to "Gallery", root_path, class: "navbar-brand", id: "site_title" %>
+          <%= link_to "Gallery", home_path(@business.slug), class: "navbar-brand", id: "site_title" %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-       <!--     <li><a href="#">Link</a></li> -->
-      <li><a href="/about" class="btn">About</a></li>
-      <li><a href= "/photos" class="btn">Browse</a></li>
-
+      <li><%= link_to 'About', about_path(@business.slug) %></li>
+      <li><%= link_to 'Browse', photos_path(@business.slug) %></li>
 
        <% if !current_user %>
             <li><a href="#" class="btn" data-toggle="modal" data-target="#basicModal">New Account</a></li>
@@ -28,17 +26,16 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if current_user && !admin? %>
-          <li><%= link_to "Welcome, #{current_user.display_name}", user_orders_path(current_user), class: "welcome-link"%></li>
-          <!-- <li><%#= link_to "Welcome, #{current_user.name.capitalize}", user_orders_path(current_user), class: "welcome-link"%></li> -->
-          <li><%= link_to 'Settings', user_path(current_user) %></li>
-          <li><%= link_to 'Logout', logout_path %></li>
+          <li><%= link_to "Welcome, #{current_user.display_name}", user_orders_path(@business.slug, current_user), class: "welcome-link"%></li>
+          <li><%= link_to 'Settings', user_path(@business.slug, current_user) %></li>
+          <li><%= link_to 'Logout', logout_path(@business.slug) %></li>
         <% elsif admin? && current_user %>
-        <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path %></span></p></li>
-          <li><%= link_to 'Administrator Menu', admin_path %></li>
+        <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path(@business.slug) %></span></p></li>
+          <li><%= link_to 'Administrator Menu', admin_path(@business.slug) %></li>
           <li><%= link_to 'Logout', logout_path %></li>
         <% else %>
         <div id="login-fields">
-          <%= form_tag(login_path, { style: "padding-top: 10px;" }) do %>
+          <%= form_tag(login_path(@business.slug), { style: "padding-top: 10px;" }) do %>
           <%= text_field_tag :email, "", placeholder: 'Email', class: 'focus', class: 'login-field' %>
           <%= password_field_tag :password, "", placeholder: 'Password', class: 'focus', class: 'login-field' %>
           <%= submit_tag 'Login', class: "btn btn-sm" %>

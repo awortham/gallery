@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     if current_user.nil? || current_user.id != params[:id].to_i
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     else
       @user = User.find(params[:id])
     end
@@ -17,26 +17,26 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       gflash :now, :success => "Awesome! Account Created"
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     else
       gflash :now, :error =>  @user.errors.full_messages.to_sentence
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     end
   end
 
   def orders
     if current_user.nil?
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     elsif current_user.id == params[:id].to_i || current_user.admin == true
       @user = User.find(params[:id])
     else
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     end
   end
 
   def edit
     if current_user.nil? || current_user.id != params[:id].to_i
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     else
       @user = User.find(params[:id])
     end
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     else
       gflash :now, :error => user.errors.full_messages.to_sentence
     end
-    redirect_to user_path
+    redirect_to user_path(business.slug, user)
   end
 
   def destroy
@@ -59,10 +59,10 @@ class UsersController < ApplicationController
     if user.destroy
       session.clear
       gflash :now, :success  => "Successfully Deleted #{user.name.capitalize}"
-      redirect_to root_path
+      redirect_to home_path(business.slug)
     else
       gflash :now, :error => @user.errors.full_messages.to_sentence
-      redirect_to user_path
+      redirect_to user_path(business.slug)
     end
   end
 

@@ -19,7 +19,7 @@ class Admin::UsersController < Admin::AdminController
     else
       gflash :now, :error => user.errors.full_messages.to_sentence
     end
-    redirect_to admin_user_path(user)
+    redirect_to admin_user_path(business.slug, user)
   end
 
   def destroy
@@ -27,10 +27,10 @@ class Admin::UsersController < Admin::AdminController
 
     if user.destroy
       gflash :now, :notice => "Successfully Deleted #{user.name.capitalize}"
-      redirect_to admin_path
+      redirect_to admin_path(business.slug)
     else
       gflash :now, :error => user.errors.full_messages.to_sentence
-      redirect_to admin_show_user_path(user)
+      redirect_to admin_show_user_path(business.slug, user)
     end
   end
 

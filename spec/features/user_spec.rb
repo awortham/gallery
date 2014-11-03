@@ -3,8 +3,9 @@ require 'rails_helper'
 describe 'create user' do
 
   before do
-    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234')
-    visit(new_user_path)
+    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234', business_id: 1)
+    @business = Business.create(slug: "joesphotography")
+    visit(new_user_path(@business.slug))
   end
 
   it 'creates a new user' do
@@ -57,7 +58,8 @@ describe 'user login' do
 
   before do
     @user = User.create(username: "Jonycage", name: "Joe", password: "1234", password_confirmation: "1234", email: "jony@comelately.com")
-    visit root_path
+    business = Business.create(slug: "joshgoldphotography", name: "jbiz")
+    visit home_path(business.slug)
   end
 
   it "can log in a user with an established username and password" do
@@ -112,7 +114,8 @@ describe 'user settings' do
 
   before do
     @user = User.create(username: "Lil Jess", name: "Jessica", password: "5555", password_confirmation: "5555", email: "jess@gmail.com")
-    visit root_path
+    business = Business.create(slug: "joshgoldphotography", name: "jbiz")
+    visit home_path(business.slug)
     within(:css, "#nav_bar") do
       fill_in'email',     with: "#{@user.email}"
       fill_in'password', with: "#{@user.password}"

@@ -20,7 +20,7 @@
           <td><%= user.admin %></td>
           <td><%= user.username %></td>
           <td><%= user.email %></td>
-          <td><%= link_to 'destroy', admin_user_path(user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %></td>
+          <td><%= link_to 'destroy', admin_user_path(@business.slug, user), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %></td>
         </tr>
     <% end %>
         </tbody>
@@ -28,7 +28,7 @@
   </div>
   <div class="edit-items-container">
     <h1>Edit Items</h1>
-    <p><%= link_to "Create a new item", new_admin_item_path, id: "new_item_button", class: "btn-lg btn-success" %></p>
+    <p><%= link_to "Create a new item", new_admin_item_path(@business.slug), id: "new_item_button", class: "btn-lg btn-success" %></p>
     <% @categories.each do |category| %>
       <h3><%= category.title %></h3>
       <table class="table table-striped">
@@ -48,8 +48,8 @@
               <td><img src="<%= item.image(:thumb) %>"></td>
               <td><span class="item_title"><%= item.title %><span><td><%= number_to_currency(item.price) %></td></td>
               <td><%= item.status %></td>
-              <td><%= link_to 'Edit', edit_admin_item_path(item), class: "btn btn-warning" %></td>
-              <td><%= link_to 'Destroy', admin_item_path(item), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Edit', edit_admin_item_path(@business.slug, item), class: "btn btn-warning" %></td>
+              <td><%= link_to 'Destroy', admin_item_path(@business.slug, item), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
         </tbody>
@@ -58,7 +58,7 @@
   </div>
   <div class="edit-categories-container">
     <h2>Edit Categories</h2>
-    <p><%= link_to "Create a New Category", new_admin_category_path, id: "new_item_button" , class: "btn-lg btn-success"%></p>
+    <p><%= link_to "Create a New Category", new_admin_category_path(@business.slug), id: "new_item_button" , class: "btn-lg btn-success"%></p>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -72,8 +72,8 @@
           <tr>
             <td><span class="item_title"><%= category.title %><span></td>
             <td><%= category.description %></td>
-            <td><%= link_to 'Edit', edit_admin_category_path(category), class: "btn btn-warning" %></td>
-            <td><%= link_to 'Destroy', admin_category_path(category), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_admin_category_path(@business.slug, category), class: "btn btn-warning" %></td>
+            <td><%= link_to 'Destroy', admin_category_path(@business.slug, category), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>

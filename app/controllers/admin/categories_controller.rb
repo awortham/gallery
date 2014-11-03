@@ -16,7 +16,7 @@ class Admin::CategoriesController < Admin::AdminController
 
     if @category.save
       gflash :now, :success => "Category Successfully Created"
-      redirect_to admin_path
+      redirect_to admin_path(business.slug)
     else
       gflash :now, :error => @category.errors.full_messages.to_sentence
       render :new
@@ -28,7 +28,7 @@ class Admin::CategoriesController < Admin::AdminController
 
     if @category.update(category_params)
       gflash :now, :success => "Category was successfully updated."
-      redirect_to admin_categories_path
+      redirect_to admin_categories_path(business.slug)
     else
       gflash :now, :error => "Category was not updated. Please try again."
       render :new
@@ -39,7 +39,7 @@ class Admin::CategoriesController < Admin::AdminController
     Category.find(params[:id]).destroy
     gflash :now,  :success => "Category was successfully deleted."
 
-    redirect_to admin_path
+    redirect_to admin_path(business.slug)
   end
 
   private
