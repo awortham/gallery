@@ -41,6 +41,3 @@ records:
   - sprig_id: 14
     title: "Young Children"
     business_id: '<%= sprig_record(Business, 3).id %>'
-  - sprig_id: 15
-    title: ""
-    business_id: '<%= sprig_record(Business, 3).id %>'
