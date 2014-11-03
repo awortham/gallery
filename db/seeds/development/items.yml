@@ -161,231 +161,213 @@ records:
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 21
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 22
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 23
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 24
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 25
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 26
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 27
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 28
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 29
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 30
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 31
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 32
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 33
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 34
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 35
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 36
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 37
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 38
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 39
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 40
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 2).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 41
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 42
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 43
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 44
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 45
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 21
+    price: 30
+    title: "White Waves"
+    description: "With greens at the front"
+    image_file_name: "beach_white_waves.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+  - sprig_id: 22
+    price: 25
+    title: "Magical Coast"
+    description: "Clouds in the horizon"
+    image_file_name: "beach_magic.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+  - sprig_id: 23
+    price: 30
+    title: "Rocks"
+    description: "Rocks in the sand"
+    image_file_name: "beach_rocks.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+  - sprig_id: 24
+    price: 25
+    title: "Woman"
+    description: "Woman dipping toes into water"
+    image_file_name: "beach_instagram.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 25
+    price:
+    title: "Beach Pastel"
+    description: "À la Paul Ferney"
+    image_file_name: "beach_pastel.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+  - sprig_id: 26
+    price: 30
+    title: "Palm Trees"
+    description: "At an angle"
+    image_file_name: "beach_angle.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
+  - sprig_id: 27
+    price: 35
+    title: "Umbrellas"
+    description: "Palm trees with umbrellas"
+    image_file_name: "beach_umbrellas.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 2).id %>'
+  - sprig_id: 28
+    price: 25
+    title: "Mountain"
+    description: "Palm trees with mountain"
+    image_file_name: "beach_mountain.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
+  - sprig_id: 29
+    price: 30
+    title: "Yellow Sun"
+    description: "Large palm tree with yellow sun"
+    image_file_name: "beach_yellow_sun.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 30
+    price: 25
+    title: "Moon"
+    description: "Palm trees with moon"
+    image_file_name: "beach_moon.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
+  - sprig_id: 31
+    price: 40
+    title: "Lighthouse Sunset"
+    description: "Sunset on the beach"
+    image_file_name: "beach_fantasy_sunset.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 32
+    price: 40
+    title: "Orange Sunset"
+    description: "Orange moon over the water"
+    image_file_name: "beach_orange_sunset.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 33
+    price: 35
+    title: "Sunset with Palm Trees"
+    description: "Blue and orange sky"
+    image_file_name: "beach_sunset_with_land.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 2).id %>'
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 34
+    price: 25
+    title: "Beach Rocks"
+    description: "Sun through the rocks"
+    image_file_name: "beach_rocks_in_ocean.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 35
+    price: 40
+    title: "Orange and Red Sunset"
+    description: "Over blue sea"
+    image_file_name: "beach_red_clouds.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+  - sprig_id: 36
+    price: 25
+    title: "Surfer 1"
+    description: "Surfer with hair"
+    image_file_name: "beach_surfer_with_hair.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 37
+    price: 25
+    title: "Surfer 2"
+    description: "Surfer in red"
+    image_file_name: "beach_surfer_in_red.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 38
+    price: 25
+    title: "Surfer 3"
+    description: "Surfer with vertical surfboard"
+    image_file_name: "beach_vertical_surfboard.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 39
+    price: 25
+    title: "Surfer 4"
+    description: "Surfer's face"
+    image_file_name: "beach_surfer_face.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 40
+    price: 25
+    title: "Surfer 5"
+    description: "Surfer hits the white waves"
+    image_file_name: "beach_surfer_white_waves.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 4).id %>'
+  - sprig_id: 41
+    price: 35
+    title: "Beach Boy"
+    description: "Beach boy in pajamas"
+    image_file_name: "beach_boys_in_pajamas.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 42
+    price: 40
+    title: "Kids With Dog"
+    description: "Kids on the beach playing with dog"
+    image_file_name: "beach_kids_with_dog.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 43
+    price: 30
+    title: "Kids Playing in the Waves"
+    description: "Group of kids playing in the waves"
+    image_file_name: "beach_kids_playing_in_waves.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 44
+    price: 30
+    title: "Beach soccer"
+    description: "Kids playing soccer on the beach"
+    image_file_name: "beach_soccer.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 3).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 45
+    price: 30
+    title: "Kids Playing in Ocean"
+    description: "Young children playing in the ocean"
+    image_file_name: "beach_arms_raised.png"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 5).id %>'
   # - sprig_id: 46
   #   price:
   #   title:

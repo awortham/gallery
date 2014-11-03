@@ -14,3 +14,18 @@ records:
   - sprig_id: 5
     title: "Desserts"
     business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 6
+    title: "Sand"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 7
+    title: "Palm Trees"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 8
+    title: "Sunsets"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 9
+    title: "Surfers"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 10
+    title: "Playing on the Beach"
+    business_id: '<%= sprig_record(Business, 2).id %>'
