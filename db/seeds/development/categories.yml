@@ -1,16 +1,31 @@
 records:
   - sprig_id: 1
-    title: "nature"
+    title: "Drinks"
     business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 2
-    title: "fashion"
+    title: "Breakfast Plates"
     business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 3
-    title: "boudoir"
+    title: "Appetizers"
     business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 4
-    title: "portrait"
+    title: "Entrées"
     business_id: '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 5
-    title: "urban"
+    title: "Desserts"
     business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 6
+    title: "Sand"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 7
+    title: "Palm Trees"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 8
+    title: "Sunsets"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 9
+    title: "Surfers"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 10
+    title: "Playing on the Beach"
+    business_id: '<%= sprig_record(Business, 2).id %>'
