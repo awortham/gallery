@@ -44,7 +44,7 @@
       <tbody>
         <% cart.line_items.each_pair do |item_id, quantity | %>
         <tr>
-          <td><%= link_to "#{(find_item(item_id).title)}", item_path(item_id)  %></td>
+          <td><%= link_to "#{(find_item(item_id).title)}", item_path(@business.slug, item_id)  %></td>
           <td><%= number_to_currency(find_item(item_id).price) %></td>
           <td><h6><%= quantity %></h6></td>
           <td></td>
@@ -66,4 +66,3 @@
     </table>
 </div>
 </div>
-
