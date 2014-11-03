@@ -29,3 +29,18 @@ records:
   - sprig_id: 10
     title: "Playing on the Beach"
     business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 11
+    title: "Newborns"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 12
+    title: "First Year"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 13
+    title: "Toddlers"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 14
+    title: "Young Children"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 15
+    title: ""
+    business_id: '<%= sprig_record(Business, 3).id %>'

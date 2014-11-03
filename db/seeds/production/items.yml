@@ -353,7 +353,7 @@ records:
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 44
     price: 30
-    title: "Beach soccer"
+    title: "Beach Soccer"
     description: "Kids playing soccer on the beach"
     image_file_name: "beach_soccer.png"
     business_id: '<%= sprig_record(Business, 2).id %>'
@@ -368,138 +368,147 @@ records:
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 46
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 47
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 48
-  #   price: 30
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 49
-  #   price: 30
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 50
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 51
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 52
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 53
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 54
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 55
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 56
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 57
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 58
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 59
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
-  # - sprig_id: 60
-  #   price:
-  #   title:
-  #   description:
-  #   image_file_name:
-  #   business_id: '<%= sprig_record(Business, 3).id %>'
-  #   category_ids:
-  #     - '<%= sprig_record(Category, 4).id %>'
-  #     - '<%= sprig_record(Category, 5).id %>'
+  - sprig_id: 46
+    price: 25
+    title: "Newborn in Hat"
+    description: "With brown eyes"
+    image_file_name: "kids_newborn_in_hat.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 11).id %>'
+  - sprig_id: 47
+    price: 25
+    title: "Sleeping Newborn"
+    description: "On shoulder"
+    image_file_name: "kids_newborn_asleep.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 11).id %>'
+  - sprig_id: 48
+    price: 25
+    title: "Newborn in Dress"
+    description: "Back of head"
+    image_file_name: "kids_newborn_in_dress.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 11).id %>'
+  - sprig_id: 49
+    price: 30
+    title: "Newborn Looking at Camera"
+    description: "The cutest"
+    image_file_name: "kids_cutest_newborn.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 11).id %>'
+  - sprig_id: 50
+    price: 30
+    title: "Newborn with Beautiful Eyes"
+    description: "The most beautiful"
+    image_file_name: "kids_newborn_with_eyes.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 11).id %>'
+  - sprig_id: 51
+    price: 30
+    title: "Young Girl with Tongue"
+    description: "Brown Eyes"
+    image_file_name: "kids_girl_with_tongue.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 12).id %>'
+  - sprig_id: 52
+    price: 30
+    title: "Boy in Pool"
+    description: "Young boy in pool"
+    image_file_name: "kids_boy_in_pool.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 12).id %>'
+  - sprig_id: 53
+    price: 30
+    title: "Boy in Red Pants"
+    description: "Boy in stripes and red pants"
+    image_file_name: "kids_boy_red_pants.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 12).id %>'
+  - sprig_id: 54
+    price: 30
+    title: "Boy on All Fours"
+    description: "Boy in stripes on all fours"
+    image_file_name: "kids_boy_on_all_fours.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 12).id %>'
+  - sprig_id: 55
+    price: 30
+    title: "Boy in Red Sweater"
+    description: "Young boy in cozy red sweater"
+    image_file_name: "kids_boy_in_red_sweater.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 13).id %>'
+  - sprig_id: 56
+    price: 30
+    title: "Girl Looking out the Window"
+    description: "Young girl looking out the window"
+    image_file_name: "kids_girl_looking_out_the_window.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 13).id %>'
+  - sprig_id: 57
+    price: 30
+    title: "Girl with Phone"
+    description: "Young girl playing with phone"
+    image_file_name: "kids_girl_with_phone.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 13).id %>'
+  - sprig_id: 58
+    price: 30
+    title: "Girl in Field"
+    description: "Young girl in field"
+    image_file_name: "kids_girl_in_field.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 13).id %>'
+  - sprig_id: 59
+    price: 35
+    title: "Girl with Hair"
+    description: "Young girl with hair"
+    image_file_name: "kids_girl_with_hair.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 14).id %>'
+  - sprig_id: 60
+    price: 35
+    title: "Girl with Hands"
+    description: "Young girl with hands"
+    image_file_name: "kids_hands.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 14).id %>'
+  - sprig_id: 61
+    price: 35
+    title: "Girl with Finger in Mouth"
+    description: "Young girl with her finger in mouth"
+    image_file_name: "kids_girl_with_finger.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 14).id %>'
+  - sprig_id: 62
+    price: 35
+    title: "Girl on Bike"
+    description: "Young girl riding bike"
+    image_file_name: "kids_girl_on_bike.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 14).id %>'
+  - sprig_id: 63
+    price: 35
+    title: "Girl with Eyes"
+    description: "Young girl with bright eyes"
+    image_file_name: "kids_young_girl_with_eyes.png"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+    category_ids:
+      - '<%= sprig_record(Category, 14).id %>'
