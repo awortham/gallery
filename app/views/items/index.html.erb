@@ -2,13 +2,13 @@
   <ul id='category_list'>
     <h3>Categories</h3>
       <% @categories.each do |category| %>
-        <li><a href="#" id="<%= category.title %>" class="filter" data-no-turbolink><%= category.title %></a>
+        <li><a href="javascript:" id="<%= category.title %>" class="filter" data-no-turbolink><%= category.title %></a>
         </li>
     <% end %>
   </ul>
 </div>
 
-<h1>All Items</h1>
+<h1>Photos</h1>
 
 <div id="masonry-grid">
   <div class="grid-sizer">
@@ -30,22 +30,47 @@
   </div>
 </div>
 
-
-
 <script>
+  var selectedCategory = window.location.search.split("=")[1] 
   var container = document.querySelector('#masonry-grid');
   var msnry = new Masonry( container, {
     columnWidth: ".grid-sizer",
     itemSelector: '.grid-item'
   });
+
+  if (selectedCategory) {
+    console.log(selectedCategory)
+    $("#" + selectedCategory).addClass("pressed");
+    filterItems();
+    msnry.layout();
+  }
+
   imagesLoaded( container, function() {
     msnry.layout();
   });
+
   $('.filter').on('click', function () {
-      $(this).toggleClass('pressed');
-      filterItems();
-      msnry.layout();
+    var pressed = $(this).hasClass('pressed');
+
+    $('.pressed').each(function() {
+      $(this).removeClass('pressed');
+    });
+    if (!pressed) {
+      $(this).addClass('pressed');
+    }
+
+    updateUrl();
+    filterItems();
+    msnry.layout();
   });
+
+  function updateUrl() {
+    var url = window.location.href.split('?')[0];
+    var category = $('.pressed').attr('id');
+
+    history.pushState({id: category}, "", "?category=" + category);
+  }
+
   function filterItems() {
     $('.grid-item').removeClass('off');
     $('.pressed').each(function() {
