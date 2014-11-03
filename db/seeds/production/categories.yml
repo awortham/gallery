@@ -1,11 +1,11 @@
 records:
   - sprig_id: 1
-    title: "nature"
+    title: "Drinks"
   - sprig_id: 2
-    title: "fashion"
+    title: "Breakfast Plates"
   - sprig_id: 3
-    title: "budoir"
+    title: "Appetizers"
   - sprig_id: 4
-    title: "portrait"
+    title: "Entrées"
   - sprig_id: 5
-    title: "urban"
+    title: "Desserts"

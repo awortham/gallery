@@ -1,176 +1,168 @@
 records:
   - sprig_id: 3
     price: 20
-    title: "so cute"
-    description: "first years of life"
-    image_file_name: "baby.png"
+    title: "Omelette"
+    description: "With tomatoes and olives"
+    image_file_name: "food_omelette.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
+      - '<%= sprig_record(Category, 2).id %>'
   - sprig_id: 2
     price: 30
-    title: "bandana-dog"
-    description: "dag with an attitude"
-    image_file_name: "bandana-dog.png"
+    title: "Eggs"
+    description: "Cast iron eggs"
+    image_file_name: "food_eggs.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 2).id %>'
   - sprig_id: 3
     price: 35
-    title: "beach-street"
-    description: "voyage beyond"
-    image_file_name: "beach-street.png"
+    title: "Pancakes"
+    description: "With tea and blueberries"
+    image_file_name: "food_pancakes.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 2).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 4
     price: 15
-    title: "bird"
-    description: "fly into the sky"
-    image_file_name: "bird.png"
+    title: "Lemon Tarts"
+    description: "Tray of lemon tarts"
+    image_file_name: "food_lemon_tarts.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 5
     price: 50
-    title: "blue-sky"
-    description: "it's a small world"
-    image_file_name: "blue-sky.png"
+    title: "Toast"
+    description: "With egg, berries, and cookie"
+    image_file_name: "food_toast.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 1).id %>'
+      - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 6
     price: 40
-    title: "bubbles"
-    description: "a perfect circle"
-    image_file_name: "bubbles.png"
+    title: "Pair of Drinks"
+    description: "Grapefruit and blood orange cocktails"
+    image_file_name: "food_blood_orange.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 7
     price: 45
-    title: "car"
-    description: "good old times"
-    image_file_name: "car.png"
+    title: "Blackberry Cocktail "
+    description: "With garnish"
+    image_file_name: "food_berry.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 8
     price: 60
-    title: "corn"
-    description: "this is food"
-    image_file_name: "corn.png"
+    title: "Orange Liquor"
+    description: "In short cup"
+    image_file_name: "food_orange.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 2).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 9
     price: 60
-    title: "dogs"
-    description: "a great beast"
-    image_file_name: "dog.png"
+    title: "Summer Cocktail"
+    description: "In garden"
+    image_file_name: "food_summer_cocktail.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 2).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 10
     price: 20
-    title: "fox"
-    description: "sly one"
-    image_file_name: "fox.png"
+    title: "Mojito"
+    description: "With straw"
+    image_file_name: "food_mojito.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 2).id %>'
+      - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 11
     price: 45
-    title: "houses"
-    description: "the whole family"
-    image_file_name: "houses.png"
+    title: "Olives"
+    description: "In small bowl"
+    image_file_name: "food_olives.png"
+    business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
-    business_id:
-      - '<%= sprig_record(Business, 1).id %>'
   - sprig_id: 12
     price: 70
-    title: "jellyfish"
-    description: "under the waves"
-    image_file_name: "jellyfish.png"
+    title: "Cheese"
+    description: "Plate of cheese"
+    image_file_name: "food_cheese.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 13
     price: 75
-    title: "leaves"
-    description: "shedding"
-    image_file_name: "leaves.png"
+    title: "Bread"
+    description: "Freshly baked bread"
+    image_file_name: "food_bread.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 14
     price: 15
-    title: "pier"
-    description: "long way to go"
-    image_file_name: "pier.png"
+    title: "Bruschetta"
+    description: "Bruschetta on plate"
+    image_file_name: "food_bruschetta.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
-      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 15
     price: 50
-    title: "rocks"
-    description: "mosaics"
-    image_file_name: "rocks.png"
+    title: "Salad"
+    description: "Salad nicoise"
+    image_file_name: "food_salad.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 16
     price: 40
-    title: "sailboat"
-    description: "row your boat"
-    image_file_name: "sailboat.png"
+    title: "Kale"
+    description: "Roasted kale with egg"
+    image_file_name: "food_kale.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 17
     price: 45
-    title: "sun through clouds"
-    description: "is there a god?"
-    image_file_name: "sun-through-clouds.png"
+    title: "Salmon"
+    description: "With crispy onion"
+    image_file_name: "food_salmon.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 18
     price: 30
-    title: "sunflowers"
-    description: "happy as a daisy"
-    image_file_name: "sunflowers.png"
+    title: "Stuffed Tomatoes"
+    description: "With bread and wine"
+    image_file_name: "food_tomatoes.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 19
     price: 60
-    title: "sunset"
-    description: "the source of color"
-    image_file_name: "sunset.png"
+    title: "Strawberries"
+    description: "Bowl of fresh strawberries"
+    image_file_name: "food_strawberries.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
+      - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 20
     price: 30
-    title: "toddler"
-    description: "not grown up"
-    image_file_name: "toddler.png"
+    title: "Creme Brulee"
+    description: "In two ramekins"
+    image_file_name: "food_creme_brulee.png"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
-      - '<%= sprig_record(Category, 4).id %>'
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 21
-    price: 
+    price:
     title:
     description:
     image_file_name:
