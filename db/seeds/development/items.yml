@@ -195,7 +195,7 @@ records:
       - '<%= sprig_record(Category, 1).id %>'
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 25
-    price:
+    price: 25
     title: "Beach Pastel"
     description: "À la Paul Ferney"
     image_file_name: "beach_pastel.png"
