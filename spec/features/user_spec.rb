@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'create user' do
 
   before do
-    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234', business_id: 1)
     @business = Business.create(slug: "joesphotography")
+    @user = User.create(name: 'joe', email: 'joe@example.com', username: 'joe', password: 'password', password_confirmation: 'password', business_id: @business.id)
     visit(new_user_path(@business.slug))
   end
 
@@ -24,16 +24,15 @@ describe 'create user' do
 
   it 'cannot create user if username is taken' do
     within(:css, "#register") do
-      fill_in 'Name',             with: 'saduser'
-      fill_in 'Email',            with: 'saduser@example.com'
+      fill_in 'Name',             with: 'joe'
+      fill_in 'Email',            with: 'joe@example.com'
       fill_in 'Username',         with: 'joe'
-      fill_in 'Password',         with: '1111'
-      fill_in 'Confirm Password', with: '1111'
+      fill_in 'Password',         with: 'password'
+      fill_in 'Confirm Password', with: 'password'
       click_on('Create Account')
     end
 
-    expect(page).to have_selector ("#email")
-    expect(page).to  have_content 'New Account'
+    expect(page).to  have_css('#email')
   end
 
 
@@ -57,9 +56,10 @@ end
 describe 'user login' do
 
   before do
-    @user = User.create(username: "Jonycage", name: "Joe", password: "1234", password_confirmation: "1234", email: "jony@comelately.com")
-    business = Business.create(slug: "joshgoldphotography", name: "jbiz")
-    visit home_path(business.slug)
+    @business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 4)
+    @user = User.create(username: "Jonycage", name: "Joe", password: "1234", password_confirmation: "1234", email: "jony@comelately.com", business_id: 4)
+    visit home_path(@business.slug)
+    p @business
   end
 
   it "can log in a user with an established username and password" do
@@ -113,8 +113,8 @@ end
 describe 'user settings' do
 
   before do
-    @user = User.create(username: "Lil Jess", name: "Jessica", password: "5555", password_confirmation: "5555", email: "jess@gmail.com")
-    business = Business.create(slug: "joshgoldphotography", name: "jbiz")
+    business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 5)
+    @user = User.create(username: "Lil Jess", name: "Jessica", password: "5555", password_confirmation: "5555", email: "jess@gmail.com", business_id: 5)
     visit home_path(business.slug)
     within(:css, "#nav_bar") do
       fill_in'email',     with: "#{@user.email}"
