@@ -25,7 +25,6 @@ class OrdersController < ApplicationController
     @order = Order.create(order_params)
     if @order.save
       session[:cart_items] = {}
-      gflash :now, :success => "Thank you. Your order has been successfully created."
       redirect_to order_path(@business.slug, @order.id)
     else
       gflash :now, :error =>  @order.errors.full_messages.to_sentence
