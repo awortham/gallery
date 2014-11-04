@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'create user' do
 
   before do
-    @user = User.create(name: 'Joe', email: 'joe@example.com', username: 'joe', password: '1234', password_confirmation: '1234', business_id: 1)
     @business = Business.create(slug: "joesphotography")
+    @user = User.create(name: 'joe', email: 'joe@example.com', username: 'joe', password: 'password', password_confirmation: 'password', business_id: @business.id)
     visit(new_user_path(@business.slug))
   end
 
@@ -24,16 +24,15 @@ describe 'create user' do
 
   it 'cannot create user if username is taken' do
     within(:css, "#register") do
-      fill_in 'Name',             with: 'saduser'
-      fill_in 'Email',            with: 'saduser@example.com'
+      fill_in 'Name',             with: 'joe'
+      fill_in 'Email',            with: 'joe@example.com'
       fill_in 'Username',         with: 'joe'
-      fill_in 'Password',         with: '1111'
-      fill_in 'Confirm Password', with: '1111'
+      fill_in 'Password',         with: 'password'
+      fill_in 'Confirm Password', with: 'password'
       click_on('Create Account')
     end
 
-    expect(page).to have_selector ("#email")
-    expect(page).to  have_content 'New Account'
+    expect(page).to  have_css('#email')
   end
 
 
