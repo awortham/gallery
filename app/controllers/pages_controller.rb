@@ -23,7 +23,7 @@ class PagesController < ApplicationController
     @user = User.new
     if cart.line_items.empty?
       redirect_to home_path(@business.slug)
-      gflash :now, :notice => "Your cart is currently empty. You should fill it with Mojitos."
+      gflash :now, :notice => "Your cart is currently empty."
     else
       render 'cart'
     end
