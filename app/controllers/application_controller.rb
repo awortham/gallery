@@ -59,8 +59,8 @@ class ApplicationController < ActionController::Base
   private
     def ensure_member
       if current_user && current_user.business_id != business.id
-          session.clear
-          redirect_to(request.original_url)
+        session.clear
+        redirect_to(request.original_url)
       end
     end
 
