@@ -9,13 +9,13 @@ class LineItemsController < ApplicationController
   def update
     cart.update_item(params[:id], params[:quantity])
     gflash :now, :success => "#{find_item(params[:id]).title} has been successfully updated."
-    redirect_to photos_path(business.slug)
+    redirect_to :back
   end
 
   def destroy
     cart.delete_item(params[:id])
     gflash :now, :notice => "#{find_item(params[:id]).title} has been successfully deleted."
-    redirect_to photos_path(business.slug)
+    redirect_to :back
   end
 
 end

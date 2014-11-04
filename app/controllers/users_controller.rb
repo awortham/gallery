@@ -17,10 +17,10 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       gflash :now, :success => "Awesome! Account Created"
-      redirect_to home_path(business.slug)
+      redirect_to :back
     else
       gflash :now, :error =>  @user.errors.full_messages.to_sentence
-      redirect_to home_path(business.slug)
+      redirect_to :back
     end
   end
 
