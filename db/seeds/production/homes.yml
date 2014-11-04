@@ -1,0 +1,11 @@
+records:
+  - sprig_id: 1
+    tagline1: 
+    tagline2:
+    tagline3:
+    tagline4:
+    caption1:
+    caption2:
+    caption3:
+    caption4:
+    business_id: '<%= sprig_record(Business, 1).id %>'
