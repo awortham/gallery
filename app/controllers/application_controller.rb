@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_user
   before_action :set_business
+  before_action :ensure_member
 
   helper_method :cart
   helper_method :find_item
@@ -56,6 +57,13 @@ class ApplicationController < ActionController::Base
   end
 
   private
+    def ensure_member
+      if current_user && current_user.business_id != business.id
+          session.clear
+          redirect_to(request.original_url)
+      end
+    end
+
     def set_user
       @user = User.new
     end

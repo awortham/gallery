@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'valid user' do
 
   before do
-    @user = create(:user, name: 'Joe', email: 'joe@example.com', username: 'joejoe', password: '1234', password_confirmation: '1234')
+    @user = create(:user, name: 'Joe', email: 'joe@example.com', username: 'joejoe', password: '1234', password_confirmation: '1234', business_id: 1)
   end
 
   it "is valid" do
@@ -38,7 +38,7 @@ describe 'valid user' do
     expect(@user).to be_valid
   end
 
-  it "has a unique email" do
+  it "has a unique email within one business" do
     second_user = @user.dup
     second_user.save
     expect(second_user).to_not be_valid
@@ -64,5 +64,11 @@ describe 'valid user' do
 
     @user.username = "#{'a'*33}"
     expect(@user).to_not be_valid
+  end
+
+  it "can create an account with a second business that has the same email" do
+    second_user = @user.dup
+    second_user.business_id = 2
+    expect(second_user).to be_valid
   end
 end
