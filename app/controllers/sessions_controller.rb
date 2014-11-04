@@ -10,14 +10,14 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password]) && user.admin?
       session[:user_id] = user.id
       gflash :now, :success => 'Successfully Logged In'
-      redirect_to home_path(@business.slug)
+      redirect_to admin_path(@business.slug)
     elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
       gflash :now, :success  => 'Successfully Logged In'
-      redirect_to home_path(@business.slug)
+      redirect_to :back
     else
       gflash :now, :error => 'Invalid login. Please try again.'
-      redirect_to home_path(@business.slug)
+      redirect_to :back
     end
   end
 
