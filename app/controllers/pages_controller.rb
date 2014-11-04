@@ -11,11 +11,6 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
-  def admin
-    @categories = Category.all
-    @users = User.all
-  end
-
   def about
     @user = User.new
   end

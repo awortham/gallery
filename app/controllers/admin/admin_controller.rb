@@ -4,4 +4,8 @@ class Admin::AdminController < ApplicationController
   def verify_admin
     redirect_to home_path(business.slug) unless User.find(session[:user_id]).admin?
   end
+    
+  def set_categories
+    @categories = business.categories.includes(:items)
+  end
 end
