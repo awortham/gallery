@@ -1,6 +1,7 @@
 class Admin::ItemsController < Admin::AdminController
+  before_filter :set_categories, only: :index
+
   def index
-    @categories = business.categories.includes(:items).where(items: {business_id: business.id})
   end
 
   def show
