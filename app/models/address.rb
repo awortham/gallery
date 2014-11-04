@@ -1,8 +1,8 @@
 class Address < ActiveRecord::Base
   belongs_to :user
 
-  validates :zip, length: { maximum: 5}, format: { with: %r{\A\d{5}\z} }
-  validates :street_number, presence: true, format: { with: %r{\A/\d+/\z}}
+  validates :zip, length: { maximum: 5}, format: { with: /\A\d{5}\z/ }
+  validates :street_number, presence: true, format: { with: /\A\d+\z/}
   validates :state, presence: true, allow_nil: false, inclusion: { in: :valid_state_code}
 
   def valid_state_code
