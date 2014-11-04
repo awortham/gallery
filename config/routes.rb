@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     get 'users/:id/orders', to: 'users#orders', as: 'user_orders'
     get '/cart'   => 'pages#cart_route', as: 'cart'
     get '/code'   => 'pages#code'
-    get '/admin'  => 'pages#admin'
+    # get '/admin'  => 'pages#admin'
     resources :users
     resources :orders
     resources :items, only: [:index, :show]
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     resources :charges
 
     namespace :admin do
+      get '/' => 'dashboard#index'
       resources :users, only: [:destroy]
       resources :items
       resources :categories
