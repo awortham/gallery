@@ -1,11 +1,16 @@
-records:
+ records:
   - sprig_id: 1
     name: "Josh Gold Photography"
+    slug: "joshgoldphotography"
   - sprig_id: 2
     name: "Kelli Nixon Photography"
+    slug: "kellinixonphotography"
   - sprig_id: 3
     name: "Pink Fog Studios"
+    slug: "pinkfogstudios"
   - sprig_id: 4
     name: "Kara Pearson Photography"
+    slug: "karapearsonphotography"
   - sprig_id: 5
     name: "Ben Fink Shapiro"
+    slug: "benfinkshapiro"
