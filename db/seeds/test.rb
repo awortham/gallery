@@ -1,3 +1,3 @@
 include Sprig::Helpers
 
-sprig [User, Category, Item, Business, Home]
+sprig [User, Category, Item, Business, Home, About]

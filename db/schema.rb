@@ -11,11 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104173030) do
+ActiveRecord::Schema.define(version: 20141105183537) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "abouts", force: true do |t|
+    t.string   "name"
+    t.text     "bio"
+    t.integer  "business_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "tagline"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
 
   create_table "addresses", force: true do |t|
     t.integer  "user_id"
@@ -61,6 +74,10 @@ ActiveRecord::Schema.define(version: 20141104173030) do
     t.text     "caption2"
     t.text     "caption3"
     t.text     "caption4"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "item_categories", force: true do |t|

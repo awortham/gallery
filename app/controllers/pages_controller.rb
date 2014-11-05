@@ -14,6 +14,7 @@ class PagesController < ApplicationController
 
   def about
     @user = User.new
+    @about = business.about
   end
 
   def code
