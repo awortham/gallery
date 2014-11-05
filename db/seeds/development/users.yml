@@ -6,7 +6,6 @@ records:
     password_confirmation: 'password'
     platform_admin: true
     username: 'Rachel'
-    business_id: <%= sprig_record(Business, 1).id %>
   - sprig_id: 2
     name: 'Jeff'
     email: 'demo+jeff@jumpstartlab.com'
@@ -15,7 +14,6 @@ records:
     admin: true
     username: 'Jeff'
     business_id: <%= sprig_record(Business, 1).id %>
-
   - sprig_id: 3
     name: 'Jorge'
     email: 'demo+jorge@jumpstartlab.com'
@@ -23,7 +21,6 @@ records:
     password_confirmation: 'password'
     username: 'Jorge'
     platform_admin: true
-    business_id: <%= sprig_record(Business, 1).id %>
   - sprig_id: 4
     name: 'Josh'
     email: 'demo+josh@jumpstartlab.com'
@@ -45,7 +42,7 @@ records:
     password: 'password'
     password_confirmation: 'password'
     username: 'Sara'
-    business_id: <%= sprig_record(Business, 1).id %>
+    business_id: <%= sprig_record(Business, 2).id %>
   - sprig_id: 7
     name: 'Aaron'
     email: 'demo+aaron@jumpstartlab.com'
