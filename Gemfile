@@ -46,6 +46,7 @@ gem "paperclip", "~> 4.2"
 gem 'aws-sdk'
 gem "fog"
 gem "sprig"
+gem "brakeman"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
