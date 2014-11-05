@@ -1,6 +1,6 @@
 <div id = "categories">
   <ul id='category_list'>
-    <h3>Categories</h3>
+    <h3>Photographs</h3>
       <% @categories.each do |category| %>
         <li><a href="javascript:" id="<%= category.title %>" class="filter" data-no-turbolink><%= category.title %></a>
         </li>
@@ -8,7 +8,6 @@
   </ul>
 </div>
 
-<h1>Photos</h1>
 
 <div id="masonry-grid">
   <div class="grid-sizer">
@@ -31,7 +30,7 @@
 </div>
 
 <script>
-  var selectedCategory = window.location.search.split("=")[1] 
+  var selectedCategory = window.location.search.split("=")[1]
   var container = document.querySelector('#masonry-grid');
   var msnry = new Masonry( container, {
     columnWidth: ".grid-sizer",
