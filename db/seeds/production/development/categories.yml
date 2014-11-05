@@ -1,0 +1,58 @@
+records:
+  - sprig_id: 1
+    title: "Drinks"
+    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 2
+    title: "Breakfast Plates"
+    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 3
+    title: "Appetizers"
+    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 4
+    title: "Entrées"
+    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 5
+    title: "Desserts"
+    business_id: '<%= sprig_record(Business, 1).id %>'
+  - sprig_id: 6
+    title: "Sand"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 7
+    title: "Palm Trees"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 8
+    title: "Sunsets"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 9
+    title: "Surfers"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 10
+    title: "Playing on the Beach"
+    business_id: '<%= sprig_record(Business, 2).id %>'
+  - sprig_id: 11
+    title: "Newborns"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 12
+    title: "First Year"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 13
+    title: "Toddlers"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 14
+    title: "Young Children"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 15
+    title: "Black and White Portraits"
+    business_id: '<%= sprig_record(Business, 3).id %>'
+  - sprig_id: 16
+    title: "Water"
+    business_id: '<%= sprig_record(Business, 4).id %>'
+  - sprig_id: 17
+    title: "Clouds"
+    business_id: '<%= sprig_record(Business, 4).id %>'
+  - sprig_id: 18
+    title: "Trees"
+    business_id: '<%= sprig_record(Business, 4).id %>'
+  - sprig_id: 19
+    title: "Miscellaneous"
+    business_id: '<%= sprig_record(Business, 4).id %>'
