@@ -26,12 +26,8 @@
 	width: 25%;
 	margin: 20px;
 	padding: 20px;
-	border: solid;
-  border-width: 3px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
-  border-color: #545454;
 }
 
 .grid-item.on {
@@ -65,6 +61,7 @@
 
 #categories ul li {
   display: inline;
+  /*text-align: center;*/
 }
 
 #categories ul li a {
@@ -72,12 +69,18 @@
   padding: .2em 1em;
   color: #fff;
   background-color: rgb(192, 192, 192);
+  /*text-align: center;*/
 }
 
 #categories ul li a.pressed {
   background-color: rgb(84, 84, 84);
+  /*text-align: center;*/
 }
 
 .grid-item.off {
   display: none;
+}
+
+#category_list{
+  text-align: center;
 }
