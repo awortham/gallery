@@ -26,12 +26,8 @@
 	width: 25%;
 	margin: 20px;
 	padding: 20px;
-	border: solid;
-  border-width: 3px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
-  border-color: #545454;
 }
 
 .grid-item.on {
