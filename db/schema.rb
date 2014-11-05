@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103202342) do
+ActiveRecord::Schema.define(version: 20141105225643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -103,6 +103,9 @@ ActiveRecord::Schema.define(version: 20141103202342) do
     t.string   "username"
     t.boolean  "platform_admin",  default: false
     t.integer  "business_id"
+    t.integer  "cart_id"
   end
+
+  add_index "users", ["cart_id"], name: "index_users_on_cart_id", using: :btree
 
 end

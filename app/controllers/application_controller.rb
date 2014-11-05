@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   helper_method :line_item_subtotal
 
   def cart
-    @cart ||= Cart.new(session)
+    current_user ? current_user.cart : Cart.create
   end
 
   def find_item(item_id)

@@ -1,14 +1,10 @@
-class Cart
+class Cart < ActiveRecord::Base
   def initialize(session)
     @session ||= session
   end
 
-  def line_items
-    @session[:cart_items] ||= {}
-  end
-
   def line_item_quantity(item_id)
-    line_items[item_id].to_i
+    line_items.find_by(item_id: item_id).first.quantity
   end
 
   def add_line_item(item_id, quantity)
