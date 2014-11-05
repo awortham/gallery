@@ -1,6 +1,6 @@
 <div class="item active">
   <div class="img">
-    <%= image_tag(@about.image_file_name) %>
+    <img src="<%= @about.image.image(:medium) %>" class="img-thumbnail">
   </div>
     <div class="container">
       <div id="bio-position">

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="page-header">Edit About Page</h1>
+      <%= bootstrap_form_for(@business.about, url: admin_dashboard_path(@business.slug, @business.about)) do |f| %>
+        <%= f.text_field :name, :id => 'title', placeholder: "Name" %>
+        <%= f.text_field :tagline, :id => 'description', placeholder: "Title" %>
+        <%= f.text_area :bio, :id => 'price', placeholder: "Bio" %>
+        <%= f.label :image, "Attach An Image" %>
+        <%= f.file_field :image %>
+
+        <%= f.submit "Save", :id => 'save', class: "btn btn-success" %>
+        <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>
+    <% end %>
+      </div>
+  </div>
+</div>

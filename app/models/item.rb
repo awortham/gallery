@@ -6,7 +6,7 @@ class Item < ActiveRecord::Base
   has_many :order_items
   has_many :orders, through: :order_items
 
-  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://fillmurray.com/252/158"
+  has_attached_file :image, :styles => { :large => "600x600", :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://fillmurray.com/252/158"
 
   validates :categories, presence: true
 

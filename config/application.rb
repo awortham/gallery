@@ -21,3 +21,5 @@ module DinerNinjaDash
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end
+
+Paperclip.options[:command_path] = "/usr/local/bin/identify"
