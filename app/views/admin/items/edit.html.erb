@@ -9,7 +9,7 @@
         <%= f.select :status, ['active', 'retired'] %>
         <%= f.label :image, "Attach an Image" %>
         <%= f.file_field :image %>
-        <%= f.collection_check_boxes :categories, Category.all, :id, :title, checked: true %>
+        <%= f.collection_check_boxes :categories, @categories, :id, :title, checked: true %>
 
         <%= f.submit "Save Item", :id => 'save', class: "btn btn-success" %>
         <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>
