@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
 
-  root 'platforms#admin'
+  root 'platforms#show'
 
-  get '/gallery'  => 'platforms#admin'
+  get '/gallery'  => 'platforms#show'
 
 
   scope '/:store_slug' do

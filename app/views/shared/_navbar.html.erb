@@ -25,7 +25,7 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if admin? && current_user || current_user.platform_admin == true %>
+        <% if admin? && current_user || current_user && current_user.platform_admin == true %>
         <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path(@business.slug) %></span></p></li>
           <li><%= link_to 'Administrator Menu', admin_path(@business.slug) %></li>
           <li><%= link_to 'Logout', logout_path %></li>
