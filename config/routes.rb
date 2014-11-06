@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
 
   root 'platforms#show'
-
   get '/gallery'  => 'platforms#show'
 
 
