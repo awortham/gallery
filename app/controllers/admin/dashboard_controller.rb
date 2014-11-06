@@ -10,12 +10,12 @@ class Admin::DashboardController < Admin::AdminController
   end
 
   def update
+    binding.pry
      @about = About.find(params[:id])
      @about.update_attributes(about_params)
      @about.image = Image.new unless @about.image
      @about.image.image = params[:about][:image]
      @about.image.save
-     fail
 
      if @about.save
        gflash :now,  :success => "About page was successfully updated."
@@ -28,6 +28,6 @@ class Admin::DashboardController < Admin::AdminController
 
   private
   def about_params
-    params.require(:about).permit(:name, :bio, :tagline, :imageable)
+    params.require(:about).permit(:name, :bio, :tagline, :image)
   end
 end
