@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+# -------------------------- new
+
+  root 'platforms#admin'
+
+  get '/gallery'  => 'platforms#admin'
+
+# -------------------------- new
+
   scope '/:store_slug' do
     get"/photos",       to: 'items#index', as: "photos"
     get "/about",       to: "pages#about", as: 'about'
@@ -18,6 +26,7 @@ Rails.application.routes.draw do
     resources :addresses, only: [:create]
     resources :line_items
     resources :charges
+
 
     namespace :admin do
       get '/' => 'dashboard#index'
