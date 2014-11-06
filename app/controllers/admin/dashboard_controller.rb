@@ -10,7 +10,7 @@ class Admin::DashboardController < Admin::AdminController
   end
 
   def update
-    binding.pry
+
      @about = About.find(params[:id])
      @about.update_attributes(about_params)
      @about.image = Image.new unless @about.image
@@ -28,6 +28,6 @@ class Admin::DashboardController < Admin::AdminController
 
   private
   def about_params
-    params.require(:about).permit(:name, :bio, :tagline, :image)
+    params.require(:about).permit(:name, :bio, :tagline)
   end
 end
