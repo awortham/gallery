@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'order' do
 
   before do
-    @order = Order.create(user_id: 1, line_items: {1 => 3}, status: 'ordered', pickup_or_delivery: 'delivery')
+    @order = Order.create(user_id: 1, line_items: [LineItem.create(cart_id: 1, item_id: 1)], status: 'ordered', pickup_or_delivery: 'delivery')
   end
 
   it 'is valid' do
@@ -12,11 +12,6 @@ describe 'order' do
 
   it 'has a user_id' do
     @order.user_id = nil
-    expect(@order).to_not be_valid
-  end
-
-  it 'must include one or more item with status of active' do
-    @order.line_items = nil
     expect(@order).to_not be_valid
   end
 
