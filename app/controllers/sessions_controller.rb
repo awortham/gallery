@@ -9,13 +9,17 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password]) && user.admin?
       session[:user_id] = user.id
+      user.cart = cart unless user.cart
       gflash :now, :success => 'Successfully Logged In'
       user.cart = cart
+      user.save
       redirect_to admin_path(@business.slug)
     elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
+      user.cart = cart unless user.cart
       gflash :now, :success  => 'Successfully Logged In'
       user.cart = cart
+      user.save
       redirect_to :back
     else
       gflash :now, :error => 'Invalid login. Please try again.'
