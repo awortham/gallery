@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
 
-# -------------------------- new
 
   root 'platforms#admin'
 
   get '/gallery'  => 'platforms#admin'
 
-# -------------------------- new
 
   scope '/:store_slug' do
     get"/photos",       to: 'items#index', as: "photos"
