@@ -17,6 +17,7 @@ unless Rails.env.test?
       default_url: "http://fillmurray.com/252/158"
     }
   )
+  Paperclip::Attachment.default_options[:use_timestamp] = false
 end
 
 # http://stackoverflow.com/a/26285035

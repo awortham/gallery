@@ -25,7 +25,7 @@ Rails.application.routes.draw do
       resources :users, only: [:destroy]
       resources :items
       resources :categories
-      # get "/edit/about" => 'dashboard#edit'
+      resources :homes, only: [:edit, :update]
     end
   end
 end

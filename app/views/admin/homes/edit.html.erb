@@ -1,0 +1,28 @@
+<div class="container">
+  <%#= image_tag @business.home.images.first.image(:medium) %>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="page-header">Edit Home Page</h1>
+      <%= bootstrap_form_for(@business.home, url: admin_home_path(@business.slug, @business.home)) do |f| %>
+        <%= f.text_field :tagline1, :id => 'title', placeholder: "Tagline 1" %>
+        <%= f.text_field :tagline2, :id => 'description', placeholder: "Tagline 2" %>
+        <%= f.text_field :tagline3, :id => 'description', placeholder: "Tagline 3" %>
+        <%= f.text_field :tagline4, :id => 'description', placeholder: "Tagline 4" %>
+        <%= f.text_field :caption1, :id => 'description', placeholder: "Caption 1" %>
+        <%= f.text_field :caption2, :id => 'description', placeholder: "Caption 2" %>
+        <%= f.text_field :caption3, :id => 'description', placeholder: "Caption 3" %>
+        <%= f.text_field :caption4, :id => 'description', placeholder: "Caption 4" %>
+
+        <!-- <%#= file_field_tag "images[]", type: :file, multiple: true %> -->
+
+        <%#= f.label :images, "Attach An Image" %>
+        <%#= f.file_field :image %>
+
+        <%= f.submit "Save", :id => 'save', class: "btn btn-success" %>
+        <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>
+    <% end %>
+      </div>
+  </div>
+</div>
+<%# @home.images.each do |image| %>
+<%#= image_tag %>
