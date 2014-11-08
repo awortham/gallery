@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
   helper_method :past_order_total
   helper_method :user_admin?
   helper_method :line_item_subtotal
+  helper_method :business
 
   def cart
     @cart ||= Cart.new(session)

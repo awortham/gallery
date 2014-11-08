@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :home_images
       resources :dashboard
+      resources :images
       get '/' => 'dashboard#index'
       resources :users, only: [:destroy]
       resources :items

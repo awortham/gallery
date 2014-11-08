@@ -1,20 +1,24 @@
-<% unless @business.images.empty? %>
-  <%= form_for @home_page_image do |f| %>
-    <% select_options = @business.images.map { |i| [i.name, i.id] } %>
-    <%= f.label :image %>
-    <%= f.select :image, options_for_select(select_options) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="page-header">Add Home Image</h1>
+      <% unless business.images.empty? %>
+        <%= bootstrap_form_for @home_image, url: admin_home_images_path do |f| %>
+          <% select_options = business.images.map { |i| [i.name, i.id] } %>
+          <%= f.select :image_id, options_for_select(select_options) %>
 
-    <%= f.label :caption %>
-    <%= f.text_field :caption %>
+          <%= f.text_field :caption %>
 
-    <%= f.label :tagline %>
-    <%= f.text_field :tagline %>
+          <%= f.text_field :tagline %>
 
-    <%= f.submit "BOOM SUCKA" %>
-  <% end %>
+          <%= f.submit "BOOM SUCKA" %>
+        <% end %>
 
-<% else %>
+      <% else %>
 
-  <h2>Silly User, You don't got no images...</h2>
-  <%= link_to "Add Some...", '#' %>
-<% end %>
+        <h2>Silly User, You don't got no images...</h2>
+        <%= link_to "Add Some...", new_admin_image_path(business.slug) %>
+      <% end %>
+    </div>
+  </div>
+</div>
