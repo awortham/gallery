@@ -1,45 +1,12 @@
 records:
   - sprig_id: 1
-    tagline1: "Sharp. Precise. Picture Perfect"
-    tagline2: "Traditional Elegance; True Complexion"
-    tagline3: "An Eye For Design"
-    tagline4: "Ready For A Photoshoot?"
-    caption1: "Josh`s Incredible Photography"
-    caption2: "From portraits to travel photography, Josh captures the best of every moment."
-    caption3: "With years of experience, Josh brings the best to his photography."
-    caption4: "Don`t worry about the details, let Josh design your favorite moments."
-    image_file_name: "food_omelette.png"
     business_id: "<%= sprig_record(Business, 1).id %>"
   - sprig_id: 2
-    tagline1: "Sharp. Precise. Picture Perfect"
-    tagline2: "Traditional Elegance; True Complexion"
-    tagline3: "An Eye For Design"
-    tagline4: "Ready For A Photoshoot?"
-    caption1: "Josh`s Incredible Photography"
-    caption2: "From portraits to travel photography, Josh captures the best of every moment."
-    caption3: "With years of experience, Josh brings the best to his photography."
-    caption4: "Don`t worry about the details, let Josh design your favorite moments."
-    image_file_name: "food_omelette.png"
+
     business_id: "<%= sprig_record(Business, 2).id %>"
   - sprig_id: 3
-    tagline1: "Sharp. Precise. Picture Perfect"
-    tagline2: "Traditional Elegance; True Complexion"
-    tagline3: "An Eye For Design"
-    tagline4: "Ready For A Photoshoot?"
-    caption1: "Josh`s Incredible Photography"
-    caption2: "From portraits to travel photography, Josh captures the best of every moment."
-    caption3: "With years of experience, Josh brings the best to his photography."
-    caption4: "Don`t worry about the details, let Josh design your favorite moments."
-    image_file_name: "food_omelette.png"
+
     business_id: "<%= sprig_record(Business, 3).id %>"
   - sprig_id: 4
-    tagline1: "Sharp. Precise. Picture Perfect"
-    tagline2: "Traditional Elegance; True Complexion"
-    tagline3: "An Eye For Design"
-    tagline4: "Ready For A Photoshoot?"
-    caption1: "Josh`s Incredible Photography"
-    caption2: "From portraits to travel photography, Josh captures the best of every moment."
-    caption3: "With years of experience, Josh brings the best to his photography."
-    caption4: "Don`t worry about the details, let Josh design your favorite moments."
-    image_file_name: "food_omelette.png"
+    
     business_id: "<%= sprig_record(Business, 4).id %>"
