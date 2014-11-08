@@ -1,0 +1,20 @@
+<% unless @business.images.empty? %>
+  <%= form_for @home_page_image do |f| %>
+    <% select_options = @business.images.map { |i| [i.name, i.id] } %>
+    <%= f.label :image %>
+    <%= f.select :image, options_for_select(select_options) %>
+
+    <%= f.label :caption %>
+    <%= f.text_field :caption %>
+
+    <%= f.label :tagline %>
+    <%= f.text_field :tagline %>
+
+    <%= f.submit "BOOM SUCKA" %>
+  <% end %>
+
+<% else %>
+
+  <h2>Silly User, You don't got no images...</h2>
+  <%= link_to "Add Some...", '#' %>
+<% end %>

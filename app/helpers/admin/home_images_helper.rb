@@ -1,0 +1,2 @@
+module Admin::HomeImagesHelper
+end

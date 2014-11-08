@@ -3,5 +3,7 @@ class Image < ActiveRecord::Base
   validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
-  belongs_to :imageable, polymorphic: true
+  def url
+    image.url
+  end
 end
