@@ -22,9 +22,10 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.create(order_params)
+    @order = Order.new(order_params)
+    @order.line_items = cart.line_items
     if @order.save
-      session[:cart_items] = {}
+      cart.line_items.clear
       redirect_to order_path(@business.slug, @order.id)
     else
       gflash :now, :error =>  @order.errors.full_messages.to_sentence

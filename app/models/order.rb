@@ -4,6 +4,7 @@ class Order < ActiveRecord::Base
   belongs_to :user
   has_many :items
   belongs_to :address
+  has_many :line_items
 
   validates :user_id, presence: true
   validates :line_items, presence: true
@@ -19,7 +20,7 @@ class Order < ActiveRecord::Base
   end
 
   def stripe_total
-    Money.new((subtotal * 100) , "USD").cents
+    Money.new((total * 100) , "USD").cents
   end
 
   def active_orders
@@ -59,4 +60,12 @@ class Order < ActiveRecord::Base
       end
       items
    end
+
+  def quantity
+    line_items.reduce(0) { |sum, i| sum + i.quantity }
+  end
+
+  def total
+    line_items.map { |i| Item.find(i.item_id).price * i.quantity }.reduce(:+)
+  end
 end
