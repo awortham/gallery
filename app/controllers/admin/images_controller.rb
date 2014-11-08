@@ -6,9 +6,10 @@ class Admin::ImagesController < ApplicationController
   def create
     @image = @business.images.new(image_params)
     if @image.save
-      redirect_to admin_dashboard_path(@business)
+      redirect_to admin_dashboard_index_path(business.slug)
     else
-      raise "HELL"
+      gflash :now,  :error => "Image was not added. Please try again."
+      render :new
     end
   end
 

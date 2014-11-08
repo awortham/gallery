@@ -9,9 +9,7 @@
 
          <%= f.fields_for :image do |attachment|%>
            <%= attachment.file_field :image %>
-        <%end%>
-        <%#= f.label :image, "Attach An Image" %>
-        <%#= f.file_field :image %>
+        <% end %>
 
         <%= f.submit "Save", :id => 'save', class: "btn btn-success" %>
         <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>

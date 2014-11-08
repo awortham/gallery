@@ -2,6 +2,7 @@
   <h1 class="page-header">Admin Options</h1>
   <%= link_to "Edit About Content", edit_admin_dashboard_path(@business.slug, @business.about), id: "new_item_button" , class: "btn-lg btn-success"%>
   <%= link_to "Edit Home Content", edit_admin_home_path(@business.slug, @business.home), id: "new_item_button" , class: "btn-lg btn-success"%>
+  <%= link_to "Add Photos", new_admin_image_path(business.slug), id: "new_item_button" , class: "btn-lg btn-success"%>
   <div class="edit-users-container">
     <h1>Edit Users</h1>
       <table class="table">

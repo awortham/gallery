@@ -7,9 +7,9 @@
           <% select_options = business.images.map { |i| [i.name, i.id] } %>
           <%= f.select :image_id, options_for_select(select_options) %>
 
-          <%= f.text_field :caption %>
-
           <%= f.text_field :tagline %>
+
+          <%= f.text_field :caption %>
 
           <%= f.submit "BOOM SUCKA" %>
         <% end %>

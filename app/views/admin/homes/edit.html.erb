@@ -1,20 +1,18 @@
 <div class="container">
-  <%#= image_tag @business.home.images.first.image(:medium) %>
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <h1 class="page-header">Edit Home Page</h1>
         <h2>Images</h2>
-        <%= link_to "Add a Home Image", new_admin_home_image_path(@business.slug)  %>
+        <%= link_to "Add a Home Image", new_admin_home_image_path(business.slug)  %>
         <% @home.images.each do |image| %>
           <div class="admin-image">
-            <img src="<%= image.url %>">
+
             <span class="image-tagline"><%= image.tagline %></span>
             <span class="image-caption"><%= image.caption %></span>
-            <button>Edit</button>
+            <button><%= link_to "Edit", edit_admin_home_image_path(business.slug, image.id) %></button>
+            <button><%= link_to "Delete", admin_home_image_path(business.slug, image.id), :action => 'destroy', :method => 'delete'%></button>
           </div>
         <% end %>
       </div>
   </div>
 </div>
-<%# @home.images.each do |image| %>
-<%#= image_tag %>
