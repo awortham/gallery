@@ -7,8 +7,10 @@
           <%= f.text_field :title, :id => 'title', placeholder: "Title" %>
           <%= f.text_area :description, :id => 'description', placeholder: "Description" %>
           <%= f.text_field :price, :id => 'price', placeholder: "Price" %>
-          <%= f.label :image, "Attach an Image" %>
-          <%= f.file_field :image %>
+
+          <% select_options = business.images.map { |i| [i.name, i.id] } %>
+          <%= f.select :image_id, options_for_select(select_options) %>
+
           <%= f.collection_check_boxes :categories, Category.all, :id, :title %>
           <%= f.submit "Save Item", :id => 'save' , class: "btn btn-success" %>
           <%= link_to "Back", admin_path, class: "btn btn-default" %>

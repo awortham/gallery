@@ -17,7 +17,7 @@ class Admin::ItemsController < Admin::AdminController
   end
 
   def create
-    @item = Item.new(item_params)
+    @item = Item.new
     @item.update_attributes(item_params)
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save
@@ -52,7 +52,7 @@ class Admin::ItemsController < Admin::AdminController
   private
 
   def item_params
-    params.require(:item).permit(:title, :description, :price, :status, :image, :categories)
+    params.require(:item).permit(:title, :description, :price, :status, :image_id, :categories)
   end
 
   def check_category
