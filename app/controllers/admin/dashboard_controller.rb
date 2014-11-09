@@ -11,6 +11,7 @@ class Admin::DashboardController < Admin::AdminController
 
   def update
      @about = About.find(params[:id])
+
      @about.update_attributes(about_params)
 
      if @about.save
@@ -24,6 +25,6 @@ class Admin::DashboardController < Admin::AdminController
 
   private
   def about_params
-    params.require(:about).permit(:name, :bio, :tagline, image_attributes: [:image])
+    params.require(:about).permit(:name, :bio, :tagline, :image_id)
   end
 end

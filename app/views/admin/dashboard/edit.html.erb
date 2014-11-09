@@ -7,9 +7,8 @@
         <%= f.text_field :tagline, :id => 'description', placeholder: "Title" %>
         <%= f.text_area :bio, :id => 'price', placeholder: "Bio" %>
 
-         <%= f.fields_for :image do |attachment|%>
-           <%= attachment.file_field :image %>
-        <% end %>
+        <% select_options = business.images.map { |i| [i.name, i.id] } %>
+        <%= f.select :image_id, options_for_select(select_options) %>
 
         <%= f.submit "Save", :id => 'save', class: "btn btn-success" %>
         <%= link_to "Back", admin_path(@business.slug), class: "btn btn-default" %>
