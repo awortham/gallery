@@ -56,10 +56,10 @@ end
 describe 'user login' do
 
   before do
-    @business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 4)
+    @home = Home.create
+    @business = Business.create(slug: "joshgoldphotography", name: "jbiz", home: @home, id: 4)
     @user = User.create(username: "Jonycage", name: "Joe", password: "1234", password_confirmation: "1234", email: "jony@comelately.com", business_id: 4)
     visit home_path(@business.slug)
-    p @business
   end
 
   it "can log in a user with an established username and password" do
@@ -113,7 +113,8 @@ end
 describe 'user settings' do
 
   before do
-    business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 5)
+    @home = Home.create
+    business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 5, home: @home)
     @user = User.create(username: "Lil Jess", name: "Jessica", password: "5555", password_confirmation: "5555", email: "jess@gmail.com", business_id: 5)
     visit home_path(business.slug)
     within(:css, "#nav_bar") do

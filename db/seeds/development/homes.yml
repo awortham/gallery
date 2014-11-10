@@ -2,11 +2,8 @@ records:
   - sprig_id: 1
     business_id: "<%= sprig_record(Business, 1).id %>"
   - sprig_id: 2
-
     business_id: "<%= sprig_record(Business, 2).id %>"
   - sprig_id: 3
-
     business_id: "<%= sprig_record(Business, 3).id %>"
   - sprig_id: 4
-    
     business_id: "<%= sprig_record(Business, 4).id %>"
