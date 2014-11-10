@@ -8,16 +8,16 @@ class Admin::ItemsController < Admin::AdminController
   end
 
   def new
-    @item       = Item.new
+    @item       = business.items.new
     @categories = Category.all
   end
 
   def edit
-    @item = Item.find(params[:id])
+    @item = business.items.find(params[:id])
   end
 
   def create
-    @item = Item.new
+    @item = business.items.new
     @item.update_attributes(item_params)
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save

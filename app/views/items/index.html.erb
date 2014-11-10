@@ -14,7 +14,7 @@
   <div class="grid-sizer">
       <% @items.each do |item| %>
         <div class="grid-item <%= item.categories.reduce('') { |sum, category| sum + category.title + ' '}.strip %>" id="item_<%= item.id %>">
-          <%= link_to image_tag(item.image(:medium)), photo_path(@business.slug, item) %>
+          <%= link_to image_tag(item.image.image(:medium)), photo_path(@business.slug, item) %>
           <span class="item_title"><%= item.title %><span><%= number_to_currency(item.price) %>
           <%= item.description %>
 
@@ -31,7 +31,7 @@
 </div>
 
 <script>
-  var selectedCategory = window.location.search.split("=")[1] 
+  var selectedCategory = window.location.search.split("=")[1]
   var container = document.querySelector('#masonry-grid');
   var msnry = new Masonry( container, {
     columnWidth: ".grid-sizer",
