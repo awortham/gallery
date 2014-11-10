@@ -12,29 +12,29 @@
         <th style="width:10%"></th>
       </tr>
     </thead>
-    <% @cart.line_items.each_pair do |item_id, quantity|  %>
+    <% cart.line_items.each do |i|  %>
     <tbody>
       <tr>
         <td data-th="Product">
           <div class="row">
-            <div class="col-sm-2 hidden-xs"><img src="<%= find_item(item_id).image(:medium) %>" alt="..." class="img-responsive"/></div>
+            <div class="col-sm-2 hidden-xs"><img src="<%= find_item(i.item_id).image(:medium) %>" alt="..." class="img-responsive"/></div>
             <div class="col-sm-10">
-              <h4 class="nomargin"><%= find_item(item_id).title %></h4>
-              <p><%= find_item(item_id).description %></p>
+              <h4 class="nomargin"><%= find_item(i.item_id).title %></h4>
+              <p><%= find_item(i.item_id).description %></p>
             </div>
           </div>
         </td>
-        <%= form_tag(line_item_path(@business.slug, item_id), method: :put) do %>
+        <%= form_tag(line_item_path(@business.slug, i.item_id), method: :put) do %>
 
-        <td data-th="Price"><%= number_to_currency(find_item(item_id).price) %></td>
+        <td data-th="Price"><%= number_to_currency(find_item(i.item_id).price) %></td>
         <td data-th="Quantity">
-          <%= number_field_tag("quantity", quantity, in: 1..20, value: quantity) %>
+          <%= number_field_tag("quantity", i.quantity, in: 1..20, value: i.quantity) %>
         </td>
 
-        <td data-th="Subtotal" class="text-center"><%= number_to_currency(cart.line_item_total(item_id, quantity)) %></td>
+        <td data-th="Subtotal" class="text-center"><%= number_to_currency(cart.line_item_total(i.item_id, i.quantity)) %></td>
         <td class="actions" style="display: inline;">
           <%= submit_tag "Save", class: "btn btn-info btn-sm" %>
-          <%= link_to "Remove", line_item_path(@business.slug, item_id), method: :delete, class: "btn btn-danger btn-sm" %>
+          <%= link_to "Remove", line_item_path(@business.slug, i.item_id), method: :delete, class: "btn btn-danger btn-sm" %>
         </td>
         <% end %>
       </tr>

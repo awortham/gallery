@@ -14,7 +14,6 @@
         <%= f.hidden_field :address_id, value: @address.id.to_i %>
         <%= f.hidden_field :status, value: 'ordered' %>
         <%= f.hidden_field :pickup_or_delivery, value: 'delivery' %>
-        <%= f.hidden_field :line_items, value: cart.line_items %>
         <%= f.submit "Complete My Order", class: "btn btn-success btn-lg" %>
       <% end %>
     <% elsif @order.pickup_or_delivery == "Pickup" %>
@@ -23,7 +22,6 @@
         	<%= f.hidden_field :address_id, value:  nil %>
         	<%= f.hidden_field :status, value: 'ordered' %>
         	<%= f.hidden_field :pickup_or_delivery, value: 'pickup' %>
-        	<%= f.hidden_field :line_items, value: cart.line_items %>
         	<%= f.submit "Complete My Order", class: "btn btn-success btn-lg" %>
         <% end %>
     <% else %>
@@ -42,11 +40,11 @@
         </tr>
       </thead>
       <tbody>
-        <% cart.line_items.each_pair do |item_id, quantity | %>
+        <% cart.line_items.each do |i| %>
         <tr>
-          <td><%= link_to "#{(find_item(item_id).title)}", item_path(@business.slug, item_id)  %></td>
-          <td><%= number_to_currency(find_item(item_id).price) %></td>
-          <td><h6><%= quantity %></h6></td>
+          <td><%= link_to "#{(find_item(i.item_id).title)}", item_path(@business.slug, i.item_id)  %></td>
+          <td><%= number_to_currency(find_item(i.item_id).price) %></td>
+          <td><h6><%= i.quantity %></h6></td>
           <td></td>
         </tr>
         <% end %>
@@ -59,8 +57,8 @@
         <tr>
           <td></td>
           <td></td>
-          <td class="order-totals"><%= past_order_quantity(cart.line_items) %></td>
-          <td class="order-totals"><%= number_to_currency(past_order_total(cart.line_items))  %></td>
+          <td class="order-totals"><%= cart.total_quantity %></td>
+          <td class="order-totals"><%= number_to_currency(cart.subtotal)  %></td>
         </tr>
       </tbody>
     </table>
