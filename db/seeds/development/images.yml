@@ -3,3 +3,4 @@ records:
     image_file_name: "reflection.jpg"
     name: "With tomatoes and olives"
     business_id: "<%= sprig_record(Business, 1).id %>"
+    
