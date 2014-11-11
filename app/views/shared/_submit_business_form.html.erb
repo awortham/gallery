@@ -1,0 +1,21 @@
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Ready to get started?</h4>
+      </div>
+      <div class="modal-body">
+        <%= bootstrap_form_tag do %>
+          <%= text_field_tag :name, placeholder: 'Name' %>
+          <%= text_field_tag :email, placeholder: 'Email' %>
+          <%= text_field_tag :business_name, placeholder: "Sara's Photography" %>
+          <%= text_area_tag :business_idea, placeholder: 'A one-stop shop for all your underwater photography needs.' %>
+          <%= submit_tag 'Submit Proposal', class: "btn btn-primary" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
