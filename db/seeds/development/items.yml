@@ -1,5 +1,6 @@
 records:
   - sprig_id: 1
+    image_id: 1
     price: 20
     title: "Omelette"
     description: "With tomatoes and olives"
@@ -7,6 +8,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
   - sprig_id: 2
+    image_id: 1
     price: 30
     title: "Eggs"
     description: "Cast iron eggs"
@@ -14,6 +16,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
   - sprig_id: 3
+    image_id: 1
     price: 35
     title: "Pancakes"
     description: "With tea and blueberries"
@@ -22,6 +25,7 @@ records:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 4
+    image_id: 1
     price: 15
     title: "Lemon Tarts"
     description: "Tray of lemon tarts"
@@ -29,6 +33,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 5
+    image_id: 1
     price: 50
     title: "Toast"
     description: "With egg, berries, and cookie"
@@ -37,6 +42,7 @@ records:
       - '<%= sprig_record(Category, 2).id %>'
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 6
+    image_id: 1
     price: 40
     title: "Pair of Drinks"
     description: "Grapefruit and blood orange cocktails"
@@ -44,6 +50,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 7
+    image_id: 1
     price: 45
     title: "Blackberry Cocktail "
     description: "With garnish"
@@ -51,6 +58,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 8
+    image_id: 1
     price: 60
     title: "Orange Liquor"
     description: "In short cup"
@@ -58,6 +66,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 9
+    image_id: 1
     price: 60
     title: "Summer Cocktail"
     description: "In garden"
@@ -65,6 +74,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 10
+    image_id: 1
     price: 20
     title: "Mojito"
     description: "With straw"
@@ -72,6 +82,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
   - sprig_id: 11
+    image_id: 1
     price: 45
     title: "Olives"
     description: "In small bowl"
@@ -79,6 +90,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
   - sprig_id: 12
+    image_id: 1
     price: 70
     title: "Cheese"
     description: "Plate of cheese"
@@ -86,6 +98,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
   - sprig_id: 13
+    image_id: 1
     price: 75
     title: "Bread"
     description: "Freshly baked bread"
@@ -93,6 +106,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
   - sprig_id: 14
+    image_id: 1
     price: 15
     title: "Bruschetta"
     description: "Bruschetta on plate"
@@ -100,6 +114,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
   - sprig_id: 15
+    image_id: 1
     price: 50
     title: "Salad"
     description: "Salad nicoise"
@@ -107,6 +122,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 16
+    image_id: 1
     price: 40
     title: "Kale"
     description: "Roasted kale with egg"
@@ -114,6 +130,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 17
+    image_id: 1
     price: 45
     title: "Salmon"
     description: "With crispy onion"
@@ -121,6 +138,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 18
+    image_id: 1
     price: 30
     title: "Stuffed Tomatoes"
     description: "With bread and wine"
@@ -128,6 +146,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
   - sprig_id: 19
+    image_id: 1
     price: 60
     title: "Strawberries"
     description: "Bowl of fresh strawberries"
@@ -135,6 +154,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 20
+    image_id: 1
     price: 30
     title: "Creme Brulee"
     description: "In two ramekins"
@@ -142,6 +162,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
   - sprig_id: 21
+    image_id: 1
     price: 30
     title: "White Waves"
     description: "With greens at the front"
@@ -149,6 +170,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
   - sprig_id: 22
+    image_id: 1
     price: 25
     title: "Magical Coast"
     description: "Clouds in the horizon"
@@ -156,6 +178,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
   - sprig_id: 23
+    image_id: 1
     price: 30
     title: "Rocks"
     description: "Rocks in the sand"
@@ -163,6 +186,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
   - sprig_id: 24
+    image_id: 1
     price: 25
     title: "Woman"
     description: "Woman dipping toes into water"
@@ -171,6 +195,7 @@ records:
       - '<%= sprig_record(Category, 6).id %>'
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 25
+    image_id: 1
     price: 25
     title: "Beach Pastel"
     description: "À la Paul Ferney"
@@ -178,6 +203,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
   - sprig_id: 26
+    image_id: 1
     price: 30
     title: "Palm Trees"
     description: "At an angle"
@@ -185,6 +211,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
   - sprig_id: 27
+    image_id: 1
     price: 35
     title: "Umbrellas"
     description: "Palm trees with umbrellas"
@@ -193,6 +220,7 @@ records:
       - '<%= sprig_record(Category, 6).id %>'
       - '<%= sprig_record(Category, 7).id %>'
   - sprig_id: 28
+    image_id: 1
     price: 25
     title: "Mountain"
     description: "Palm trees with mountain"
@@ -200,6 +228,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
   - sprig_id: 29
+    image_id: 1
     price: 30
     title: "Yellow Sun"
     description: "Large palm tree with yellow sun"
@@ -208,6 +237,7 @@ records:
       - '<%= sprig_record(Category, 7).id %>'
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 30
+    image_id: 1
     price: 25
     title: "Moon"
     description: "Palm trees with moon"
@@ -215,6 +245,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
   - sprig_id: 31
+    image_id: 1
     price: 40
     title: "Lighthouse Sunset"
     description: "Sunset on the beach"
@@ -222,6 +253,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 32
+    image_id: 1
     price: 40
     title: "Orange Sunset"
     description: "Orange moon over the water"
@@ -229,6 +261,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 33
+    image_id: 1
     price: 35
     title: "Sunset with Palm Trees"
     description: "Blue and orange sky"
@@ -237,6 +270,7 @@ records:
       - '<%= sprig_record(Category, 7).id %>'
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 34
+    image_id: 1
     price: 25
     title: "Beach Rocks"
     description: "Sun through the rocks"
@@ -244,6 +278,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 35
+    image_id: 1
     price: 40
     title: "Orange and Red Sunset"
     description: "Over blue sea"
@@ -251,6 +286,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
   - sprig_id: 36
+    image_id: 1
     price: 25
     title: "Surfer 1"
     description: "Surfer with hair"
@@ -258,6 +294,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
   - sprig_id: 37
+    image_id: 1
     price: 25
     title: "Surfer 2"
     description: "Surfer in red"
@@ -265,6 +302,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
   - sprig_id: 38
+    image_id: 1
     price: 25
     title: "Surfer 3"
     description: "Surfer with vertical surfboard"
@@ -272,6 +310,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
   - sprig_id: 39
+    image_id: 1
     price: 25
     title: "Surfer 4"
     description: "Surfer's face"
@@ -279,6 +318,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
   - sprig_id: 40
+    image_id: 1
     price: 25
     title: "Surfer 5"
     description: "Surfer hits the white waves"
@@ -286,6 +326,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
   - sprig_id: 41
+    image_id: 1
     price: 35
     title: "Beach Boy"
     description: "Beach boy in pajamas"
@@ -294,6 +335,7 @@ records:
       - '<%= sprig_record(Category, 6).id %>'
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 42
+    image_id: 1
     price: 40
     title: "Kids With Dog"
     description: "Kids on the beach playing with dog"
@@ -302,6 +344,7 @@ records:
       - '<%= sprig_record(Category, 6).id %>'
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 43
+    image_id: 1
     price: 30
     title: "Kids Playing in the Waves"
     description: "Group of kids playing in the waves"
@@ -309,6 +352,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 44
+    image_id: 1
     price: 30
     title: "Beach Soccer"
     description: "Kids playing soccer on the beach"
@@ -317,6 +361,7 @@ records:
       - '<%= sprig_record(Category, 8).id %>'
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 45
+    image_id: 1
     price: 30
     title: "Kids Playing in Ocean"
     description: "Young children playing in the ocean"
@@ -324,6 +369,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 10).id %>'
   - sprig_id: 46
+    image_id: 1
     price: 25
     title: "Newborn in Hat"
     description: "With brown eyes"
@@ -332,6 +378,7 @@ records:
       - '<%= sprig_record(Category, 11).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 47
+    image_id: 1
     price: 25
     title: "Sleeping Newborn"
     description: "On shoulder"
@@ -340,6 +387,7 @@ records:
       - '<%= sprig_record(Category, 11).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 48
+    image_id: 1
     price: 25
     title: "Newborn in Dress"
     description: "Back of head"
@@ -348,6 +396,7 @@ records:
       - '<%= sprig_record(Category, 11).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 49
+    image_id: 1
     price: 30
     title: "Newborn Looking at Camera"
     description: "The cutest"
@@ -356,6 +405,7 @@ records:
       - '<%= sprig_record(Category, 11).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 50
+    image_id: 1
     price: 30
     title: "Newborn with Beautiful Eyes"
     description: "The most beautiful"
@@ -364,6 +414,7 @@ records:
       - '<%= sprig_record(Category, 11).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 51
+    image_id: 1
     price: 30
     title: "Young Girl with Tongue"
     description: "Brown Eyes"
@@ -371,6 +422,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
   - sprig_id: 52
+    image_id: 1
     price: 30
     title: "Boy in Pool"
     description: "Young boy in pool"
@@ -379,6 +431,7 @@ records:
       - '<%= sprig_record(Category, 12).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 53
+    image_id: 1
     price: 30
     title: "Boy in Red Pants"
     description: "Boy in stripes and red pants"
@@ -386,6 +439,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
   - sprig_id: 54
+    image_id: 1
     price: 30
     title: "Boy on All Fours"
     description: "Boy in stripes on all fours"
@@ -394,6 +448,7 @@ records:
       - '<%= sprig_record(Category, 12).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 55
+    image_id: 1
     price: 30
     title: "Child in Green Shirt"
     description: "Young child in green shirt"
@@ -401,6 +456,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
   - sprig_id: 56
+    image_id: 1
     price: 30
     title: "Boy in Red Sweater"
     description: "Young boy in cozy red sweater"
@@ -408,6 +464,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
   - sprig_id: 57
+    image_id: 1
     price: 30
     title: "Girl Looking out the Window"
     description: "Young girl looking out the window"
@@ -415,6 +472,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
   - sprig_id: 58
+    image_id: 1
     price: 30
     title: "Girl with Phone"
     description: "Young girl playing with phone"
@@ -423,6 +481,7 @@ records:
       - '<%= sprig_record(Category, 13).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 59
+    image_id: 1
     price: 30
     title: "Girl in Field"
     description: "Young girl in field"
@@ -430,6 +489,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
   - sprig_id: 60
+    image_id: 1
     price: 35
     title: "Girl with Hair"
     description: "Young girl with hair"
@@ -437,6 +497,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
   - sprig_id: 61
+    image_id: 1
     price: 35
     title: "Girl with Hands"
     description: "Young girl with hands"
@@ -445,6 +506,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 62
+    image_id: 1
     price: 35
     title: "Girl with Finger in Mouth"
     description: "Young girl with her finger in mouth"
@@ -453,6 +515,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 63
+    image_id: 1
     price: 35
     title: "Girl on Bike"
     description: "Young girl riding bike"
@@ -461,6 +524,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 64
+    image_id: 1
     price: 35
     title: "Girl with Eyes"
     description: "Young girl with bright eyes"
@@ -469,6 +533,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 65
+    image_id: 1
     price: 40
     title: "Girl Running"
     description: "Young girl running"
@@ -477,6 +542,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 66
+    image_id: 1
     price: 40
     title: "Siblings"
     description: "Young siblings"
@@ -484,6 +550,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
   - sprig_id: 67
+    image_id: 1
     price: 40
     title: "Window"
     description: "Staring out the Window"
@@ -491,6 +558,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
   - sprig_id: 68
+    image_id: 1
     price: 40
     title: "Water"
     description: "Child playing with water"
@@ -499,6 +567,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 69
+    image_id: 1
     price: 40
     title: "Angel Child"
     description: "Young girl with flowers"
@@ -507,6 +576,7 @@ records:
       - '<%= sprig_record(Category, 14).id %>'
       - '<%= sprig_record(Category, 15).id %>'
   - sprig_id: 70
+    image_id: 1
     price: 40
     title: "Sunset on the Water"
     description: "Sunset on the dock"
@@ -514,6 +584,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 16).id %>'
   - sprig_id: 71
+    image_id: 1
     price: 35
     title: "Purple Sky"
     description: "Purple sky with dock"
@@ -522,6 +593,7 @@ records:
       - '<%= sprig_record(Category, 16).id %>'
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 72
+    image_id: 1
     price: 45
     title: "Rocks on the Coast"
     description: "With waves through the sand "
@@ -529,6 +601,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 16).id %>'
   - sprig_id: 73
+    image_id: 1
     price: 45
     title: "Lighthouse with Orange Sky"
     description: "Over the water"
@@ -536,6 +609,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 16).id %>'
   - sprig_id: 74
+    image_id: 1
     price: 35
     title: "Bridge Over Troubled Water"
     description: "Black and white"
@@ -543,6 +617,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 16).id %>'
   - sprig_id: 75
+    image_id: 1
     price: 35
     title: "Bridge in Pastel"
     description: "Over water"
@@ -550,6 +625,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 16).id %>'
   - sprig_id: 76
+    image_id: 1
     price: 40
     title: "Sun Through the Clouds"
     description: "With rocks"
@@ -557,6 +633,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 17).id %>'
   - sprig_id: 77
+    image_id: 1
     price: 40
     title: "Clouds and Trees"
     description: "With blue sky"
@@ -564,6 +641,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 17).id %>'
   - sprig_id: 78
+    image_id: 1
     price: 40
     title: "Tea Fields"
     description: "Over the clouds"
@@ -571,6 +649,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 17).id %>'
   - sprig_id: 79
+    image_id: 1
     price: 25
     title: "Bench"
     description: "With leaves on the ground"
@@ -578,6 +657,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 80
+    image_id: 1
     price: 30
     title: "Autumn"
     description: "Orange Trees"
@@ -585,6 +665,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 81
+    image_id: 1
     price: 30
     title: "Woods"
     description: "Sunshine through the trees"
@@ -592,6 +673,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 82
+    image_id: 1
     price: 30
     title: "Snow"
     description: "Snow in the mountains"
@@ -599,6 +681,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 83
+    image_id: 1
     price: 35
     title: "Vineyard"
     description: "In angles"
@@ -606,6 +689,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 84
+    image_id: 1
     price: 35
     title: "Cliff"
     description: "With sun"
@@ -613,6 +697,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 84
+    image_id: 1
     price: 35
     title: "Barn"
     description: "In the field"
@@ -620,6 +705,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 18).id %>'
   - sprig_id: 85
+    image_id: 1
     price: 40
     title: "Hay"
     description: "Fields with blue sky"
@@ -627,6 +713,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 19).id %>'
   - sprig_id: 86
+    image_id: 1
     price: 40
     title: "Sunset Through the Palm Trees"
     description: "With orange sun"
@@ -634,6 +721,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 19).id %>'
   - sprig_id: 87
+    image_id: 1
     price: 35
     title: "Corn"
     description: "In the fields"
@@ -641,6 +729,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 19).id %>'
   - sprig_id: 88
+    image_id: 1
     price: 40
     title: "Bride 1"
     description: "bride 1"
@@ -648,6 +737,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
   - sprig_id: 89
+    image_id: 1
     price: 40
     title: "Bride 2"
     description: "bride 2"
@@ -655,6 +745,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
   - sprig_id: 90
+    image_id: 1
     price: 40
     title: "Bride 3"
     description: "bride 3"
@@ -662,6 +753,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
   - sprig_id: 91
+    image_id: 1
     price: 40
     title: "Couple 1"
     description: "couple 1"
@@ -669,6 +761,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 92
+    image_id: 1
     price: 40
     title: "Couple 2"
     description: "couple 2"
@@ -676,6 +769,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 93
+    image_id: 1
     price: 40
     title: "Couple 3"
     description: "couple 3"
@@ -683,6 +777,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 94
+    image_id: 1
     price: 40
     title: "Couple 4"
     description: "couple 4"
@@ -690,6 +785,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 95
+    image_id: 1
     price: 40
     title: "Couple 5"
     description: "couple 5"
@@ -697,6 +793,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 96
+    image_id: 1
     price: 40
     title: "Couple 6"
     description: "couple 6"
@@ -704,6 +801,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 97
+    image_id: 1
     price: 40
     title: "Couple 7"
     description: "couple 7"
@@ -711,6 +809,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 98
+    image_id: 1
     price: 40
     title: "Couple 8"
     description: "couple 8"
@@ -718,6 +817,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 99
+    image_id: 1
     price: 40
     title: "Couple 9"
     description: "couple 9"
@@ -725,6 +825,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 100
+    image_id: 1
     price: 40
     title: "Couple 10"
     description: "couple 10"
@@ -732,6 +833,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 101
+    image_id: 1
     price: 40
     title: "Couple 11"
     description: "couple 11"
@@ -739,6 +841,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 102
+    image_id: 1
     price: 40
     title: "Couple 12"
     description: "couple 12"
@@ -746,6 +849,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 103
+    image_id: 1
     price: 40
     title: "Couple 13"
     description: "couple 13"
@@ -753,6 +857,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 104
+    image_id: 1
     price: 40
     title: "Couple 14"
     description: "couple 14"
@@ -760,6 +865,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 105
+    image_id: 1
     price: 40
     title: "Couple 15"
     description: "couple 15"
@@ -767,6 +873,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 106
+    image_id: 1
     price: 40
     title: "Couple 16"
     description: "couple 16"
@@ -774,6 +881,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 107
+    image_id: 1
     price: 40
     title: "Couple 17"
     description: "couple 17"
@@ -781,6 +889,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 108
+    image_id: 1
     price: 40
     title: "Couple 18"
     description: "couple 18"
@@ -788,6 +897,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 109
+    image_id: 1
     price: 40
     title: "Couple 19"
     description: "couple 19"
@@ -795,6 +905,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
   - sprig_id: 110
+    image_id: 1
     price: 40
     title: "Family 1"
     description: "family 1"
@@ -802,6 +913,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
   - sprig_id: 111
+    image_id: 1
     price: 40
     title: "Family 2"
     description: "family 2"
@@ -809,6 +921,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
   - sprig_id: 112
+    image_id: 1
     price: 40
     title: "Family 3"
     description: "family 3"
@@ -816,6 +929,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
   - sprig_id: 113
+    image_id: 1
     price: 40
     title: "Family 4"
     description: "family 4"
@@ -823,6 +937,7 @@ records:
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
   - sprig_id: 114
+    image_id: 1
     price: 40
     title: "Family 5"
     description: "family 5"
