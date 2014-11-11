@@ -4,7 +4,7 @@ records:
     title: "Omelette"
     description: "With tomatoes and olives"
     business_id: "<%= sprig_record(Business, 1).id %>"
-    image_id: "<%= sprig_record(Image, 1).id %>"
+    # image_id: "<%= sprig_record(Image, 1).id %>"
     category_ids:
       - "<%= sprig_record(Category, 2).id %>"
 #   - sprig_id: 2

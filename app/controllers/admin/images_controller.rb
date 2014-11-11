@@ -16,6 +16,7 @@ class Admin::ImagesController < ApplicationController
   private
 
   def image_params
+    Rails.logger.debug params[:image][:image].inspect
     params.require(:image).permit(:name, :image)
   end
 end
