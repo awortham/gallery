@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_user
   before_action :set_business
-  before_action :ensure_member
+  # before_action :ensure_member
 
   helper_method :cart
   helper_method :find_item
