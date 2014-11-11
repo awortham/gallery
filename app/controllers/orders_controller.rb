@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
   def index
     if current_user.nil?
       redirect_to home_path(business.slug)
-    elsif current_user.admin == true
+    elsif current_user.admin
       @recent_orders = active_orders
       @paid_orders = paid_orders
       @cancelled_orders = cancelled_orders
