@@ -25,14 +25,14 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if current_user && !admin? %>
-          <li><%= link_to "Welcome, #{current_user.display_name}", user_orders_path(@business.slug, current_user), class: "welcome-link"%></li>
-          <li><%= link_to 'Settings', user_path(@business.slug, current_user) %></li>
-          <li><%= link_to 'Logout', logout_path(@business.slug) %></li>
-        <% elsif admin? && current_user %>
+        <% if admin? && current_user || current_user && current_user.platform_admin == true %>
         <li><p id="user_welcome">Welcome, <span class="user-name"><%= link_to current_user.username.capitalize, orders_path(@business.slug) %></span></p></li>
           <li><%= link_to 'Administrator Menu', admin_path(@business.slug) %></li>
           <li><%= link_to 'Logout', logout_path %></li>
+        <% elsif current_user && !admin? %>
+          <li><%= link_to "Welcome, #{current_user.display_name}", user_orders_path(@business.slug, current_user), class: "welcome-link"%></li>
+          <li><%= link_to 'Settings', user_path(@business.slug, current_user) %></li>
+          <li><%= link_to 'Logout', logout_path(@business.slug) %></li>
         <% else %>
         <div id="login-fields">
           <%= form_tag(login_path(@business.slug), { style: "padding-top: 10px;" }) do %>
