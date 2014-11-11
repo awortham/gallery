@@ -36,5 +36,4 @@ Rails.application.routes.draw do
 
     end
   end
-      # root :to => 'platform/dashboard#home'
 end
