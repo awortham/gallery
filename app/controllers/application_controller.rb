@@ -58,6 +58,9 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  # end goal: get rid of the ensure_member method
+
     def ensure_member
       if current_user && current_user.business_id != business.id && current_user.platform_admin == false
         session.clear

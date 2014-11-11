@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   has_many :orders
   has_many :addresses
 
-  validates :name, presence: true
+  validates :name, :role, presence: true
   validates_length_of :username, in: 2..32, allow_blank: true
   validates :username, allow_blank: true, length: { in: 2..32 }, uniqueness: {scope: :business_id}
 
@@ -16,6 +16,14 @@ class User < ActiveRecord::Base
 
   def admin?
     admin == true
+  end
+
+  def platform_admin?
+    role == "platform_admin"
+  end
+
+  def default_url
+    '/platform'
   end
 
   def display_name
