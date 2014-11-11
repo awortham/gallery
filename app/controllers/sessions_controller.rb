@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
   skip_before_action :ensure_member
 
   def new
@@ -13,7 +12,7 @@ class SessionsController < ApplicationController
       gflash :now, :success => 'Successfully Logged In'
       user.cart = cart
       user.save
-      redirect_to admin_path(@business.slug)
+      redirect_to admin_path(business.slug)
     elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
       user.cart = cart unless user.cart
@@ -30,6 +29,10 @@ class SessionsController < ApplicationController
   def destroy
     session.clear
     gflash :now, :success => 'Successfully Logged Out.'
-    redirect_to home_path(@business.slug)
+    if business.slug == 'gallery'
+      redirect_to platform_path(business.slug)
+    else
+      redirect_to home_path(business.slug)
+    end
   end
 end

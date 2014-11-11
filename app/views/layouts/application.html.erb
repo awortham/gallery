@@ -14,7 +14,11 @@
   </head>
   <body>
     <%= render 'shared/flash_messages' %>
-    <%= render 'shared/navbar' %>
+    <% if business.slug == 'gallery' %>
+      <%= render 'shared/platform_navbar' %>
+    <% else %>
+      <%= render 'shared/navbar' %>
+    <% end %>
     <%= yield %>
 <script>
 $(document).ready(function() {
