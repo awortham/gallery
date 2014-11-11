@@ -14,6 +14,7 @@ class Admin::ItemsController < Admin::AdminController
 
   def edit
     @item = business.items.find(params[:id])
+    @categories = business.categories
   end
 
   def create
