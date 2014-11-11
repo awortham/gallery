@@ -1,12 +1,12 @@
 <div class="item active">
   <div class="img">
-    <img src="https://s3-us-west-2.amazonaws.com/turing-gallery/portrait.png" width="500" height="500">
+    <img src="<%= @about.image.image(:medium) %>" class="img-thumbnail">
   </div>
     <div class="container">
       <div id="bio-position">
-      <h1>Gallery</h1>
-        <h3>Professional Photography</h3>
-          <p>Photographer's Bio Here</p>
+      <h1><%= @about.name %></h1>
+        <h3><%= @about.tagline %></h3>
+          <p><%= @about.bio %></p>
         <%= link_to 'Home', home_path(@business.slug), class: "btn btn-default" %>
       </div>
     </div>

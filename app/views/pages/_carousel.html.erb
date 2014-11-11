@@ -6,45 +6,19 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
-  <div class="carousel-inner" style="  height: 739px;
-">
-    <div class="item active">
-      <img src="https://s3-us-west-2.amazonaws.com/turing-gallery/beach-street.png"
-       alt="First slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Sharp. Precise. Picture Perfect.</h1>
-            <p>Gallery Photography</p>
+
+  <div class="carousel-inner" style="  height: 739px;">
+    <% @home.images.each_with_index do |image, index| %>
+      <div class='item <%= "#{ index.zero? ? 'active' : '' }" %> '>
+        <img src="<%= image.url %>" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><%= image.tagline %></h1>
+              <p><%= image.caption %></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="item">
-        <img src="https://s3-us-west-2.amazonaws.com/turing-gallery/sailboat.png" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Traditional Elegance; True Complexion </h1>
-            <p>From portraits to travel photography, our photographers capture the best of every moment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="https://s3-us-west-2.amazonaws.com/turing-gallery/bubbles.png" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>An Eye for Design </h1>
-            <p>With years of experience, we brings the best to our photography.</p>
-            <!-- <p><a class="btn btn-lg btn-default" href="/about" role="button">Meet Lisa</a></p> -->
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="https://s3-us-west-2.amazonaws.com/turing-gallery/sun-through-clouds.png" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Ready for a Photoshoot?</h1>
-            <p>Don't worry about the details. Let us design your favorite moments. </p>
-          </div>
-        </div>
+      <% end %>
     </div>
   </div><!-- /.carousel -->
 </div>

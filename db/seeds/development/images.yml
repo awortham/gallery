@@ -1,0 +1,5 @@
+# records:
+#   - sprig_id: 1
+#     image: <% open(URI('https://s3-us-west-2.amazonaws.com/turing-gallery/beach-street.png ')) %>
+#     name: "With tomatoes and olives"
+#     business_id: "<%= sprig_record(Business, 1).id %>"

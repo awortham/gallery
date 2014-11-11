@@ -17,7 +17,7 @@
         <tbody>
           <% category.items.each do |item| %>
             <tr>
-              <td><img src="<%= item.image(:thumb) %>"></td>
+              <td><img src="<%= item.image.image(:thumb) %>"></td>
               <td><span class="item_title"><%= item.title %><span><td><%= number_to_currency(item.price) %></td></td>
               <td><%= item.status %></td>
               <td><%= link_to 'Edit', edit_admin_item_path(@business.slug, item) %></td>

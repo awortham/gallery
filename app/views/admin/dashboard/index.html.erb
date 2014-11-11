@@ -1,6 +1,18 @@
 <div class="container"><br><br><br>
   <h1 class="page-header">Admin Options</h1>
   <div class="edit-users-container">
+    <h1>Edit About Page</h1>
+    <%= link_to "Edit About Content", edit_admin_dashboard_path(@business.slug, @business.about), id: "new_item_button" , class: "btn-lg btn-success"%>
+  </div>
+  <div class="edit-users-container">
+    <h1>Edit Home Page</h1>
+    <%= link_to "Edit Home Content", edit_admin_home_path(@business.slug, @business.home), id: "new_item_button" , class: "btn-lg btn-success"%>
+  </div>
+  <div class="edit-users-container">
+    <h1>Add New Photos</h1>
+    <%= link_to "Add Photos", new_admin_image_path(business.slug), id: "new_item_button" , class: "btn-lg btn-success"%>
+  </div>
+  <div class="edit-users-container">
     <h1>Edit Users</h1>
       <table class="table">
         <thead>
@@ -45,7 +57,7 @@
         <tbody>
           <% category.items.each do |item| %>
             <tr>
-              <td><img src="<%= item.image(:thumb) %>"></td>
+              <td><img src="<%= item.image.image(:thumb) %>"></td>
               <td><span class="item_title"><%= item.title %><span><td><%= number_to_currency(item.price) %></td></td>
               <td><%= item.status %></td>
               <td><%= link_to 'Edit', edit_admin_item_path(@business.slug, item), class: "btn btn-warning" %></td>
@@ -78,5 +90,5 @@
         <% end %>
       </tbody>
     </table>
-    </div>
+  </div>
 </div>

@@ -11,11 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106185843) do
+ActiveRecord::Schema.define(version: 20141108200630) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "abouts", force: true do |t|
+    t.string   "name"
+    t.text     "bio"
+    t.integer  "business_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "tagline"
+    t.integer  "image_id"
+  end
+
+  add_index "abouts", ["image_id"], name: "index_abouts_on_image_id", using: :btree
 
   create_table "addresses", force: true do |t|
     t.integer  "user_id"
@@ -49,6 +62,34 @@ ActiveRecord::Schema.define(version: 20141106185843) do
     t.integer  "business_id"
   end
 
+  create_table "home_images", force: true do |t|
+    t.integer  "home_id"
+    t.integer  "image_id"
+    t.string   "caption"
+    t.string   "tagline"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "homes", force: true do |t|
+    t.integer  "business_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.integer  "business_id"
+    t.string   "name"
+  end
+
+  add_index "images", ["business_id"], name: "index_images_on_business_id", using: :btree
+
   create_table "item_categories", force: true do |t|
     t.integer  "item_id"
     t.integer  "category_id"
@@ -59,16 +100,15 @@ ActiveRecord::Schema.define(version: 20141106185843) do
   create_table "items", force: true do |t|
     t.string   "title"
     t.text     "description"
-    t.decimal  "price",              precision: 8, scale: 2
+    t.decimal  "price",       precision: 8, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.string   "status",                                     default: "active"
+    t.string   "status",                              default: "active"
     t.integer  "business_id"
+    t.integer  "image_id"
   end
+
+  add_index "items", ["image_id"], name: "index_items_on_image_id", using: :btree
 
   create_table "line_items", force: true do |t|
     t.integer  "item_id"

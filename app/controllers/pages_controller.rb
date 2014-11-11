@@ -9,10 +9,12 @@ class PagesController < ApplicationController
   def menu
     @categories = Category.all
     @user = User.new
+    @home = business.home
   end
 
   def about
     @user = User.new
+    @about = business.about
   end
 
   def code

@@ -8,17 +8,16 @@ class Admin::ItemsController < Admin::AdminController
   end
 
   def new
-    @item       = Item.new
-    @categories = business.categories
+    @item       = business.items.new
+    @categories = Category.all
   end
 
   def edit
-    @item = Item.find(params[:id])
-    @categories = business.categories
+    @item = business.items.find(params[:id])
   end
 
   def create
-    @item = Item.new(item_params)
+    @item = business.items.new
     @item.update_attributes(item_params)
     @item.categories = Category.where(id: params["item"]["categories"])
     if @item.save
@@ -53,7 +52,7 @@ class Admin::ItemsController < Admin::AdminController
   private
 
   def item_params
-    params.require(:item).permit(:title, :description, :price, :status, :image, :categories)
+    params.require(:item).permit(:title, :description, :price, :status, :image_id, :categories)
   end
 
   def check_category

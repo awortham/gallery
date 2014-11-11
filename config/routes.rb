@@ -20,10 +20,14 @@ Rails.application.routes.draw do
     resources :charges
 
     namespace :admin do
+      resources :home_images
+      resources :dashboard
+      resources :images
       get '/' => 'dashboard#index'
       resources :users, only: [:destroy]
       resources :items
       resources :categories
+      resources :homes, only: [:edit, :update]
     end
   end
 end

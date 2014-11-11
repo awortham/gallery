@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="page-header">Edit Image</h1>
+        <%= bootstrap_form_for @home_image, url: admin_home_image_path(business.slug, @home_image.id) do |f| %>
+
+          <%= f.text_field :tagline %>
+
+          <%= f.text_field :caption %>
+
+          <%= f.submit "BOOM SUCKA" %>
+
+        <%= link_to "Admin Menu", admin_dashboard_index_path(business.slug) %>
+      <% end %>
+    </div>
+  </div>
+</div>
