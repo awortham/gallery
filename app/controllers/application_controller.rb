@@ -67,15 +67,15 @@ class ApplicationController < ActionController::Base
       end
     end
 
-    def ensure_status
-      redirect_to platform_path('gallery') if business.status == "retired"
-    end
-
     def set_user
       @user = User.new
     end
 
     def set_business
       @business = Business.where(slug: params[:store_slug]).first
+    end
+
+    def ensure_status
+      redirect_to platform_path('gallery') if business.status == "retired"
     end
 end
