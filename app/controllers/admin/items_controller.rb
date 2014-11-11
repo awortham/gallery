@@ -9,7 +9,7 @@ class Admin::ItemsController < Admin::AdminController
 
   def new
     @item       = business.items.new
-    @categories = Category.all
+    @categories = business.categories
   end
 
   def edit
@@ -19,7 +19,7 @@ class Admin::ItemsController < Admin::AdminController
   def create
     @item = business.items.new
     @item.update_attributes(item_params)
-    @item.categories = Category.where(id: params["item"]["categories"])
+    @item.categories = business.categories.where(id: params["item"]["categories"])
     if @item.save
       gflash :now,  :success => "Item Successfully Created"
       redirect_to admin_items_path(business.slug)
