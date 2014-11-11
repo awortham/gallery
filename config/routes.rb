@@ -29,5 +29,10 @@ Rails.application.routes.draw do
       resources :categories
       resources :homes, only: [:edit, :update]
     end
+
+    namespace :platform do
+      get '/' => 'platform#new'
+      get '/admin',   to: 'platform#index', as: 'platform'
+    end
   end
 end

@@ -14,3 +14,6 @@ records:
   - sprig_id: 5
     name: "Ben Fink Shapiro"
     slug: "benfinkshapiro"
+  - sprig_id: 6
+    name: "Gallery"
+    slug: "gallery"
