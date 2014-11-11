@@ -6,6 +6,7 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
+
   <div class="carousel-inner" style="  height: 739px;">
     <% @home.images.each_with_index do |image, index| %>
       <div class='item <%= "#{ index.zero? ? 'active' : '' }" %> '>

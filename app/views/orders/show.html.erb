@@ -15,12 +15,12 @@
         </tr>
       </thead>
       <tbody>
-        <% order_items(@order.line_items).each_pair do |item_id, quantity | %>
+        <% @order.line_items.each do |i| %>
         <tr>
-          <td><%= link_to "#{(find_item(item_id).title)}", item_path(@business.slug, item_id)  %></td>
-          <td><%= number_to_currency(find_item(item_id).price) %></td>
-          <td><%= quantity %></td>
-          <td><%= number_to_currency(cart.line_item_subtotal(item_id, quantity)) %></td>
+          <td><%= link_to "#{(find_item(i.item_id).title)}", item_path(@business.slug, i.item_id)  %></td>
+          <td><%= number_to_currency(find_item(i.item_id).price) %></td>
+          <td><%= i.quantity %></td>
+          <td><%= number_to_currency(cart.line_item_subtotal(i.item_id, i.quantity)) %></td>
         </tr>
         <% end %>
       </tbody>
@@ -32,8 +32,8 @@
         <tr>
           <td></td>
           <td></td>
-          <td class="order-totals"><%= past_order_quantity(@order.line_items) %></td>
-          <td class="order-totals"><%= number_to_currency(past_order_total(@order.line_items))  %></td>
+          <td class="order-totals"><%= @order.quantity %></td>
+          <td class="order-totals"><%= number_to_currency(@order.total)  %></td>
         </tr>
       </tbody>
     </table>

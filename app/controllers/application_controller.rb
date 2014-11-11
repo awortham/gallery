@@ -19,7 +19,8 @@ class ApplicationController < ActionController::Base
   helper_method :business
 
   def cart
-    @cart ||= Cart.new(session)
+    return current_user.cart if current_user && current_user.cart
+    @cart ||= Cart.create
   end
 
   def find_item(item_id)

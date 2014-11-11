@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20141108200630) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
@@ -115,6 +116,7 @@ ActiveRecord::Schema.define(version: 20141108200630) do
     t.integer  "quantity",   default: 1
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "order_id"
   end
 
   add_index "line_items", ["cart_id"], name: "index_line_items_on_cart_id", using: :btree
@@ -142,6 +144,9 @@ ActiveRecord::Schema.define(version: 20141108200630) do
     t.string   "username"
     t.boolean  "platform_admin",  default: false
     t.integer  "business_id"
+    t.integer  "cart_id"
   end
+
+  add_index "users", ["cart_id"], name: "index_users_on_cart_id", using: :btree
 
 end

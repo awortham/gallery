@@ -56,3 +56,12 @@ records:
   - sprig_id: 19
     title: "Miscellaneous"
     business_id: '<%= sprig_record(Business, 4).id %>'
+  - sprig_id: 20
+    title: "Brides"
+    business_id: '<%= sprig_record(Business, 5).id %>'
+  - sprig_id: 21
+    title: "Couples"
+    business_id: '<%= sprig_record(Business, 5).id %>'
+  - sprig_id: 22
+    title: "Wedding Parties"
+    business_id: '<%= sprig_record(Business, 5).id %>'

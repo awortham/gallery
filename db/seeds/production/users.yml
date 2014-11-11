@@ -73,3 +73,18 @@ records:
     password_confirmation: 'password'
     username: 'Jessica'
     business_id: <%= sprig_record(Business, 4).id %>
+  - sprig_id: 11
+    name: 'Ben'
+    email: 'demo+ben@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Ben'
+    admin: true
+    business_id: <%= sprig_record(Business, 5).id %>
+  - sprig_id: 12
+    name: 'Fink'
+    email: 'demo+fink@jumpstartlab.com'
+    password: 'password'
+    password_confirmation: 'password'
+    username: 'Fink'
+    business_id: <%= sprig_record(Business, 5).id %>  
