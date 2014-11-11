@@ -1,7 +1,7 @@
 class Platform::DashboardController < Platform::PlatformController
   before_filter :verify_platform, only: :index
 
-  def new
+  def home
   end
 
   def index

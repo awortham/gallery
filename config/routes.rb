@@ -31,7 +31,7 @@ Rails.application.routes.draw do
     end
 
     namespace :platform do
-      get '/' => 'dashboard#new'
+      get '/' => 'dashboard#home'
       get '/admin',   to: 'dashboard#index', as: 'platform'
     end
   end
