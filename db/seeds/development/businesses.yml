@@ -2,18 +2,24 @@ records:
   - sprig_id: 1
     name: "Josh Gold Photography"
     slug: "joshgoldphotography"
+    status: "active"
   - sprig_id: 2
     name: "Kelli Nixon Photography"
     slug: "kellinixonphotography"
+    status: "active"
   - sprig_id: 3
     name: "Pink Fog Studios"
     slug: "pinkfogstudios"
+    status: "active"
   - sprig_id: 4
     name: "Kara Pearson Photography"
     slug: "karapearsonphotography"
+    status: "active"
   - sprig_id: 5
     name: "Ben Fink Shapiro"
     slug: "benfinkshapiro"
+    status: "active"
   - sprig_id: 6
     name: "Gallery"
     slug: "gallery"
+    status: "active"
