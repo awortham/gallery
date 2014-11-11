@@ -4,13 +4,13 @@
   <div class="row">
     <hr>
     <div class="row row-margin-bottom">
-      <div class="col-md-7 no-padding lib-item" data-category="view">
+      <div class="col-md-11 no-padding lib-item" data-category="view">
         <div class="lib-panel">
           <div class="row box-shadow">
-            <div class="col-md-6">
-              <img src="<%= @item.image(:medium) %>" class="img-thumbnail">
+            <div class="col-md-10">
+              <img src="<%= @item.image.image(:original) %>" style = "height: 500px; width: 800px" class="img-thumbnail">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2">
               <div class="lib-row lib-header">
                 <h1><%= @item.title %></h1>
                 <div class="lib-header-seperator"></div>

@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'create user' do
 
   before do
-    @business = Business.create(slug: "joesphotography")
+    @business = Business.create(slug: "joesphotography", status: 'active')
     @user = User.create(name: 'joe', email: 'joe@example.com', username: 'joe', password: 'password', password_confirmation: 'password', business_id: @business.id)
     visit(new_user_path(@business.slug))
   end
@@ -57,7 +57,7 @@ describe 'user login' do
 
   before do
     @home = Home.create
-    @business = Business.create(slug: "joshgoldphotography", name: "jbiz", home: @home, id: 4)
+    @business = Business.create(slug: "joshgoldphotography", name: "jbiz", home: @home, id: 4, status: 'active')
     @user = User.create(username: "Jonycage", name: "Joe", password: "1234", password_confirmation: "1234", email: "jony@comelately.com", business_id: 4)
     visit home_path(@business.slug)
   end
@@ -114,7 +114,7 @@ describe 'user settings' do
 
   before do
     @home = Home.create
-    business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 5, home: @home)
+    business = Business.create(slug: "joshgoldphotography", name: "jbiz", id: 5, home: @home, status: 'active')
     @user = User.create(username: "Lil Jess", name: "Jessica", password: "5555", password_confirmation: "5555", email: "jess@gmail.com", business_id: 5)
     visit home_path(business.slug)
     within(:css, "#nav_bar") do
