@@ -26,7 +26,7 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def create
-    @business = Business.new(business_params)
+    @business = Business.new(buziness_params)
     if @business.save
       gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
@@ -41,7 +41,7 @@ class Platform::DashboardController < Platform::PlatformController
     redirect_to platform_path(business.slug) unless current_user && current_user.platform_admin?
   end
 
-  def business_params
-    params.require(:business).permit(:name, :email, :business_name, :business_idea)
+  def buziness_params
+    params.require(:buziness).permit(:name, :email, :business_name, :business_idea)
   end
 end
