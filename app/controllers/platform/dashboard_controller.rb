@@ -17,6 +17,11 @@ class Platform::DashboardController < Platform::PlatformController
     @update_business = Business.find(params[:id])
     @update_business.status = (params[:business][:status])
     if @update_business.save
+      if @update_business.status == "active"
+        Notifier.approval(@update_business.id).deliver
+      elsif @update_business.status == "retired"
+        Notifier.denial(@update_business.id).deliver
+      end
       gflash :now, :success => "Business successfully updated!"
       redirect_to platform_dashboard_index_path
     else

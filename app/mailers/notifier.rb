@@ -20,11 +20,13 @@ class Notifier < ActionMailer::Base
     mail(to: admin.email, subject: "Request for new store")
   end
 
-  def approval
-
+  def approval(business_id)
+    @business = Business.find(business_id)
+    mail(to: @business.email, subject: "Approved!")
   end
 
-  def denial
-
+  def denial(business_id)
+    @business = Business.find(business_id)
+    mail(to: @business.email, subject: "unapproved")
   end
 end
