@@ -3,7 +3,7 @@ records:
     image_id: 1
     price: 20
     title: "Omelette"
-    description: "With tomatoes and olives"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
@@ -11,7 +11,7 @@ records:
     image_id: 1
     price: 30
     title: "Eggs"
-    description: "Cast iron eggs"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
@@ -19,7 +19,7 @@ records:
     image_id: 1
     price: 35
     title: "Pancakes"
-    description: "With tea and blueberries"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
@@ -28,7 +28,7 @@ records:
     image_id: 1
     price: 15
     title: "Lemon Tarts"
-    description: "Tray of lemon tarts"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
@@ -36,7 +36,7 @@ records:
     image_id: 1
     price: 50
     title: "Toast"
-    description: "With egg, berries, and cookie"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 2).id %>'
@@ -45,7 +45,7 @@ records:
     image_id: 1
     price: 40
     title: "Pair of Drinks"
-    description: "Grapefruit and blood orange cocktails"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
@@ -53,7 +53,7 @@ records:
     image_id: 1
     price: 45
     title: "Blackberry Cocktail "
-    description: "With garnish"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
@@ -61,7 +61,7 @@ records:
     image_id: 1
     price: 60
     title: "Orange Liquor"
-    description: "In short cup"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
@@ -69,7 +69,7 @@ records:
     image_id: 1
     price: 60
     title: "Summer Cocktail"
-    description: "In garden"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
@@ -77,7 +77,7 @@ records:
     image_id: 1
     price: 20
     title: "Mojito"
-    description: "With straw"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 1).id %>'
@@ -85,7 +85,7 @@ records:
     image_id: 1
     price: 45
     title: "Olives"
-    description: "In small bowl"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
@@ -93,7 +93,7 @@ records:
     image_id: 1
     price: 70
     title: "Cheese"
-    description: "Plate of cheese"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
@@ -101,7 +101,7 @@ records:
     image_id: 1
     price: 75
     title: "Bread"
-    description: "Freshly baked bread"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
@@ -109,7 +109,7 @@ records:
     image_id: 1
     price: 15
     title: "Bruschetta"
-    description: "Bruschetta on plate"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 3).id %>'
@@ -117,7 +117,7 @@ records:
     image_id: 1
     price: 50
     title: "Salad"
-    description: "Salad nicoise"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
@@ -125,7 +125,7 @@ records:
     image_id: 1
     price: 40
     title: "Kale"
-    description: "Roasted kale with egg"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
@@ -133,7 +133,7 @@ records:
     image_id: 1
     price: 45
     title: "Salmon"
-    description: "With crispy onion"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
@@ -141,7 +141,7 @@ records:
     image_id: 1
     price: 30
     title: "Stuffed Tomatoes"
-    description: "With bread and wine"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 4).id %>'
@@ -149,7 +149,7 @@ records:
     image_id: 1
     price: 60
     title: "Strawberries"
-    description: "Bowl of fresh strawberries"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
@@ -157,7 +157,7 @@ records:
     image_id: 1
     price: 30
     title: "Creme Brulee"
-    description: "In two ramekins"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 1).id %>'
     category_ids:
       - '<%= sprig_record(Category, 5).id %>'
@@ -165,7 +165,7 @@ records:
     image_id: 1
     price: 30
     title: "White Waves"
-    description: "With greens at the front"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -173,7 +173,7 @@ records:
     image_id: 1
     price: 25
     title: "Magical Coast"
-    description: "Clouds in the horizon"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -181,7 +181,7 @@ records:
     image_id: 1
     price: 30
     title: "Rocks"
-    description: "Rocks in the sand"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -189,7 +189,7 @@ records:
     image_id: 1
     price: 25
     title: "Woman"
-    description: "Woman dipping toes into water"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -198,7 +198,7 @@ records:
     image_id: 1
     price: 25
     title: "Beach Pastel"
-    description: "À la Paul Ferney"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -206,7 +206,7 @@ records:
     image_id: 1
     price: 30
     title: "Palm Trees"
-    description: "At an angle"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
@@ -214,7 +214,7 @@ records:
     image_id: 1
     price: 35
     title: "Umbrellas"
-    description: "Palm trees with umbrellas"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -223,7 +223,7 @@ records:
     image_id: 1
     price: 25
     title: "Mountain"
-    description: "Palm trees with mountain"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
@@ -231,7 +231,7 @@ records:
     image_id: 1
     price: 30
     title: "Yellow Sun"
-    description: "Large palm tree with yellow sun"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
@@ -240,7 +240,7 @@ records:
     image_id: 1
     price: 25
     title: "Moon"
-    description: "Palm trees with moon"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
@@ -248,7 +248,7 @@ records:
     image_id: 1
     price: 40
     title: "Lighthouse Sunset"
-    description: "Sunset on the beach"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
@@ -256,7 +256,7 @@ records:
     image_id: 1
     price: 40
     title: "Orange Sunset"
-    description: "Orange moon over the water"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
@@ -264,7 +264,7 @@ records:
     image_id: 1
     price: 35
     title: "Sunset with Palm Trees"
-    description: "Blue and orange sky"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 7).id %>'
@@ -273,7 +273,7 @@ records:
     image_id: 1
     price: 25
     title: "Beach Rocks"
-    description: "Sun through the rocks"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
@@ -281,7 +281,7 @@ records:
     image_id: 1
     price: 40
     title: "Orange and Red Sunset"
-    description: "Over blue sea"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
@@ -289,7 +289,7 @@ records:
     image_id: 1
     price: 25
     title: "Surfer 1"
-    description: "Surfer with hair"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
@@ -297,7 +297,7 @@ records:
     image_id: 1
     price: 25
     title: "Surfer 2"
-    description: "Surfer in red"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
@@ -305,7 +305,7 @@ records:
     image_id: 1
     price: 25
     title: "Surfer 3"
-    description: "Surfer with vertical surfboard"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
@@ -313,7 +313,7 @@ records:
     image_id: 1
     price: 25
     title: "Surfer 4"
-    description: "Surfer's face"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
@@ -321,7 +321,7 @@ records:
     image_id: 1
     price: 25
     title: "Surfer 5"
-    description: "Surfer hits the white waves"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 9).id %>'
@@ -329,7 +329,7 @@ records:
     image_id: 1
     price: 35
     title: "Beach Boy"
-    description: "Beach boy in pajamas"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -338,7 +338,7 @@ records:
     image_id: 1
     price: 40
     title: "Kids With Dog"
-    description: "Kids on the beach playing with dog"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 6).id %>'
@@ -347,7 +347,7 @@ records:
     image_id: 1
     price: 30
     title: "Kids Playing in the Waves"
-    description: "Group of kids playing in the waves"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 10).id %>'
@@ -355,7 +355,7 @@ records:
     image_id: 1
     price: 30
     title: "Beach Soccer"
-    description: "Kids playing soccer on the beach"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 8).id %>'
@@ -364,7 +364,7 @@ records:
     image_id: 1
     price: 30
     title: "Kids Playing in Ocean"
-    description: "Young children playing in the ocean"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 2).id %>'
     category_ids:
       - '<%= sprig_record(Category, 10).id %>'
@@ -372,7 +372,7 @@ records:
     image_id: 1
     price: 25
     title: "Newborn in Hat"
-    description: "With brown eyes"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 11).id %>'
@@ -381,7 +381,7 @@ records:
     image_id: 1
     price: 25
     title: "Sleeping Newborn"
-    description: "On shoulder"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 11).id %>'
@@ -390,7 +390,7 @@ records:
     image_id: 1
     price: 25
     title: "Newborn in Dress"
-    description: "Back of head"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 11).id %>'
@@ -399,7 +399,7 @@ records:
     image_id: 1
     price: 30
     title: "Newborn Looking at Camera"
-    description: "The cutest"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 11).id %>'
@@ -408,7 +408,7 @@ records:
     image_id: 1
     price: 30
     title: "Newborn with Beautiful Eyes"
-    description: "The most beautiful"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 11).id %>'
@@ -417,7 +417,7 @@ records:
     image_id: 1
     price: 30
     title: "Young Girl with Tongue"
-    description: "Brown Eyes"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
@@ -425,7 +425,7 @@ records:
     image_id: 1
     price: 30
     title: "Boy in Pool"
-    description: "Young boy in pool"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
@@ -434,7 +434,7 @@ records:
     image_id: 1
     price: 30
     title: "Boy in Red Pants"
-    description: "Boy in stripes and red pants"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
@@ -442,7 +442,7 @@ records:
     image_id: 1
     price: 30
     title: "Boy on All Fours"
-    description: "Boy in stripes on all fours"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
@@ -451,7 +451,7 @@ records:
     image_id: 1
     price: 30
     title: "Child in Green Shirt"
-    description: "Young child in green shirt"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 12).id %>'
@@ -459,7 +459,7 @@ records:
     image_id: 1
     price: 30
     title: "Boy in Red Sweater"
-    description: "Young boy in cozy red sweater"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
@@ -467,7 +467,7 @@ records:
     image_id: 1
     price: 30
     title: "Girl Looking out the Window"
-    description: "Young girl looking out the window"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
@@ -475,7 +475,7 @@ records:
     image_id: 1
     price: 30
     title: "Girl with Phone"
-    description: "Young girl playing with phone"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
@@ -484,7 +484,7 @@ records:
     image_id: 1
     price: 30
     title: "Girl in Field"
-    description: "Young girl in field"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 13).id %>'
@@ -492,7 +492,7 @@ records:
     image_id: 1
     price: 35
     title: "Girl with Hair"
-    description: "Young girl with hair"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -500,7 +500,7 @@ records:
     image_id: 1
     price: 35
     title: "Girl with Hands"
-    description: "Young girl with hands"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -509,7 +509,7 @@ records:
     image_id: 1
     price: 35
     title: "Girl with Finger in Mouth"
-    description: "Young girl with her finger in mouth"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -518,7 +518,7 @@ records:
     image_id: 1
     price: 35
     title: "Girl on Bike"
-    description: "Young girl riding bike"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -527,7 +527,7 @@ records:
     image_id: 1
     price: 35
     title: "Girl with Eyes"
-    description: "Young girl with bright eyes"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -536,7 +536,7 @@ records:
     image_id: 1
     price: 40
     title: "Girl Running"
-    description: "Young girl running"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -545,7 +545,7 @@ records:
     image_id: 1
     price: 40
     title: "Siblings"
-    description: "Young siblings"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -553,7 +553,7 @@ records:
     image_id: 1
     price: 40
     title: "Window"
-    description: "Staring out the Window"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -561,7 +561,7 @@ records:
     image_id: 1
     price: 40
     title: "Water"
-    description: "Child playing with water"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -570,7 +570,7 @@ records:
     image_id: 1
     price: 40
     title: "Angel Child"
-    description: "Young girl with flowers"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 3).id %>'
     category_ids:
       - '<%= sprig_record(Category, 14).id %>'
@@ -732,7 +732,7 @@ records:
     image_id: 1
     price: 40
     title: "Bride 1"
-    description: "bride 1"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
@@ -740,7 +740,7 @@ records:
     image_id: 1
     price: 40
     title: "Bride 2"
-    description: "bride 2"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
@@ -748,7 +748,7 @@ records:
     image_id: 1
     price: 40
     title: "Bride 3"
-    description: "bride 3"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 20).id %>'
@@ -756,7 +756,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 1"
-    description: "couple 1"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -764,7 +764,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 2"
-    description: "couple 2"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -772,7 +772,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 3"
-    description: "couple 3"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -780,7 +780,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 4"
-    description: "couple 4"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -788,7 +788,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 5"
-    description: "couple 5"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -796,7 +796,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 6"
-    description: "couple 6"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -804,7 +804,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 7"
-    description: "couple 7"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -812,7 +812,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 8"
-    description: "couple 8"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -820,7 +820,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 9"
-    description: "couple 9"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -828,7 +828,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 10"
-    description: "couple 10"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -836,7 +836,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 11"
-    description: "couple 11"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -844,7 +844,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 12"
-    description: "couple 12"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -852,7 +852,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 13"
-    description: "couple 13"
+    description: "20 × 25 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -860,7 +860,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 14"
-    description: "couple 14"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -868,7 +868,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 15"
-    description: "couple 15"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -876,7 +876,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 16"
-    description: "couple 16"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -884,7 +884,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 17"
-    description: "couple 17"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -892,7 +892,7 @@ records:
     image_id: 1
     price: 40
     title: "Couple 18"
-    description: "couple 18"
+    description: "24 × 30 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 21).id %>'
@@ -908,7 +908,7 @@ records:
     image_id: 1
     price: 40
     title: "Family 1"
-    description: "family 1"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
@@ -916,7 +916,7 @@ records:
     image_id: 1
     price: 40
     title: "Family 2"
-    description: "family 2"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
@@ -924,7 +924,7 @@ records:
     image_id: 1
     price: 40
     title: "Family 3"
-    description: "family 3"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
@@ -932,7 +932,7 @@ records:
     image_id: 1
     price: 40
     title: "Family 4"
-    description: "family 4"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
@@ -940,7 +940,7 @@ records:
     image_id: 1
     price: 40
     title: "Family 5"
-    description: "family 5"
+    description: "28 × 36 cm"
     business_id: '<%= sprig_record(Business, 5).id %>'
     category_ids:
       - '<%= sprig_record(Category, 22).id %>'
