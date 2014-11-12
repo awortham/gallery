@@ -1,25 +1,31 @@
 records:
   - sprig_id: 1
-    name: "Sharp. Precise. Picture Perfect"
-    bio: "Traditional Elegance; True Complexion"
-    tagline: "An Eye For Design"
+    name: "Josh Gold"
+    bio: "Josh Gold has decades of experience shooting for restaurants and culinary magazines. His work is well-known in the industry, often regarded as the best of food photography."
+    tagline: "An Eye for Design; A Taste for Excellence"
     image_id: 1
     business_id: "<%= sprig_record(Business, 1).id %>"
   - sprig_id: 2
-    name: "Sharp. Precise. Picture Perfect"
-    bio: "Traditional Elegance; True Complexion"
-    tagline: "An Eye For Design"
+    name: "Kelli Nixon"
+    bio: "Kelli has decades of experience shooting for luxury and travel magazines. Her work is well-known in the industry, often regarded as the best of beach photography."
+    tagline: "An Eye for Design; A Coast of Beauty"
     image_id: 1
     business_id: "<%= sprig_record(Business, 2).id %>"
   - sprig_id: 3
-    name: "Sharp. Precise. Picture Perfect"
-    bio: "Traditional Elegance; True Complexion"
-    tagline: "An Eye For Design"
+    name: "Pink Fog Studios"
+    bio: "At Pink Fog Studios, our photographers have decades of experience working with families and young children. Friendly and professional, we'll help to capture your treasured moments."
+    tagline: "An Eye for Design; A Lifetime of Moments"
     image_id: 1
     business_id: "<%= sprig_record(Business, 3).id %>"
   - sprig_id: 4
-    name: "Sharp. Precise. Picture Perfect"
-    bio: "Traditional Elegance; True Complexion"
-    tagline: "An Eye For Design"
+    name: "Kara Pearson"
+    bio: "Kara has decades of experience shooting for travel magazines. Her work is well-known in the industry, often regarded as the best of landscape photography."
+    tagline: "An Eye for Design; A World Full of Beauty"
     image_id: 1
     business_id: "<%= sprig_record(Business, 4).id %>"
+  - sprig_id: 5
+    name: "Ben Fink Shapiro"
+    bio: "Ben has decades of experience shooting for bridal magazines. His work is well-known in the industry, often regarded as the best of wedding photography."
+    tagline: "An Eye for Design; A Marriage of Beauty"
+    image_id: 1
+    business_id: "<%= sprig_record(Business, 5).id %>"
