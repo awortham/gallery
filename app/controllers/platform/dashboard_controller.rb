@@ -31,7 +31,11 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def create
-    @business = Business.new(buziness_params)
+    @business = Business.create(buziness_params)
+    @business.slug = @business.business_name.downcase.split.join
+    @business.about = About.create
+    @business.home = Home.create
+    @business.users << User.create(name: @business.name, password: "password", password_confirmation: "password", email: @business.email, admin: "true", username: @business.name)
     if @business.save
       User.where(platform_admin: true).each do |pa|
         Notifier.request_business(@business.id, pa.id).deliver
