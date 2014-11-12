@@ -53,10 +53,14 @@ $(document).ready(function() {
 });
 </script>
 
-<% if current_user == nil  %>
+<% if current_user == nil && business.slug != "gallery" %>
      <a href="#" class="btn" data-toggle="modal" data-target="#basicModal"></a>
      <%= render partial: 'shared/create_user_form' %>
+  <% else %>
+     <a href="#" class="btn" data-toggle="modal" data-target="#basicModal"></a>
+     <%= render partial: 'shared/submit_business_form' %>
 <% end %>
+
 
   </body>
 </html>
