@@ -34,6 +34,7 @@
         <tr>
           <th>Name</th>
           <th>Slug</th>
+          <th>Email</th>
           <th>Status</th>
           <th colspan="3"></th>
         </tr>
@@ -44,6 +45,7 @@
           <tr>
             <td><%= business.name %></td>
             <td><%= business.slug %></td>
+            <td><%= business.email %></td>
             <td><%= link_to business.status, edit_platform_dashboard_path(@business.slug, business), class: "btn btn-warning" %></td>
           </tr>
          <% end %>
