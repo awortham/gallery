@@ -8,9 +8,8 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def create
-    @business = Business.new(business_params)
+    @business.slug = Business.new(business_params)
     if @business.save
-      session[:user_id] = @business.id
       gflash :now, :success => "Awesome! Account Created"
       redirect_to :back
     else
