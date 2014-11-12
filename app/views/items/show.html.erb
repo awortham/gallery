@@ -18,7 +18,7 @@
                <h4><%= @item.description %></h4>
                <h4><%= @item.dimensions %></h4>
              </div>
-             <h4>Price: <%= number_to_currency(@item.price) %></h4>
+             <h4><%= number_to_currency(@item.price) %></h4>
            </div>
           <% if @item.available? %>
            <%= form_tag line_items_path, :style => "padding-top: 25%; padding-left: 55%;" do %>
