@@ -30,6 +30,7 @@ class Platform::DashboardController < Platform::PlatformController
     @business.slug = @business.business_name.downcase
     @business.about = About.create
     @business.home = Home.create
+    @business.users << User.create(name: "new_admin", password: "password", password_confirmation: "password", email: @business.email, admin: "true", username: "new_admin")
     if @business.save
       gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
