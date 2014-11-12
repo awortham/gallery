@@ -50,7 +50,7 @@
             <th>Title</th>
             <th>Price</th>
             <th>Status</th>
-            <th>Description</th>
+            <th>Dimensions</th>
             <th colspan="3"></th>
           </tr>
         </thead>
@@ -60,6 +60,7 @@
               <td><img src="<%= item.image.image(:thumb) %>"></td>
               <td><span class="item_title"><%= item.title %><span><td><%= number_to_currency(item.price) %></td></td>
               <td><%= item.status %></td>
+              <td><%= item.dimensions %></td>
               <td><%= link_to 'Edit', edit_admin_item_path(@business.slug, item), class: "btn btn-warning" %></td>
               <td><%= link_to 'Destroy', admin_item_path(@business.slug, item), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>

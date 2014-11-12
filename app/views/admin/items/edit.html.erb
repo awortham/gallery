@@ -5,6 +5,7 @@
       <%= bootstrap_form_for(@item, url: admin_item_path(@business.slug, @item)) do |f| %>
         <%= f.text_field :title, :id => 'title', placeholder: "Title" %>
         <%= f.text_area :description, :id => 'description', placeholder: "Description" %>
+        <%= f.text_area :dimensions, :id => 'dimensions', placeholder: "Dimensions" %>
         <%= f.text_field :price, :id => 'price', placeholder: "Price" %>
         <%= f.select :status, ['active', 'retired'] %>
         <% select_options = business.images.map { |i| [i.name, i.id] } %>
