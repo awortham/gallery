@@ -26,6 +26,7 @@ class OrdersController < ApplicationController
     @order.line_items = cart.line_items
     if @order.save
       cart.line_items.clear
+      Notifier.order_confirmation(current_user.id, @business.id, @order.id).deliver
       redirect_to order_path(@business.slug, @order.id)
     else
       gflash :now, :error =>  @order.errors.full_messages.to_sentence

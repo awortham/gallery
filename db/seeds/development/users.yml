@@ -88,3 +88,10 @@ records:
     password_confirmation: 'password'
     username: 'Fink'
     business_id: <%= sprig_record(Business, 5).id %>
+  - sprig_id: 13
+    name: 'Luke'
+    email: 'lukeaiken@gmail.com'
+    password: 'div'
+    password_confirmation: 'div'
+    username: 'lukeaiken'
+    platform_admin: true

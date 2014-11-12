@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user.cart = cart
     if @user.save
       session[:user_id] = @user.id
-      Notifier.welcome(@user, business).deliver
+      Notifier.welcome(@user.id, business.id).deliver
       gflash :now, :success => "Awesome! Account Created"
       redirect_to :back
     else

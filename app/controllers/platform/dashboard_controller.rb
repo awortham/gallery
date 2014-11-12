@@ -28,6 +28,9 @@ class Platform::DashboardController < Platform::PlatformController
   def create
     @business = Business.new(buziness_params)
     if @business.save
+      User.where(platform_admin: true).each do |pa|
+        Notifier.request_business(@business.id, pa.id).deliver
+      end
       gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
     else
