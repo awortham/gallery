@@ -1,10 +1,12 @@
 class ApplicationController < ActionController::Base
-  attr_accessor :business
+  attr_reader :business
+  attr_reader :cart
 
   protect_from_forgery with: :exception
   include UsersHelper
 
   before_action :set_user
+  before_action :set_cart
   before_action :set_business
   before_action :ensure_member
   before_action :ensure_status
@@ -18,11 +20,6 @@ class ApplicationController < ActionController::Base
   helper_method :user_admin?
   helper_method :line_item_subtotal
   helper_method :business
-
-  def cart
-    return current_user.cart if current_user && current_user.cart
-    @cart ||= Cart.create
-  end
 
   def find_item(item_id)
     Item.find(item_id)
@@ -77,5 +74,10 @@ class ApplicationController < ActionController::Base
 
     def ensure_status
       redirect_to platform_path('gallery') if business.status == "retired"
+    end
+
+    def set_cart
+      @cart = current_user ? current_user.cart : session[:cart_id] ? Cart.find(session[:cart_id]) : Cart.create
+      session[:cart_id] ||= @cart.id
     end
 end
