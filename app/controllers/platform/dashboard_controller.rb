@@ -2,6 +2,7 @@ class Platform::DashboardController < Platform::PlatformController
   before_filter :verify_platform, only: :index
 
   def home
+    # @business = Business.new
   end
 
   def index
@@ -14,14 +15,13 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def update
-    # binding.pry
     @update_business = Business.find(params[:id])
     @update_business.status = (params[:business][:status])
     if @update_business.save
-      gflash :now, :success => "Business was successfully updated! You are the man!"
+      gflash :now, :success => "Business was successfully updated!"
       redirect_to platform_dashboard_index_path
     else
-      gflash :now, :error => "Business was not updated. You screwed it up."
+      gflash :now, :error => "Business was not updated."
       render :edit
     end
   end
@@ -29,7 +29,7 @@ class Platform::DashboardController < Platform::PlatformController
   def create
     @business.slug = Business.new(business_params)
     if @business.save
-      gflash :now, :success => "Awesome! Account Created"
+      gflash :now, :success => "Account created."
       redirect_to :back
     else
       gflash :now, :error =>  @business.errors.full_messages.to_sentence
