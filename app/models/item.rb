@@ -9,7 +9,7 @@ class Item < ActiveRecord::Base
 
   validates :categories, presence: true
 
-  validates :title, :description, presence: true
+  validates :title, :description, :dimensions, presence: true
   validates :price, numericality: {greater_than_or_equal_to: 0.01}
   validates :status, inclusion: { in: ['active', 'retired'] }
 
