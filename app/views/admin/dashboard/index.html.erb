@@ -76,7 +76,6 @@
       <thead>
         <tr>
           <th>Title</th>
-          <th>Description</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -84,7 +83,6 @@
         <% @categories.each do |category| %>
           <tr>
             <td><span class="item_title"><%= category.title %><span></td>
-            <td><%= category.description %></td>
             <td><%= link_to 'Edit', edit_admin_category_path(@business.slug, category), class: "btn btn-warning" %></td>
             <td><%= link_to 'Destroy', admin_category_path(@business.slug, category), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
