@@ -1,6 +1,8 @@
 <div class="item active">
   <div class="img">
-    <img src="<%= @about.image.image(:original) %>" class="img-thumbnail" style= "height: 400px; width: 600px">
+    <% unless @about.image.nil? %>
+      <img src="<%= @about.image.image(:original) %>" class="img-thumbnail" style= "height: 400px; width: 600px">
+    <% end %>
   </div>
     <div class="container">
       <div id="bio-position">

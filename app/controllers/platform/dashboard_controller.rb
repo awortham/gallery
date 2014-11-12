@@ -26,7 +26,10 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def create
-    @business = Business.new(buziness_params)
+    @business = Business.create(buziness_params)
+    @business.slug = @business.business_name.downcase
+    @business.about = About.create
+    @business.home = Home.create
     if @business.save
       gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
