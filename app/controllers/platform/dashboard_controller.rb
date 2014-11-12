@@ -14,9 +14,10 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def update
-    @business = Business.find(params[:id])
-    @business.update_attributes(params[:status])
-    if @business.save
+    # binding.pry
+    @update_business = Business.find(params[:id])
+    @update_business.status = (params[:business][:status])
+    if @update_business.save
       gflash :now, :success => "Business was successfully updated! You are the man!"
       redirect_to platform_dashboard_index_path
     else
