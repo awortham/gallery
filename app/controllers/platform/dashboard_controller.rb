@@ -5,6 +5,24 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def index
+    @users = User.all
+    @businesses = Business.all
+  end
+
+  def edit
+    @edit_business = Business.find(params[:id])
+  end
+
+  def update
+    @business = Business.find(params[:id])
+    @business.update_attributes(params[:status])
+    if @business.save
+      gflash :now, :success => "Business was successfully updated! You are the man!"
+      redirect_to platform_dashboard_index_path
+    else
+      gflash :now, :error => "Business was not updated. You screwed it up."
+      render :edit
+    end
   end
 
   private

@@ -1,0 +1,25 @@
+records:
+  - sprig_id: 1
+    name: "Sharp. Precise. Picture Perfect"
+    bio: "Traditional Elegance; True Complexion"
+    tagline: "An Eye For Design"
+    image_id: 1
+    business_id: "<%= sprig_record(Business, 1).id %>"
+  - sprig_id: 2
+    name: "Sharp. Precise. Picture Perfect"
+    bio: "Traditional Elegance; True Complexion"
+    tagline: "An Eye For Design"
+    image_id: 1
+    business_id: "<%= sprig_record(Business, 2).id %>"
+  - sprig_id: 3
+    name: "Sharp. Precise. Picture Perfect"
+    bio: "Traditional Elegance; True Complexion"
+    tagline: "An Eye For Design"
+    image_id: 1
+    business_id: "<%= sprig_record(Business, 3).id %>"
+  - sprig_id: 4
+    name: "Sharp. Precise. Picture Perfect"
+    bio: "Traditional Elegance; True Complexion"
+    tagline: "An Eye For Design"
+    image_id: 1
+    business_id: "<%= sprig_record(Business, 4).id %>"

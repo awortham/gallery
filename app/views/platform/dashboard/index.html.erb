@@ -1,0 +1,52 @@
+<div class="container"><br><br><br>
+  <h1 class="page-header">Admin Options</h1>
+
+  <div class="edit-users-container">
+    <h1>Users</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Created</th>
+            <th>Admin</th>
+            <th>Username</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user|  %>
+          <tr>
+          <td><%= user.name %></td>
+          <td><%= time_ago_in_words(user.created_at) %></td>
+          <td><%= user.admin %></td>
+          <td><%= user.username %></td>
+          <td><%= user.email %></td>
+        </tr>
+    <% end %>
+        </tbody>
+    </table>
+  </div>
+
+  <div class="edit-categories-container">
+    <h2>Businesses</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Slug</th>
+          <th>Status</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody id="admin_categories_edit_table">
+        <% @businesses.each do |business| %>
+          <tr>
+            <td><%= business.name %></td>
+            <td><%= business.slug %></td>
+            <td><%= link_to business.status, edit_platform_dashboard_path(@business.slug, business), class: "btn btn-warning" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
