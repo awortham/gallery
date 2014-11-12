@@ -129,21 +129,6 @@ describe 'user settings' do
     expect(page).to have_content 'My Account Settings'
   end
 
-
-  it 'allows user to edit user settings' do
-    within(:css, "#nav_bar") do
-      click_on('Settings')
-    end
-
-    click_on('Edit Account Details')
-    fill_in 'Name', with: 'NewName'
-    click_on('Update Account')
-
-    expect(page).to have_content 'Welcome, Lil Jess'
-    expect(page).to have_content 'Account Settings'
-    expect(page).to_not have_content "Jessica"
-  end
-
   it 'deletes a user account when requested' do
     within(:css, "#nav_bar") do
       click_on('Settings')

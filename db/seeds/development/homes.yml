@@ -7,3 +7,5 @@ records:
     business_id: "<%= sprig_record(Business, 3).id %>"
   - sprig_id: 4
     business_id: "<%= sprig_record(Business, 4).id %>"
+  - sprig_id: 5
+    business_id: "<%= sprig_record(Business, 5).id %>"

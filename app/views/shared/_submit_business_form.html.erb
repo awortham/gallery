@@ -1,0 +1,21 @@
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Interested in using the Gallery platform for your photography business? Submit this form, and the Gallery staff will be in touch soon.</h4>
+      </div>
+      <div class="modal-body">
+          <%= bootstrap_form_for("business", html: { id: "register-business" }) do |f| %>
+            <%= f.text_field :name, placeholder: 'Name' %>
+            <%= f.text_field :email, placeholder: 'Email' %>
+            <%= f.text_field :business_name, placeholder: 'Business name' %>
+            <%= f.text_field :business_idea, placeholder: 'Tell us about your photography business' %>
+            <%= f.submit 'Get in Touch', class: "btn btn-primary" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>

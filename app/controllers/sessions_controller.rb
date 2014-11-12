@@ -8,16 +8,14 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password]) && user.admin?
       session[:user_id] = user.id
-      user.cart = cart unless user.cart
+      associate_cart(user)
       gflash :now, :success => 'Successfully Logged In'
-      user.cart = cart
       user.save
       redirect_to admin_path(business.slug)
     elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      user.cart = cart unless user.cart
+      user.cart ||= cart
       gflash :now, :success  => 'Successfully Logged In'
-      user.cart = cart
       user.save
       redirect_to :back
     else
@@ -35,4 +33,14 @@ class SessionsController < ApplicationController
       redirect_to home_path(business.slug)
     end
   end
+
+  private
+    
+    def associate_cart(user)
+      if cart.line_items.present? && user.cart && user.cart.line_items.present?
+        user.cart.line_items << cart.line_items
+      else
+        user.cart ||= cart
+      end
+    end
 end

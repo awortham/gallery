@@ -32,6 +32,7 @@ Rails.application.routes.draw do
 
     namespace :platform do
       get '/' => 'dashboard#home'
+      post '/' => 'dashboard#create'
       resources :dashboard
     end
   end
