@@ -14,13 +14,14 @@
       <% @items.each do |item| %>
         <div class="grid-item <%= item.categories.reduce('') { |sum, category| sum + category.title + ' '}.strip %>" id="item_<%= item.id %>">
           <%= link_to image_tag(item.image.image(:medium)), photo_path(@business.slug, item) %>
-          <span class="item_title"><%= item.title %><span><%= number_to_currency(item.price) %>
+          <span class="item_title"></br><%= item.title + ' '%><span>
+          <%= number_to_currency(item.price) %>
+          </br>
           <%= item.description %>
 
           <%= form_tag line_items_path(@business.slug) do %>
             <%= number_field :quantity, "quantity", in: 1..20, value: 1 %>
             <%= hidden_field_tag :id, item.id %>
-              <a href="#" class="btn btn-default disabled" role=""><%= number_to_currency(item.price) %></a>
               <% unless item.status == 'retired' %>
                 <%= submit_tag "Add to Cart", class: "btn btn-success" %>
               <% end %>
