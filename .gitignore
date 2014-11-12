@@ -59,3 +59,4 @@ s3_config.rb
 
 # Ignore application configuration
 /config/application.yml
+/config/initializers/mail.rb
