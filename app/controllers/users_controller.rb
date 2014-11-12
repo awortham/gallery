@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = @business.users.new(user_params)
+    @user.cart = cart
     if @user.save
       session[:user_id] = @user.id
       gflash :now, :success => "Awesome! Account Created"
