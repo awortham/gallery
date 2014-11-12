@@ -1,6 +1,5 @@
 <p style="color: green"><%= flash[:notice] %></p>
 <div class="container">
-  <h1>Item Details</h1>
   <div class="row">
     <hr>
     <div class="row row-margin-bottom">
@@ -16,9 +15,10 @@
                 <div class="lib-header-seperator"></div>
               </div>
               <div class="lib-row lib-desc">
-               <h3><%= @item.description %></h3>
+               <h4><%= @item.description %></h4>
+               <h4><%= @item.dimensions %></h4>
              </div>
-             <p><h3 class="pull-center", style="margin-left: 21px;">Price: <%= number_to_currency(@item.price) %></h3></p>
+             <h4>Price: <%= number_to_currency(@item.price) %></h4>
            </div>
           <% if @item.available? %>
            <%= form_tag line_items_path, :style => "padding-top: 25%; padding-left: 55%;" do %>
