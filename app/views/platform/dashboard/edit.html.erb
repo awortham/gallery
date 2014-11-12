@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="page-header">Edit Item</h1>
+      <%= bootstrap_form_for(@edit_business, url: platform_dashboard_path(business.slug, @edit_business)) do |f| %>
+
+        <%= f.select :status, ['active', 'retired'] %>
+        <% select_options = business.images.map { |i| [i.name, i.id] } %>
+
+        <%= f.submit "Save Item", :id => 'save', class: "btn btn-success" %>
+        <%= link_to "Back", platform_dashboard_index_path(@business.slug), class: "btn btn-default" %>
+    <% end %>
+    </div>
+  </div>
+</div>
