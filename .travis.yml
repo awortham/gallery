@@ -5,3 +5,5 @@ env:
   - DB=postgresql
 before_script:
   - psql -c 'create database gallery_test' -U postgres
+services:
+  - redis-server
