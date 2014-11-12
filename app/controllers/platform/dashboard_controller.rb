@@ -17,7 +17,7 @@ class Platform::DashboardController < Platform::PlatformController
     @update_business = Business.find(params[:id])
     @update_business.status = (params[:business][:status])
     if @update_business.save
-      gflash :now, :success => "Business was successfully updated!"
+      gflash :now, :success => "Business successfully updated!"
       redirect_to platform_dashboard_index_path
     else
       gflash :now, :error => "Business was not updated."
@@ -28,7 +28,7 @@ class Platform::DashboardController < Platform::PlatformController
   def create
     @business = Business.new(business_params)
     if @business.save
-      gflash :now, :success => "Account created."
+      gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
     else
       gflash :now, :error =>  @business.errors.full_messages.to_sentence

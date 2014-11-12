@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user.cart = cart
     if @user.save
       session[:user_id] = @user.id
-      gflash :now, :success => "Awesome! Account Created"
+      gflash :now, :success => "Account Created"
       redirect_to :back
     else
       gflash :now, :error =>  @user.errors.full_messages.to_sentence

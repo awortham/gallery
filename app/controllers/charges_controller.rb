@@ -25,7 +25,7 @@ class ChargesController < ApplicationController
 
     @order.status = "completed"
     @order.save
-    gflash :now, :success => "Thanks.Your order is now paid. You will be recieving a confirmation email shortly."
+    gflash :now, :success => "Thanks. Your order is now paid. You will be receiving a confirmation email shortly."
 
   rescue Stripe::CardError => e
     flash[:error] = e.message

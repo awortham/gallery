@@ -9,8 +9,8 @@
           <%= bootstrap_form_for("business", html: { id: "register-business" }) do |f| %>
             <%= f.text_field :name, placeholder: 'Name' %>
             <%= f.text_field :email, placeholder: 'Email' %>
-            <%= f.text_field :business_name, placeholder: 'Sara Simon Photography' %>
-            <%= f.text_field :business_idea, placeholder: 'A Great Idea Goes Here' %>
+            <%= f.text_field :business_name, placeholder: 'Business name' %>
+            <%= f.text_field :business_idea, placeholder: 'Tell us about your company' %>
             <%= f.submit 'Submit Business', class: "btn btn-primary" %>
         <% end %>
       </div>
