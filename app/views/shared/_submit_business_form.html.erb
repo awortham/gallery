@@ -6,11 +6,12 @@
         <h4 class="modal-title" id="myModalLabel">Ready to get started?</h4>
       </div>
       <div class="modal-body">
-          <%= bootstrap_form_for(@business.slug, html: { id: "register-business" }) do |f| %>
+          <%= bootstrap_form_for("business", html: { id: "register-business" }) do |f| %>
             <%= f.text_field :name, placeholder: 'Name' %>
             <%= f.text_field :email, placeholder: 'Email' %>
             <%= f.text_field :business_name, placeholder: 'Sara Simon Photography' %>
-            <%= f.submit 'Create Account', class: "btn btn-primary" %>
+            <%= f.text_field :business_idea, placeholder: 'A Great Idea Goes Here' %>
+            <%= f.submit 'Submit Business', class: "btn btn-primary" %>
         <% end %>
       </div>
       <div class="modal-footer">

@@ -2,7 +2,6 @@ class Platform::DashboardController < Platform::PlatformController
   before_filter :verify_platform, only: :index
 
   def home
-    # @business = Business.new
   end
 
   def index
@@ -27,7 +26,7 @@ class Platform::DashboardController < Platform::PlatformController
   end
 
   def create
-    @business.slug = Business.new(business_params)
+    @business = Business.new(business_params)
     if @business.save
       gflash :now, :success => "Account created."
       redirect_to :back
@@ -45,5 +44,4 @@ class Platform::DashboardController < Platform::PlatformController
   def business_params
     params.require(:business).permit(:name, :email, :business_name, :business_idea)
   end
-
 end
