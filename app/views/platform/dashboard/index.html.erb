@@ -40,11 +40,13 @@
       </thead>
       <tbody id="admin_categories_edit_table">
         <% @businesses.each do |business| %>
+         <% unless business.slug == 'gallery' %>
           <tr>
             <td><%= business.name %></td>
             <td><%= business.slug %></td>
             <td><%= link_to business.status, edit_platform_dashboard_path(@business.slug, business), class: "btn btn-warning" %></td>
           </tr>
+         <% end %>
         <% end %>
       </tbody>
     </table>
