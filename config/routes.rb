@@ -2,6 +2,8 @@ require 'resque/server'
 
 Rails.application.routes.draw do
 
+  mount Resque::Server.new, :at => "/resque"
+
   scope '/:store_slug' do
     get"/photos",       to: 'items#index', as: "photos"
     get "/about",       to: "pages#about", as: 'about'
