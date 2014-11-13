@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   include UsersHelper
 
   before_action :set_user
-  before_action :set_cart
   before_action :set_business
+  before_action :set_cart
   before_action :ensure_member
   before_action :ensure_status
 
@@ -78,9 +78,13 @@ class ApplicationController < ActionController::Base
 
     def set_cart
       @cart = current_user ? current_user.cart : session[:cart_id] ? Cart.find(session[:cart_id]) : Cart.create
+      if session[:cart_store] && session[:cart_store] != business.slug
+        @cart.line_items.clear
+      end
     rescue ActiveRecord::RecordNotFound
       @cart = Cart.create
     ensure
       session[:cart_id] ||= @cart.id
+      session[:cart_store] = business.slug
     end
 end
