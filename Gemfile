@@ -19,6 +19,7 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'money'
 gem "gritter", "1.1.0"
 gem 'resque'
+gem 'unicorn'
 
 
 
