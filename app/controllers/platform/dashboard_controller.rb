@@ -17,11 +17,8 @@ class Platform::DashboardController < Platform::PlatformController
     @update_business = Business.find(params[:id])
     @update_business.status = (params[:business][:status])
     if @update_business.save
-      if @update_business.status == "active"
-        Notifier.approval(@update_business.id).deliver
-      elsif @update_business.status == "retired"
-        Notifier.denial(@update_business.id).deliver
-      end
+      Resque.enqueue(ApprovalJob, @update_business.id) if @update_business.status == "active"
+      Resque.enqueue(DenialJob, @update_business.id) if @update_business.status == "retired"
       gflash :now, :success => "Business successfully updated!"
       redirect_to platform_dashboard_index_path
     else
@@ -37,9 +34,7 @@ class Platform::DashboardController < Platform::PlatformController
     @business.home = Home.create
     @business.users << User.create(name: @business.name, password: "password", password_confirmation: "password", email: @business.email, admin: "true", username: @business.name)
     if @business.save
-      User.where(platform_admin: true).each do |pa|
-        Notifier.request_business(@business.id, pa.id).deliver
-      end
+      Resque.enqueue(RequestBusinessJob, @business.id)
       gflash :now, :success => "Thanks! We'll be in touch soon."
       redirect_to :back
     else

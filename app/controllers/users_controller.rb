@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user.cart = cart
     if @user.save
       session[:user_id] = @user.id
-      Resque.enqueue(WelcomeNotifier, @user.id, business.id)
+      Resque.enqueue(WelcomeJob, @user.id, business.id)
       gflash :now, :success => "Awesome! Account Created"
       redirect_to :back
     else
