@@ -2,16 +2,17 @@
 <div class="container">
   <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <h1> Create a Menu Item</h1>
+        <h1> Create an Item</h1>
         <%= bootstrap_form_for(@item, url: admin_items_path) do |f| %>
           <%= f.text_field :title, :id => 'title', placeholder: "Title" %>
           <%= f.text_area :description, :id => 'description', placeholder: "Description" %>
+          <%= f.text_field :dimensions, :id => 'dimensions', placeholder: "Dimensions" %>
           <%= f.text_field :price, :id => 'price', placeholder: "Price" %>
 
           <% select_options = business.images.map { |i| [i.name, i.id] } %>
           <%= f.select :image_id, options_for_select(select_options) %>
 
-          <%= f.collection_check_boxes :categories, Category.all, :id, :title %>
+          <%= f.collection_check_boxes :categories, @categories.all, :id, :title %>
           <%= f.submit "Save Item", :id => 'save' , class: "btn btn-success" %>
           <%= link_to "Back", admin_path, class: "btn btn-default" %>
         <% end %>
