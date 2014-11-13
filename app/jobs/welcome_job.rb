@@ -1,4 +1,4 @@
-class WelcomeNotifier
+class WelcomeJob
   @queue = :email
 
   def self.perform(user_id, business_id)
