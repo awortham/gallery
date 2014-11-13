@@ -1,16 +1,60 @@
 <div class="container"><br><br><br>
   <h1 class="page-header">Admin Options</h1>
-  <div class="edit-users-container">
-    <h1>Edit About Page</h1>
-    <%= link_to "Edit About Content", edit_admin_dashboard_path(@business.slug, @business.about), id: "new_item_button" , class: "btn-lg btn-success"%>
+  <div class="edit-categories-container">
+    <h2>Add New Photos</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>
+            Photos
+          </th>
+        </tr>
+      </thead>
+      <tbody id="admin_categories_edit_table">
+        <tr>
+          <td>
+            <%= link_to "Add Photos", new_admin_image_path(business.slug), id: "new_item_button" , class: "btn-lg btn-success"%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="edit-users-container">
-    <h1>Edit Home Page</h1>
-    <%= link_to "Edit Home Content", edit_admin_home_path(@business.slug, @business.home), id: "new_item_button" , class: "btn-lg btn-success"%>
+  <div class="edit-categories-container">
+    <h2>Edit About Page</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+        </tr>
+      </thead>
+      <tbody id="admin_categories_edit_table">
+        <tr>
+          <td>
+            <%= link_to "Edit About Content", edit_admin_dashboard_path(@business.slug, @business.about), id: "new_item_button" , class: "btn-lg btn-warning"%>          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="edit-users-container">
-    <h1>Add New Photos</h1>
-    <%= link_to "Add Photos", new_admin_image_path(business.slug), id: "new_item_button" , class: "btn-lg btn-success"%>
+  <div class="edit-categories-container">
+    <h2>Edit Home Page</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>
+            Home
+          </th>
+        </tr>
+      </thead>
+      <tbody id="admin_categories_edit_table">
+        <tr>
+          <td>
+            <%= link_to "Edit Home Content", edit_admin_home_path(@business.slug, @business.home), id: "new_item_button" , class: "btn-lg btn-warning"%>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="edit-users-container">
     <h1>Edit Users</h1>
@@ -61,8 +105,8 @@
               <td><span class="item_title"><%= item.title %><span><td><%= number_to_currency(item.price) %></td></td>
               <td><%= item.status %></td>
               <td><%= item.dimensions %></td>
-              <td><%= link_to 'Edit', edit_admin_item_path(@business.slug, item), class: "btn btn-warning" %></td>
-              <td><%= link_to 'Destroy', admin_item_path(@business.slug, item), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Edit', edit_admin_item_path(business.slug, item), class: "btn btn-warning" %></td>
+              <td><%= link_to 'Destroy', admin_item_path(business.slug, item), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
         </tbody>
@@ -71,7 +115,7 @@
   </div>
   <div class="edit-categories-container">
     <h2>Edit Categories</h2>
-    <p><%= link_to "Create a New Category", new_admin_category_path(@business.slug), id: "new_item_button" , class: "btn-lg btn-success"%></p>
+    <p><%= link_to "Create a New Category", new_admin_category_path(business.slug), id: "new_item_button" , class: "btn-lg btn-success"%></p>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -83,10 +127,29 @@
         <% @categories.each do |category| %>
           <tr>
             <td><span class="item_title"><%= category.title %><span></td>
-            <td><%= link_to 'Edit', edit_admin_category_path(@business.slug, category), class: "btn btn-warning" %></td>
-            <td><%= link_to 'Destroy', admin_category_path(@business.slug, category), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_admin_category_path(business.slug, category), class: "btn btn-warning" %></td>
+            <td><%= link_to 'Destroy', admin_category_path(business.slug, category), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="edit-categories-container">
+    <h2>Edit Your Information</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>
+            Info
+          </th>
+        </tr>
+      </thead>
+      <tbody id="admin_categories_edit_table">
+        <tr>
+          <td>
+            <%= link_to 'Change Information', edit_user_path(business.slug, current_user), class: "btn btn-warning" %>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
