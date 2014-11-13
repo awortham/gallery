@@ -18,8 +18,8 @@ gem 'bootstrap_form'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'money'
 gem "gritter", "1.1.0"
-gem 'resque'
-gem 'unicorn'
+gem 'resque', '~> 1.24.1'
+gem 'unicorn', '~> 4.6.2'
 
 
 
