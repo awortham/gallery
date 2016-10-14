@@ -1,4 +1,5 @@
 class Address < ActiveRecord::Base
+
   belongs_to :user
 
   validates :zip, length: { maximum: 5}, format: { with: /\A\d{5}\z/ }
