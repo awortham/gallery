@@ -1,5 +1,5 @@
 class AddressesController < ApplicationController
-
+  #sample change for git
   def create
     @address = Address.create(address_params)
     redirect_to new_order_path(business.slug, address: @address.id)
